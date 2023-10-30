@@ -1,0 +1,18 @@
+Package: oxfordtheme
+Type: Package
+Title: University of Oxford Theme and Theme Components for 'ggplot2'
+Version: 0.0.0.9000
+Authors@R: person(
+      given = "Ernest", 
+      family = "Guevarra", 
+      comment = c(ORCID = "0000-0002-4887-4415"), 
+      email = "ernest@guevarra.io", 
+      role = c("aut", "cre")
+    )
+Description: Theme and theme components for 'ggplot2' based on University of 
+    Oxford's visual identity guidelines 
+    <https://www.ox.ac.uk/sites/files/oxford/media_wysiwyg/Oxford%20Blue%20LR.pdf>. 
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
