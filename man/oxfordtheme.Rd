@@ -7,8 +7,7 @@
 \title{Oxford Theme and Theme Components}
 \description{
 Theme and theme components for 'ggplot2' based on University of Oxford's
-visual identity guidelines
-\url{https://www.ox.ac.uk/sites/files/oxford/media_wysiwyg/Oxford\%20Blue\%20LR.pdf}.
+visual identity guidelines \url{https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines}
 }
 \author{
 Ernest Guevarra (ernest@guevarra.io)

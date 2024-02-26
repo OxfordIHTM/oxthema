@@ -1,5 +1,7 @@
 # Create table for Oxford colours from branding toolkit ------------------------
 
+## colours from https://www.ox.ac.uk/sites/files/oxford/media_wysiwyg/Oxford%20Blue%20LR.pdf ----
+
 oxford_colours <- data.frame(
   rbind(
     c(Name="blue",    Pantone=282,            C=100, M=80,  Y=0,   K=60, R=0,   G=33,  B=71),
@@ -33,6 +35,8 @@ oxford_colours <- data.frame(
   dplyr::mutate(dplyr::across(.cols = C:B, .fns = as.integer))
 
 
+### Add NA for silver and gold rgb and cmyk ----
+
 oxford_colours$hex <- c(
   with(
     oxford_colours[1:(nrow(oxford_colours) - 2), ],
@@ -43,9 +47,9 @@ oxford_colours$hex <- c(
 
 
 
-## Colours from https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines/colours
+## Colours from https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines/colours ----
 
-### Create session with colours URL ----
+### Scraping - Create session with colours URL ----
 session <- rvest::session("https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines/colours")
 
 ### Process text ----
@@ -65,7 +69,6 @@ oxford_colours <- rbind(
 )
 
 ### Process fields ----
-
 oxford_colours <- oxford_colours |>
   dplyr::mutate(
     rgb = stringr::str_remove_all(rgb, pattern = "RGB "),
@@ -73,4 +76,6 @@ oxford_colours <- oxford_colours |>
     pantone = stringr::str_remove_all(pantone, pattern = "Pantone: |Pantone ")
   )
 
+
+## Save as package dataset ----
 usethis::use_data(oxford_colours, overwrite = TRUE, compress = "xz")

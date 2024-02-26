@@ -1,0 +1,61 @@
+title: oxfordtheme
+
+url: https://oxford-ihtm.io/oxfordtheme/
+
+template:
+  bootstrap: 5
+  bootswatch: litera
+  theme: haddock
+  ganalytics: #
+
+home:
+  links:
+  - text: Read more on University of Oxford visual identity guide
+    href: https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines
+
+navbar:
+  bg: primary
+  type: light
+  structure:
+    left:  [home, intro, reference, articles, news]
+    right: [linkedin, github]
+
+  components:
+    # articles:
+    #   text: Articles
+    #   menu:
+    #   - text: "ICD-11 Foundation"
+    #     href: articles/icd11_foundation.html
+    #   - text: "Detecting inflammation"
+    #     href: articles/inflammation.html
+    #   - text: "Detecting iron deficiency"
+    #     href: articles/iron-deficiency.html
+    #   - text: "Detecting iodine deficiency"
+    #     href: articles/iodine-deficiency.html
+    linkedin:
+      icon: "fab fa-linkedin fa-lg"
+      href: https://www.linkedin.com/company/international-health-and-tropical-medicine
+
+
+reference:
+  - title: Description
+    contents:
+    - oxfordtheme
+
+  - title: Palettes
+    contents:
+    - oxford_palettes
+
+  - title: Get colours
+    contents:
+    - get_oxford_colour
+    - get_oxford_colours
+
+  - title: Utilities
+    contents:
+    - cmyk2rgb
+
+  - title: Supporting datasets
+    contents:
+    - oxford_colours
+
