@@ -13,7 +13,8 @@ identity guidelines
 \seealso{
 Useful links:
 \itemize{
-  \item \url{http://oxford-ihtm.io/oxfordtheme/}
+  \item \url{https://oxford-ihtm.io/oxfordtheme/,https://github.com/OxfordIHTM/oxfordtheme}
+  \item Report bugs at \url{https://github.com/OxfordIHTM/oxfordtheme/issues}
 }
 
 }

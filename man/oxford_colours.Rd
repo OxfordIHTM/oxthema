@@ -5,15 +5,14 @@
 \alias{oxford_colours}
 \title{Oxford colours based on University of Oxford's visual identity guidelines}
 \format{
-A data frame with 5 columns and 34 rows:
-
-| **Variable** | **Description** |
-| :--- | :--- |
-| *name* | Official Oxford colour name |
-| *rgb* | Three integers for the red, green, blue components of the RGB colour model |
-| *cmyk* | Four integers for the cyan, magenta, yellow, and black components of the CMYK colour model |
-| *hex* | Hexadecimal codes for corresponding colour |
-| *pantone* | Pantone colour name |
+A data frame with 5 columns and 34 rows:\tabular{ll}{
+   \strong{Variable} \tab \strong{Description} \cr
+   \emph{name} \tab Official Oxford colour name \cr
+   \emph{rgb} \tab Three integers for the red, green, blue components of the RGB colour model \cr
+   \emph{cmyk} \tab Four integers for the cyan, magenta, yellow, and black components of the CMYK colour model \cr
+   \emph{hex} \tab Hexadecimal codes for corresponding colour \cr
+   \emph{pantone} \tab Pantone colour name \cr
+}
 }
 \source{
 https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines/colours

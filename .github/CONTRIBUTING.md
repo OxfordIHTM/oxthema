@@ -2,7 +2,7 @@
 
 ## Bugs
 
-* Submit an issue on the [issues page](https://github.com/OxfordIHTM/icd/issues)
+* Submit an issue on the [issues page](https://github.com/OxfordIHTM/oxfordtheme/issues)
 
 ## Code contributions
 
@@ -11,14 +11,14 @@
 * Clone your version on your account down to your machine from your account
 
 ```
-git clone https://github.com/<yourgithubusername>/icd.git
+git clone https://github.com/<yourgithubusername>/oxfordtheme.git
 ```
 
-* Make sure to track progress upstream i.e., on our version of `icd`
-at `OxfordIHTM/icd`, by doing
+* Make sure to track progress upstream i.e., on our version of `oxfordtheme`
+at `OxfordIHTM/oxfordtheme`, by doing
 
 ```
-git remote add upstream https://github.com/OxfordIHTM/icd.git
+git remote add upstream https://github.com/OxfordIHTM/oxfordtheme.git
 ```
 
 * Before making changes make sure to pull changes in from `upstream` by doing
@@ -32,4 +32,4 @@ documentation
 
 * Push up changes to your account
 
-* Submit a pull request at `OxfordIHTM/icd`
+* Submit a pull request at `OxfordIHTM/oxfordtheme`

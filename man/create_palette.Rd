@@ -24,7 +24,7 @@ create_brewer_palette(
 
 \item{n}{Number of colours desired/required. Oxford palettes have at least
 5 colours. All colour schemes are derived from the University of Oxford
-[visual identity guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines).
+\href{https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines}{visual identity guidelines}.
 #If NULL (default), use all colours.}
 
 \item{type}{A character value for type of palette to use. Can be either
@@ -32,12 +32,12 @@ sequential, divergent, or qualitative.}
 }
 \value{
 A character vector of desired/required colours with length equivalent
-  to `n`
+to \code{n}
 }
 \description{
 These functions apply a similar approach used and demonstrated by
-[ColorBrewer](https://colorbrewer2.org) and has been patterned after the
-syntax of the [RColorBrewer](https://cran.r-project.org/web/packages/RColorBrewer/index.html)
+\href{https://colorbrewer2.org}{ColorBrewer} and has been patterned after the
+syntax of the \href{https://cran.r-project.org/web/packages/RColorBrewer/index.html}{RColorBrewer}
 package
 }
 \examples{
