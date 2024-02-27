@@ -13,6 +13,8 @@ knitr::opts_chunk$set(
 
 library(oxfordtheme)
 library(ggplot2)
+
+requireNamespace("sf", quietly = TRUE)
 ```
 
 # oxfordtheme: Oxford Palette, Theme, and Theme Components
@@ -167,26 +169,26 @@ ggplot(
 ## Scatterplot of mpg and disp of mtcars dataset using celebratory Oxford theme
 
 ### Base R
-cols <- ifelse(
-  mtcars$cyl == 4, oxford_theme_palettes()$celebratory[1],
+plot(
+  x = mtcars$mpg, 
+  y = mtcars$disp, 
+  pch = 19, cex = 1.75, 
+  col = ifelse(
+    mtcars$cyl == 4, oxford_theme_palettes()$celebratory[1],
     ifelse(
       mtcars$cyl == 6, oxford_theme_palettes()$celebratory[2],
       oxford_theme_palettes()$celebratory[3]
     )
-)
-
-plot(
-  x = mtcars$mpg, 
-  y = mtcars$disp, 
-  pch = 19, cex = 1.75, col = cols,
+  ),
   main = "Miles per gallon by displacement grouped by number of cylinders",
-  xlab = "mpg", ylab = "disp"
+  xlab = "mpg", ylab = "disp",
+  frame.plot = FALSE
 )
 legend(
   x = "topright", inset = 0.02,
   title = "Cylinders",
   legend = c("4", "6", "8"),
-  pch = 19, pt.cex = 1.5,
+  pch = 19, pt.cex = 1.5, bty = "n",
   col = oxford_theme_palettes()$celebratory[1:3]
 )
 
@@ -198,7 +200,66 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   theme_minimal()
 ```
 
-## Author/s
+#### Plotting maps using Oxford palettes
+
+```{r oxford-palette-sequential, fig.show = "hold", out.width = "50%", fig.height = 8}
+## Plot acute malnutrition using Oxford sequential palette
+
+### Yellow-Orange-Brown
+ggplot(data = nut_survey_map) +
+  geom_sf(mapping = aes(fill = muac_gam)) +
+  scale_fill_gradientn(
+    colours = create_palette_sequential(n = 5, name = "ylorbr")
+  ) +
+  labs(
+    title = "Prevalence of global child wasting",
+    subtitle = "Sequential Yellow-Orange-Brown Colour Palette"
+  ) +
+  theme_minimal()
+
+### Yellow-Green-Blue
+ggplot(data = nut_survey_map) +
+  geom_sf(mapping = aes(fill = muac_gam)) +
+  scale_fill_gradientn(
+    colours = create_palette_sequential(n = 5, name = "ylgnbu")
+  ) +
+  labs(
+    title = "Prevalence of global child wasting",
+    subtitle = "Sequential Yellow-Green-Blue Colour Palette"
+  ) +
+  theme_minimal()
+```
+
+
+```{r oxford-palette-divergent, fig.show = "hold", out.width = "50%", fig.height = 8}
+## Plot acute malnutrition using Oxford divergent palette
+
+### Pink-Yellow-Green
+ggplot(data = nut_survey_map) +
+  geom_sf(mapping = aes(fill = muac_gam)) +
+  scale_fill_gradientn(
+    colours = create_palette_divergent(n = 9, name = "piylgn")
+  ) +
+  labs(
+    title = "Prevalence of global child wasting",
+    subtitle = "Divergent Pink-Yellow-Green Colour Palette"
+  ) +
+  theme_minimal()
+
+### Red-Grey
+ggplot(data = nut_survey_map) +
+  geom_sf(mapping = aes(fill = muac_gam)) +
+  scale_fill_gradientn(
+    colours = create_palette_divergent(n = 9, name = "rdgy")
+  ) +
+  labs(
+    title = "Prevalence of global child wasting",
+    subtitle = "Divergent Red-Grey Colour Palette"
+  ) +
+  theme_minimal()
+```
+
+## Authors
 
 * [Ernest Guevarra](https://github.com/ernestguevarra)
 

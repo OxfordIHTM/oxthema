@@ -18,16 +18,16 @@
 #'   to `n`
 #'
 #' @examples
-#' create_palette_sequential("blues", 5)
-#' create_palette_divergent("brbg", 10)
-#' create_palette_qualitative("dark", 5)
-#' create_brewer_palette("blues", 5)
+#' create_palette_sequential(5, "blues")
+#' create_palette_divergent(10, "brbg")
+#' create_palette_qualitative(5, "dark")
+#' create_brewer_palette(5, "blues")
 #'
 #' @rdname create_palette
 #' @export
 #'
 
-create_palette_sequential <- function(name, n) {
+create_palette_sequential <- function(n, name) {
   ## Check if specified palette is sequential ----
   if (
     !name %in% c(
@@ -68,7 +68,7 @@ create_palette_sequential <- function(name, n) {
 #' @rdname create_palette
 #' @export
 #'
-create_palette_divergent <- function(name, n) {
+create_palette_divergent <- function(n, name) {
   ## Check if specified palette is divergent ----
   if (
     !name %in%
@@ -105,7 +105,7 @@ create_palette_divergent <- function(name, n) {
 #' @rdname create_palette
 #' @export
 #'
-create_palette_qualitative <- function(name, n) {
+create_palette_qualitative <- function(n, name) {
   ## Check if specified palette is qualitative ----
   if (
     !name %in%
@@ -152,17 +152,17 @@ create_palette_qualitative <- function(name, n) {
 #' @rdname create_palette
 #' @export
 #'
-create_brewer_palette <- function(name, n,
+create_brewer_palette <- function(n, name,
                                   type = c("sequential", "divergent", "qualitative")) {
   ## Determine type of palette ----
   type <- match.arg(type)
 
   ## Determine which palette to create ----
-  if (type == "sequential") pal <- create_palette_sequential(name = name, n = n)
+  if (type == "sequential") pal <- create_palette_sequential(n = n, name = name)
 
-  if (type == "divergent") pal <- create_palette_divergent(name = name, n = n)
+  if (type == "divergent") pal <- create_palette_divergent(n = n, name = name)
 
-  if (type == "qualitative") pal <- create_palette_qualitative(name = name, n = n)
+  if (type == "qualitative") pal <- create_palette_qualitative(n = n, name = name)
 
   ## Return palette ----
   pal
