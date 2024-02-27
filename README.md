@@ -13,6 +13,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![R-CMD-check](https://github.com/OxfordIHTM/oxfordtheme/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/OxfordIHTM/oxfordtheme/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/OxfordIHTM/oxfordtheme/branch/main/graph/badge.svg)](https://app.codecov.io/gh/OxfordIHTM/oxfordtheme?branch=main)
+[![CodeFactor](https://www.codefactor.io/repository/github/oxfordihtm/oxfordtheme/badge)](https://www.codefactor.io/repository/github/oxfordihtm/oxfordtheme)
 <!-- badges: end -->
 
 Palette, theme, and theme components based on [University of

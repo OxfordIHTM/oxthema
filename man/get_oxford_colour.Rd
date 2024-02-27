@@ -28,9 +28,9 @@ or "pantone". Default is "hex".}
 vector? Default is FALSE.}
 }
 \value{
-A character value or vector of Oxford colour/s as per `model`
-  specification. If `named` is TRUE, returns a named character value or
-  vector.
+A character value or vector of Oxford colour/s as per \code{model}
+specification. If \code{named} is TRUE, returns a named character value or
+vector.
 }
 \description{
 Get named Oxford colours vector

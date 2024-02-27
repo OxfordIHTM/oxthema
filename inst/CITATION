@@ -1,0 +1,16 @@
+citHeader("To cite oxfordtheme in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = "oxfordtheme: Oxford Palette, Theme, and Theme Components.",
+  author   = person("Ernest Guevarra"),
+  year     = "2024",
+  note     = "R package version 0.0.9000",
+  url      = "https://oxford-ihtm.io/oxfordtheme/",
+  textVersion = paste(
+    paste("Ernest Guevarra (2024).",
+          "oxfordtheme: Oxford Palette, Theme, and Theme Components.",
+          "R package version 0.0.9000.",
+          "URL https://oxford-ihtm.io/oxfordtheme/")
+  )
+)

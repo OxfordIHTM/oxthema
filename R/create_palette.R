@@ -56,8 +56,11 @@ create_palette_sequential <- function(name, n) {
   ## Update palette to n ----
   pal <- grDevices::colorRampPalette(pal)(n)
 
+  ## Create palette class ----
+  class(pal) <- "palette"
+
   ## Return palette ----
-  structure(pal, class = "palette", name = name)
+  pal
 }
 
 
@@ -91,8 +94,11 @@ create_palette_divergent <- function(name, n) {
   ## Update palette to n ----
   pal <- grDevices::colorRampPalette(pal)(n)
 
+  ## Create palette class ----
+  class(pal) <- "palette"
+
   ## Return palette ----
-  structure(pal, class = "palette", name = name)
+  pal
 }
 
 #'
@@ -134,8 +140,11 @@ create_palette_qualitative <- function(name, n) {
   ## Update palette to n ----
   pal <- grDevices::colorRampPalette(pal)(n)
 
+  ## Create palette class ----
+  class(pal) <- "palette"
+
   ## Return palette ----
-  structure(pal, class = "palette", name = name)
+  pal
 }
 
 
