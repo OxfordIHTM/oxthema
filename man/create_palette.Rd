@@ -7,25 +7,25 @@
 \alias{create_brewer_palette}
 \title{Create new palettes based on Oxford palettes}
 \usage{
-create_palette_sequential(name, n)
+create_palette_sequential(n, name)
 
-create_palette_divergent(name, n)
+create_palette_divergent(n, name)
 
-create_palette_qualitative(name, n)
+create_palette_qualitative(n, name)
 
 create_brewer_palette(
-  name,
   n,
+  name,
   type = c("sequential", "divergent", "qualitative")
 )
 }
 \arguments{
-\item{name}{Name of Oxford palette to use}
-
 \item{n}{Number of colours desired/required. Oxford palettes have at least
 5 colours. All colour schemes are derived from the University of Oxford
 \href{https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines}{visual identity guidelines}.
 #If NULL (default), use all colours.}
+
+\item{name}{Name of Oxford palette to use}
 
 \item{type}{A character value for type of palette to use. Can be either
 sequential, divergent, or qualitative.}
@@ -41,9 +41,9 @@ syntax of the \href{https://cran.r-project.org/web/packages/RColorBrewer/index.h
 package
 }
 \examples{
-create_palette_sequential("blues", 5)
-create_palette_divergent("brbg", 10)
-create_palette_qualitative("dark", 5)
-create_brewer_palette("blues", 5)
+create_palette_sequential(5, "blues")
+create_palette_divergent(10, "brbg")
+create_palette_qualitative(5, "dark")
+create_brewer_palette(5, "blues")
 
 }
