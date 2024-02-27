@@ -48,9 +48,17 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">get_oxford_colour</span><span class="op">(</span>pattern <span class="op">=</span> <span class="cn">NULL</span>, type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"hex"</span>, <span class="st">"rgb"</span>, <span class="st">"cmyk"</span>, <span class="st">"pantone"</span><span class="op">)</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">get_oxford_colour</span><span class="op">(</span></span>
+<span>  pattern <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  model <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"hex"</span>, <span class="st">"rgb"</span>, <span class="st">"cmyk"</span>, <span class="st">"pantone"</span><span class="op">)</span>,</span>
+<span>  named <span class="op">=</span> <span class="cn">FALSE</span></span>
+<span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">get_oxford_colours</span><span class="op">(</span>pattern <span class="op">=</span> <span class="cn">NULL</span>, type <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"hex"</span>, <span class="st">"rgb"</span>, <span class="st">"cmyk"</span>, <span class="st">"pantone"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">get_oxford_colours</span><span class="op">(</span></span>
+<span>  pattern <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  model <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"hex"</span>, <span class="st">"rgb"</span>, <span class="st">"cmyk"</span>, <span class="st">"pantone"</span><span class="op">)</span>,</span>
+<span>  named <span class="op">=</span> <span class="cn">FALSE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -60,76 +68,47 @@
 Default is NULL in which case all the Oxford colours are returned.</p></dd>
 
 
-<dt>type</dt>
-<dd><p>A character vector of colour type. Can be "rgb", "cmyk", "hex",
+<dt>model</dt>
+<dd><p>A character vector of colour model. Can be "rgb", "cmyk", "hex",
 or "pantone". Default is "hex".</p></dd>
+
+
+<dt>named</dt>
+<dd><p>Logical. Should the output be a named character value or
+vector? Default is FALSE.</p></dd>
 
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     
 
-<p>A named vector of Oxford colour/s</p>
+<p>A character value or vector of Oxford colour/s as per `model`
+  specification. If `named` is TRUE, returns a named character value or
+  vector.</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">get_oxford_colours</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          Oxford blue         Oxford mauve         Oxford peach </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            "#002147"            "#776885"            "#E08D79" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Oxford potters pink          Oxford dusk         Oxford lilac </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            "#ED9390"            "#C4A29E"            "#D1BDD5" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        Oxford sienna       Oxford CCB red          Oxford plum </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            "#994636"            "#AA1A2D"            "#7F055F" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         Oxford coral      Oxford lavender        Oxford orange </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            "#FE615A"            "#D4CDF4"            "#FB5607" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          Oxford pink         Oxford green    Oxford ocean grey </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            "#E6007E"            "#426A5A"            "#789E9E" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Oxford yellow ochre     Oxford cool grey      Oxford sky blue </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            "#E2C044"            "#E4F0EF"            "#B9D6F2" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    Oxford sage green      Oxford viridian    Oxford royal blue </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            "#A0AF84"            "#15616D"            "#1D42A6" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          Oxford aqua   Oxford vivid green    Oxford lime green </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            "#00AAB4"            "#65E5AE"            "#95C11F" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Oxford cerulean blue  Oxford lemon yellow      Oxford charcoal </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            "#49B6FF"            "#F7EF66"            "#211D1C" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      Oxford ash grey         Oxford umber    Oxford stone grey </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            "#61615F"            "#89827A"            "#D9D8D6" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    Oxford shell grey     Oxford off white                 Gold </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            "#F1EEE9"            "#F2F0F0"                   "" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>               Silver </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                   "" </span>
-<span class="r-in"><span><span class="fu">get_oxford_colours</span><span class="op">(</span>type <span class="op">=</span> <span class="st">"rgb"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          Oxford blue         Oxford mauve         Oxford peach </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          "0, 33, 71"      "119, 104, 133"      "224, 141, 121" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Oxford potters pink          Oxford dusk         Oxford lilac </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      "237, 147, 144"      "196, 162, 158"      "209, 189, 213" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        Oxford sienna       Oxford CCB red          Oxford plum </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        "153, 70, 54"         "127, 5, 95"         "127, 5, 95" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         Oxford coral      Oxford lavender        Oxford orange </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        "254, 97, 90"      "212, 205, 244"         "251, 86, 7" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          Oxford pink         Oxford green    Oxford ocean grey </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        "230, 0, 126"        "66, 106, 90"      "120, 158, 158" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  Oxford yellow ochre     Oxford cool grey      Oxford sky blue </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       "226, 192, 68"      "228, 240, 239"      "185, 214, 242" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    Oxford sage green      Oxford viridian    Oxford royal blue </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      "160, 175, 132"        "21, 97, 109"        "29, 66, 166" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          Oxford aqua   Oxford vivid green    Oxford lime green </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        "0, 170, 180"      "101, 229, 174"       "149, 193, 31" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Oxford cerulean blue  Oxford lemon yellow      Oxford charcoal </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       "73, 182, 255"      "247, 239, 102"         "33, 29, 28" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      Oxford ash grey         Oxford umber    Oxford stone grey </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         "97, 97, 95"      "137, 130, 122"      "217, 216, 214" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    Oxford shell grey     Oxford off white                 Gold </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      "241, 238, 233"      "242, 240, 240"                   "" </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>               Silver </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                   "" </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "#002147" "#776885" "#E08D79" "#ED9390" "#C4A29E" "#D1BDD5" "#994636"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [8] "#AA1A2D" "#7F055F" "#FE615A" "#D4CDF4" "#FB5607" "#E6007E" "#426A5A"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [15] "#789E9E" "#E2C044" "#E4F0EF" "#B9D6F2" "#A0AF84" "#15616D" "#1D42A6"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [22] "#00AAB4" "#65E5AE" "#95C11F" "#49B6FF" "#F7EF66" "#211D1C" "#61615F"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [29] "#89827A" "#D9D8D6" "#F1EEE9" "#F2F0F0" ""        ""       </span>
+<span class="r-in"><span><span class="fu">get_oxford_colours</span><span class="op">(</span>model <span class="op">=</span> <span class="st">"rgb"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "0, 33, 71"     "119, 104, 133" "224, 141, 121" "237, 147, 144"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [5] "196, 162, 158" "209, 189, 213" "153, 70, 54"   "127, 5, 95"   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [9] "127, 5, 95"    "254, 97, 90"   "212, 205, 244" "251, 86, 7"   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [13] "230, 0, 126"   "66, 106, 90"   "120, 158, 158" "226, 192, 68" </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [17] "228, 240, 239" "185, 214, 242" "160, 175, 132" "21, 97, 109"  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [21] "29, 66, 166"   "0, 170, 180"   "101, 229, 174" "149, 193, 31" </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [25] "73, 182, 255"  "247, 239, 102" "33, 29, 28"    "97, 97, 95"   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [29] "137, 130, 122" "217, 216, 214" "241, 238, 233" "242, 240, 240"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [33] ""              ""             </span>
 <span class="r-in"><span><span class="fu">get_oxford_colours</span><span class="op">(</span>pattern <span class="op">=</span> <span class="st">"lilac"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Oxford lilac </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    "#D1BDD5" </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#D1BDD5"</span>
 <span class="r-in"><span><span class="fu">get_oxford_colours</span><span class="op">(</span>pattern <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"lilac"</span>, <span class="st">"sage green"</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      Oxford lilac Oxford sage green </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         "#D1BDD5"         "#A0AF84" </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "#D1BDD5" "#A0AF84"</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
