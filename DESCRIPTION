@@ -1,6 +1,6 @@
 Package: oxfordtheme
 Type: Package
-Title: Oxford Theme and Theme Components
+Title: Oxford Palette, Theme, and Theme Components
 Version: 0.0.0.9000
 Authors@R: person(
       given = "Ernest", 
@@ -9,8 +9,8 @@ Authors@R: person(
       email = "ernest@guevarra.io", 
       role = c("aut", "cre")
     )
-Description: Theme and theme components based on University of Oxford's visual 
-    identity guidelines
+Description: Palette, theme, and theme components based on University of 
+    Oxford's visual identity guidelines
     <https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines>. 
 License: GPL (>= 3)
 Depends: 

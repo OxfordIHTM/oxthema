@@ -4,10 +4,18 @@
 \name{oxfordtheme}
 \alias{oxfordtheme}
 \alias{oxfordtheme-package}
-\title{Oxford Theme and Theme Components}
+\title{Oxford Palette, Theme, and Theme Components}
 \description{
-Theme and theme components for 'ggplot2' based on University of Oxford's
-visual identity guidelines \url{https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines}
+Palette, theme, and theme components based on University of Oxford's visual
+identity guidelines
+\url{https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines}.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{http://oxford-ihtm.io/oxfordtheme/}
+}
+
 }
 \author{
 Ernest Guevarra (ernest@guevarra.io)
