@@ -15,7 +15,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 coverage](https://codecov.io/gh/OxfordIHTM/oxfordtheme/branch/main/graph/badge.svg)](https://app.codecov.io/gh/OxfordIHTM/oxfordtheme?branch=main)
 <!-- badges: end -->
 
-Theme and theme components for ‘ggplot2’ based on [University of
+Palette, theme, and theme components based on [University of
 Oxford](https://ox.ac.uk)’s [visual identity
 guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines).
 
@@ -34,13 +34,18 @@ time.
 
 ## Installation
 
-`oxfordtheme` is not yet on [CRAN](https://cran.r-project.org).
-
-You can install the development version of `oxfordtheme` from the
-[Oxford IHTM R universe](https://oxfordihtm.r-universe.dev) as follows:
+`oxfordtheme` is not yet available on [CRAN](https://cran.r-project.org)
+but can be installed through the [Oxford IHTM R
+universe](https://oxfordihtm.r-universe.dev) resository as follows:
 
 ``` r
-install.packages("codigo", repos = c('https://oxfordihtm.r-universe.dev', 'https://cloud.r-project.org'))
+install.packages(
+  "oxfordtheme", 
+  repos = c(
+    'https://oxfordihtm.r-universe.dev', 
+    'https://cloud.r-project.org'
+  )
+)
 ```
 
 ## Usage

@@ -46,6 +46,13 @@ reference:
     contents:
     - oxford_palettes
 
+  - title: Create palettes
+    contents:
+    - create_palette_sequential
+    - create_palette_divergent
+    - create_palette_qualitative
+    - create_oxford_palette
+
   - title: Get colours
     contents:
     - get_oxford_colour
