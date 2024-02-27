@@ -258,6 +258,7 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
 ggplot(data = nut_survey_map) +
   geom_sf(mapping = aes(fill = muac_gam)) +
   scale_fill_gradientn(
+    name = "",
     colours = create_palette_sequential(n = 5, name = "ylorbr")
   ) +
   labs(
@@ -270,6 +271,7 @@ ggplot(data = nut_survey_map) +
 ggplot(data = nut_survey_map) +
   geom_sf(mapping = aes(fill = muac_gam)) +
   scale_fill_gradientn(
+    name = "",
     colours = create_palette_sequential(n = 5, name = "ylgnbu")
   ) +
   labs(
@@ -286,27 +288,33 @@ ggplot(data = nut_survey_map) +
 
 ### Pink-Yellow-Green
 ggplot(data = nut_survey_map) +
-  geom_sf(mapping = aes(fill = muac_gam)) +
+  geom_sf(mapping = aes(fill = muac_mam)) +
   scale_fill_gradientn(
-    colours = create_palette_divergent(n = 9, name = "piylgn")
+    name = "",
+    colours = create_palette_divergent(n = 11, name = "piylgn")
   ) +
   labs(
-    title = "Prevalence of global child wasting",
+    title = "Prevalence of moderate child wasting",
     subtitle = "Divergent Pink-Yellow-Green Colour Palette"
   ) +
   theme_minimal()
+#> Warning in create_palette_divergent(n = 11, name = "piylgn"): Divergent
+#> palettes have maximum 11 colours. Returning 11 colours.
 
-### Red-Grey
+### Purple-Green
 ggplot(data = nut_survey_map) +
-  geom_sf(mapping = aes(fill = muac_gam)) +
+  geom_sf(mapping = aes(fill = muac_sam)) +
   scale_fill_gradientn(
-    colours = create_palette_divergent(n = 9, name = "rdgy")
+    name = "",
+    colours = create_palette_divergent(n = 11, name = "prgn")
   ) +
   labs(
-    title = "Prevalence of global child wasting",
-    subtitle = "Divergent Red-Grey Colour Palette"
+    title = "Prevalence of severe child wasting",
+    subtitle = "Divergent Purple-Green Colour Palette"
   ) +
   theme_minimal()
+#> Warning in create_palette_divergent(n = 11, name = "prgn"): Divergent palettes
+#> have maximum 11 colours. Returning 11 colours.
 ```
 
 <img src="man/figures/README-oxford-palette-divergent-1.png" width="50%" /><img src="man/figures/README-oxford-palette-divergent-2.png" width="50%" />

@@ -43,6 +43,5 @@ nut_survey_map <- district_results_sf
 usethis::use_data(nut_survey_map, overwrite = TRUE, compress = "xz")
 
 
-ggplot(data = district_results_sf) +
-  geom_sf(mapping = aes(fill = muac_gam)) +
-  scale_fill_gradientn(colours = create_palette_divergent(n = 3, name = "piylgn"))
+
+
