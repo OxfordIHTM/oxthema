@@ -56,11 +56,6 @@ Based on the [University of Oxford](https://ox.ac.uk)’s [visual identity
 guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines),
 the following colours are available from this package:
 
-``` r
-oxford_colours |>
-  knitr::kable()
-```
-
 | name                 | rgb           | cmyk            | hex      | pantone       |
 |:---------------------|:--------------|:----------------|:---------|:--------------|
 | Oxford blue          | 0, 33, 71     | 100, 87, 42, 51 | \#002147 | 282           |
@@ -101,54 +96,47 @@ oxford_colours |>
 ### Oxford palettes
 
 Based on the [University of Oxford](https://ox.ac.uk)’s [visual identity
-guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines),
+guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines)
+and the carefully curated colour groups of the official University
+[theme
+packs](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines/theme-packs),
 the following palettes are available from this package:
 
 #### Heritage
 
 ``` r
-create_oxford_palette(name = "heritage", n = 5, type = "qualitative")
+oxford_theme_palettes()$heritage
+#> [1] "#994636" "#E08D79" "#C4A29E" "#A0AF84" "#426A5A"
 ```
 
-![](man/figures/README-oxford-palettes-heritage-1.png)<!-- -->
+![](man/figures/README-oxford-palettes-heritage-show-1.png)<!-- -->
 
 #### Contemporary
 
 ``` r
-create_oxford_palette(name = "contemporary", n = 5, type = "qualitative")
+oxford_theme_palettes()$contemporary
+#> [1] "#FE615A" "#ED9390" "#E4F0EF" "#789E9E" "#00AAB4"
 ```
 
-![](man/figures/README-oxford-palettes-contemporary-1.png)<!-- -->
+![](man/figures/README-oxford-palettes-contemporary-show-1.png)<!-- -->
 
 #### Celebratory
 
 ``` r
-create_oxford_palette(name = "celebratory", n = 5, type = "qualitative")
+oxford_theme_palettes()$celebratory
+#> [1] "#15616D" "#776885" "#E2C044" "#D4CDF4" "#7F055F"
 ```
 
-![](man/figures/README-oxford-palettes-celebratory-1.png)<!-- -->
+![](man/figures/README-oxford-palettes-celebratory-show-1.png)<!-- -->
 
 #### Corporate
 
 ``` r
-create_oxford_palette(name = "corporate", n = 5, type = "qualitative")
+oxford_theme_palettes()$corporate
+#> [1] "#FB5607" "#B9D6F2" "#95C11F" "#49B6FF" "#1D42A6"
 ```
 
-![](man/figures/README-oxford-palettes-corporate-1.png)<!-- -->
-
-<!----
-&#10;```r
-ggplot(mtcars, aes(factor(cyl), fill=factor(gear))) +  
-  geom_bar() +
-  scale_fill_manual(
-    values = create_oxford_palette(
-      name = "heritage", n = 3, type = "qualitative"
-    )
-  ) +
-  theme_minimal()
-```
-&#10;<img src="man/figures/README-ggplot-example-1.png" style="display: block; margin: auto;" />
----->
+![](man/figures/README-oxford-palettes-corporate-show-1.png)<!-- -->
 
 ## Community guidelines
 

@@ -4,8 +4,8 @@
 \alias{create_palette_sequential}
 \alias{create_palette_divergent}
 \alias{create_palette_qualitative}
-\alias{create_oxford_palette}
-\title{Create palette based on Oxford palettes}
+\alias{create_brewer_palette}
+\title{Create new palettes based on Oxford palettes}
 \usage{
 create_palette_sequential(name, n)
 
@@ -13,7 +13,7 @@ create_palette_divergent(name, n)
 
 create_palette_qualitative(name, n)
 
-create_oxford_palette(
+create_brewer_palette(
   name,
   n,
   type = c("sequential", "divergent", "qualitative")
@@ -35,12 +35,12 @@ A character vector of desired/required colours with length equivalent
   to `n`
 }
 \description{
-Create palette based on Oxford palettes
+Create new palettes based on Oxford palettes
 }
 \examples{
 create_palette_sequential("blues", 5)
 create_palette_divergent("brbg", 10)
-create_palette_qualitative("heritage", 5)
-create_oxford_palette("blues", 5)
+create_palette_qualitative("dark", 5)
+create_brewer_palette("blues", 5)
 
 }

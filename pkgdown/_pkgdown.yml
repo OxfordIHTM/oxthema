@@ -44,14 +44,15 @@ reference:
 
   - title: Palettes
     contents:
-    - oxford_palettes
+    - oxford_theme_palettes
+    - oxford_brewer_palettes
 
   - title: Create palettes
     contents:
     - create_palette_sequential
     - create_palette_divergent
     - create_palette_qualitative
-    - create_oxford_palette
+    - create_brewer_palette
 
   - title: Get colours
     contents:

@@ -52,51 +52,55 @@ install.packages(
 
 Based on the [University of Oxford](https://ox.ac.uk)'s [visual identity guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines), the following colours are available from this package:
 
-```{r oxford-colours}
+```{r oxford-colours, echo = FALSE}
 oxford_colours |>
   knitr::kable()
 ```
 
 ### Oxford palettes
 
-Based on the [University of Oxford](https://ox.ac.uk)'s [visual identity guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines), the following palettes are available from this package:
+Based on the [University of Oxford](https://ox.ac.uk)'s [visual identity guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines) and the carefully curated colour groups of the official University [theme packs](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines/theme-packs), the following palettes are available from this package:
 
 #### Heritage
 
-```{r oxford-palettes-heritage, echo = TRUE, fig.height = 1}
-create_oxford_palette(name = "heritage", n = 5, type = "qualitative")
+```{r oxford-palettes-heritage-code}
+oxford_theme_palettes()$heritage
+```
+
+```{r oxford-palettes-heritage-show, echo = FALSE, fig.height = 1}
+structure(oxford_theme_palettes()$heritage, class = "palette", name = "heritage")
 ```
 
 #### Contemporary
 
-```{r oxford-palettes-contemporary, echo = TRUE, fig.height = 1}
-create_oxford_palette(name = "contemporary", n = 5, type = "qualitative")
+```{r oxford-palettes-contemporary-code}
+oxford_theme_palettes()$contemporary
+```
+
+```{r oxford-palettes-contemporary-show, echo = FALSE, fig.height = 1}
+structure(oxford_theme_palettes()$contemporary, class = "palette", name = "contemporary")
 ```
 
 #### Celebratory
 
-```{r oxford-palettes-celebratory, echo = TRUE, fig.height = 1}
-create_oxford_palette(name = "celebratory", n = 5, type = "qualitative")
+```{r oxford-palettes-celebratory-code}
+oxford_theme_palettes()$celebratory
+```
+
+```{r oxford-palettes-celebratory-show, echo = FALSE, fig.height = 1}
+structure(oxford_theme_palettes()$celebratory, class = "palette", name = "celebratory")
 ```
 
 #### Corporate
 
-```{r oxford-palettes-corporate, echo = TRUE, fig.height = 1}
-create_oxford_palette(name = "corporate", n = 5, type = "qualitative")
+```{r oxford-palettes-corporate-code}
+oxford_theme_palettes()$corporate
 ```
 
-<!----
-```{r ggplot-example, fig.align = "center", fig.height = 4, fig.width = 5}
-ggplot(mtcars, aes(factor(cyl), fill=factor(gear))) +  
-  geom_bar() +
-  scale_fill_manual(
-    values = create_oxford_palette(
-      name = "heritage", n = 3, type = "qualitative"
-    )
-  ) +
-  theme_minimal()
+```{r oxford-palettes-corporate-show, echo = FALSE, fig.height = 1}
+structure(oxford_theme_palettes()$corporate, class = "palette", name = "corporate")
 ```
----->
+
 
 ## Community guidelines
 
