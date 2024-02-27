@@ -169,7 +169,7 @@ The University of Oxford recommended theme palettes can be used for
 plotting. Below is code examples of how this can be done both with base
 R plotting function and with `ggplot2`.
 
-#### Base R plot
+#### Bar plots in base R and using `ggplot`
 
 ``` r
 ## Barplot of cyl and vs of mtcars dataset using heritage Oxford theme
@@ -210,6 +210,8 @@ ggplot(
 
 <img src="man/figures/README-mtcars-barplot-1.png" width="50%" /><img src="man/figures/README-mtcars-barplot-2.png" width="50%" />
 
+#### Scatter plots in base R and using `ggplot`
+
 ``` r
 ## Scatterplot of mpg and disp of mtcars dataset using celebratory Oxford theme
 
@@ -246,6 +248,10 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
 ```
 
 <img src="man/figures/README-mtcars-scatterplot-1.png" width="50%" /><img src="man/figures/README-mtcars-scatterplot-2.png" width="50%" />
+
+## Author/s
+
+- [Ernest Guevarra](https://github.com/ernestguevarra)
 
 ## Community guidelines
 

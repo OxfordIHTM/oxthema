@@ -198,6 +198,10 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   theme_minimal()
 ```
 
+## Author/s
+
+* [Ernest Guevarra](https://github.com/ernestguevarra)
+
 ## Community guidelines
 
 Feedback, bug reports and feature requests are welcome; file issues or seek support [here](https://github.com/OxfordIHTM/oxfordtheme/issues). If you would like to contribute to the package, please see our [contributing guidelines](https://oxford-ihtm.io/oxfordtheme/CONTRIBUTING.html).
