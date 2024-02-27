@@ -35,7 +35,10 @@ A character vector of desired/required colours with length equivalent
   to `n`
 }
 \description{
-Create new palettes based on Oxford palettes
+These functions apply a similar approach used and demonstrated by
+[ColorBrewer](https://colorbrewer2.org) and has been patterned after the
+syntax of the [RColorBrewer](https://cran.r-project.org/web/packages/RColorBrewer/index.html)
+package
 }
 \examples{
 create_palette_sequential("blues", 5)

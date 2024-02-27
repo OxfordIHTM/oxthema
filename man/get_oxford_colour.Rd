@@ -5,9 +5,17 @@
 \alias{get_oxford_colours}
 \title{Get named Oxford colours vector}
 \usage{
-get_oxford_colour(pattern = NULL, model = c("hex", "rgb", "cmyk", "pantone"))
+get_oxford_colour(
+  pattern = NULL,
+  model = c("hex", "rgb", "cmyk", "pantone"),
+  named = FALSE
+)
 
-get_oxford_colours(pattern = NULL, model = c("hex", "rgb", "cmyk", "pantone"))
+get_oxford_colours(
+  pattern = NULL,
+  model = c("hex", "rgb", "cmyk", "pantone"),
+  named = FALSE
+)
 }
 \arguments{
 \item{pattern}{Optional. A character value or vector to use as a search term.
@@ -15,10 +23,14 @@ Default is NULL in which case all the Oxford colours are returned.}
 
 \item{model}{A character vector of colour model. Can be "rgb", "cmyk", "hex",
 or "pantone". Default is "hex".}
+
+\item{named}{Logical. Should the output be a named character value or
+vector? Default is FALSE.}
 }
 \value{
 A character value or vector of Oxford colour/s as per `model`
-  specification
+  specification. If `named` is TRUE, returns a named character value or
+  vector.
 }
 \description{
 Get named Oxford colours vector

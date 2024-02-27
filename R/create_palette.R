@@ -1,6 +1,11 @@
 #'
 #' Create new palettes based on Oxford palettes
 #'
+#' These functions apply a similar approach used and demonstrated by
+#' [ColorBrewer](https://colorbrewer2.org) and has been patterned after the
+#' syntax of the [RColorBrewer](https://cran.r-project.org/web/packages/RColorBrewer/index.html)
+#' package
+#'
 #' @param name Name of Oxford palette to use
 #' @param n Number of colours desired/required. Oxford palettes have at least
 #'   5 colours. All colour schemes are derived from the University of Oxford

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# oxfordtheme: Oxford Theme and Theme Components
+# oxfordtheme: Oxford Palette, Theme, and Theme Components
 
 <!-- badges: start -->
 
@@ -93,6 +93,30 @@ the following colours are available from this package:
 | Gold                 |               |                 |          | 10122C        |
 | Silver               |               |                 |          | 10103C        |
 
+![](man/figures/README-oxford-colours-graphic-1.png)<!-- -->
+
+You can access either the name, RGB, CMYK, hex code, and/or Pantone
+values of each Oxford colour through the `get_oxford_colours()` function
+as follows:
+
+``` r
+## Get hex code for Oxford blue
+get_oxford_colours(pattern = "Oxford blue")
+#> [1] "#002147"
+
+## Get hex code for all colours with "blue" in their name (show name in output)
+get_oxford_colours(pattern = "blue", named = TRUE)
+#>          Oxford blue      Oxford sky blue    Oxford royal blue 
+#>            "#002147"            "#B9D6F2"            "#1D42A6" 
+#> Oxford cerulean blue 
+#>            "#49B6FF"
+```
+
+The `get_oxford_colours()` function can thus be used to create your own
+bespoke combination of colours from the Oxford colours palette and
+create your own theme (see next section for University of Oxford
+officially recommended themes using the Oxford colours).
+
 ### Oxford palettes
 
 Based on the [University of Oxford](https://ox.ac.uk)’s [visual identity
@@ -137,6 +161,90 @@ oxford_theme_palettes()$corporate
 ```
 
 ![](man/figures/README-oxford-palettes-corporate-show-1.png)<!-- -->
+
+### Oxford theme paletttes for use in plotting
+
+The University of Oxford recommended theme palettes can be used for
+plotting. Below is code examples of how this can be done both with base
+R plotting function and with `ggplot2`.
+
+#### Base R plot
+
+``` r
+## Barplot of cyl and vs of mtcars dataset using heritage Oxford theme
+
+### Base R
+table(mtcars$cyl, mtcars$vs) |>
+  barplot(
+    names.arg = c("v-shaped", "straight"),
+    main = "Engine shape by number of cylinders",
+    ylab = "n",
+    legend.text = TRUE,
+    col = oxford_theme_palettes()$heritage,
+    args.legend = list(
+      x = "topright",
+      inset = 0.002,
+      title = "Cylinders",
+      bty = "n"
+    )
+  )
+
+### ggplot2
+ggplot(
+  data = mtcars, 
+  mapping = aes(
+      x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")), 
+      fill = factor(cyl)
+    )  
+  ) +
+  geom_bar() +
+  scale_fill_manual(name = "Cylinders", values = oxford_theme_palettes()$heritage) +
+  labs(
+    title = "Engine shape by number of cylinders",
+    x = NULL,
+    y = "n"
+  ) +
+  theme_minimal()
+```
+
+<img src="man/figures/README-mtcars-barplot-1.png" width="50%" /><img src="man/figures/README-mtcars-barplot-2.png" width="50%" />
+
+``` r
+## Scatterplot of mpg and disp of mtcars dataset using celebratory Oxford theme
+
+### Base R
+cols <- ifelse(
+  mtcars$cyl == 4, oxford_theme_palettes()$celebratory[1],
+    ifelse(
+      mtcars$cyl == 6, oxford_theme_palettes()$celebratory[2],
+      oxford_theme_palettes()$celebratory[3]
+    )
+)
+
+plot(
+  x = mtcars$mpg, 
+  y = mtcars$disp, 
+  pch = 19, cex = 1.75, col = cols,
+  main = "Miles per gallon by displacement grouped by number of cylinders",
+  xlab = "mpg", ylab = "disp"
+)
+legend(
+  x = "topright", inset = 0.02,
+  title = "Cylinders",
+  legend = c("4", "6", "8"),
+  pch = 19, pt.cex = 1.5,
+  col = oxford_theme_palettes()$celebratory[1:3]
+)
+
+### ggplot2
+ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
+  geom_point(size = 5) +
+  scale_colour_manual(name = "Cylinders", values = oxford_theme_palettes()$celebratory) +
+  labs(title = "Miles per gallon by displacement grouped by number of cylinders") +
+  theme_minimal()
+```
+
+<img src="man/figures/README-mtcars-scatterplot-1.png" width="50%" /><img src="man/figures/README-mtcars-scatterplot-2.png" width="50%" />
 
 ## Community guidelines
 
