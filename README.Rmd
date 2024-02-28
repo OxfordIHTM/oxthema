@@ -17,7 +17,7 @@ library(ggplot2)
 requireNamespace("sf", quietly = TRUE)
 ```
 
-# oxfordtheme: Oxford Palette, Theme, and Theme Components
+# oxfordtheme: Oxford Palette, Theme, and Theme Components <img src="man/figures/logo.png" width="200" align="right" />
 
 <!-- badges: start -->
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)

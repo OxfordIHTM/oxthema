@@ -36,7 +36,16 @@ get_oxford_colour <- function(pattern = NULL,
     ox_cols <- df[c("name", model)][stringr::str_detect(df$name, pattern = pattern), ]
 
     if (named) {
-      ox_cols <- structure(ox_cols[[model]], names = ox_cols[["name"]])
+      #ox_cols <- structure(ox_cols[[model]], names = ox_cols[["name"]])
+
+      ox_cols <- ox_cols |>
+        (\(x)
+          {
+            cols <- x[[model]]
+            names(cols) <- x$name
+            cols
+          }
+        )()
     } else {
       ox_cols <- ox_cols[[model]]
     }
