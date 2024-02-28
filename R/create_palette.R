@@ -83,9 +83,9 @@ create_palette_divergent <- function(n, name) {
     n <- 3
   }
 
-  if (n > 9) {
+  if (n > 11) {
     warning ("Divergent palettes have maximum 11 colours. Returning 11 colours.")
-    n <- 9
+    n <- 11
   }
 
   ## Get base palette ----
