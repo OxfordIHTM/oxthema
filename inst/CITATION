@@ -7,10 +7,12 @@ citEntry(
   year     = "2024",
   note     = "R package version 0.0.9000",
   url      = "https://oxford-ihtm.io/oxfordtheme/",
+  doi      = "https://zenodo.org/doi/10.5281/zenodo.10721129",
   textVersion = paste(
     paste("Ernest Guevarra (2024).",
           "oxfordtheme: Oxford Palette, Theme, and Theme Components.",
           "R package version 0.0.9000.",
-          "URL https://oxford-ihtm.io/oxfordtheme/")
+          "URL https://oxford-ihtm.io/oxfordtheme/",
+          "DOI https://zenodo.org/doi/10.5281/zenodo.10721129")
   )
 )
