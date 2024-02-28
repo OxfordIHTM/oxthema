@@ -14,6 +14,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![Codecov test
 coverage](https://codecov.io/gh/OxfordIHTM/oxfordtheme/branch/main/graph/badge.svg)](https://app.codecov.io/gh/OxfordIHTM/oxfordtheme?branch=main)
 [![CodeFactor](https://www.codefactor.io/repository/github/oxfordihtm/oxfordtheme/badge)](https://www.codefactor.io/repository/github/oxfordihtm/oxfordtheme)
+[![DOI](https://zenodo.org/badge/711630340.svg)](https://zenodo.org/doi/10.5281/zenodo.10721129)
 <!-- badges: end -->
 
 Palette, theme, and theme components based on [University of
