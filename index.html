@@ -480,7 +480,7 @@
 <span>      <span class="fu"><a href="reference/oxford_theme.html">oxford_theme_palettes</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">celebratory</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span></span>
 <span>    <span class="op">)</span></span>
 <span>  <span class="op">)</span>,</span>
-<span>  main <span class="op">=</span> <span class="st">"Miles per gallon by displacement grouped by number of cylinders"</span>,</span>
+<span>  main <span class="op">=</span> <span class="st">"mpg by disp grouped by cyl"</span>,</span>
 <span>  xlab <span class="op">=</span> <span class="st">"mpg"</span>, ylab <span class="op">=</span> <span class="st">"disp"</span>,</span>
 <span>  frame.plot <span class="op">=</span> <span class="cn">FALSE</span></span>
 <span><span class="op">)</span></span>
@@ -495,8 +495,11 @@
 <span><span class="co">### ggplot2</span></span>
 <span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">mtcars</span>, mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">mpg</span>, y <span class="op">=</span> <span class="va">disp</span>, colour <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">cyl</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_point</span><span class="op">(</span>size <span class="op">=</span> <span class="fl">5</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">scale_colour_manual</span><span class="op">(</span>name <span class="op">=</span> <span class="st">"Cylinders"</span>, values <span class="op">=</span> <span class="fu"><a href="reference/oxford_theme.html">oxford_theme_palettes</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">celebratory</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">labs</span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Miles per gallon by displacement grouped by number of cylinders"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">scale_colour_manual</span><span class="op">(</span></span>
+<span>    name <span class="op">=</span> <span class="st">"Cylinders"</span>, </span>
+<span>    values <span class="op">=</span> <span class="fu"><a href="reference/oxford_theme.html">oxford_theme_palettes</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">celebratory</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">labs</span><span class="op">(</span>title <span class="op">=</span> <span class="st">"mpg by disp grouped by cyl"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-mtcars-scatterplot-1.png" width="50%"><img src="reference/figures/README-mtcars-scatterplot-2.png" width="50%"></p>
 </div>
@@ -533,37 +536,33 @@
 <span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-oxford-palette-sequential-1.png" width="50%"><img src="reference/figures/README-oxford-palette-sequential-2.png" width="50%"></p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">## Plot acute malnutrition using Oxford divergent palette</span></span>
+<code class="sourceCode R"><span><span class="co">## Plot period prevalence of fever and diarrhoea using Oxford divergent palette</span></span>
 <span></span>
 <span><span class="co">### Pink-Yellow-Green</span></span>
 <span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">nut_survey_map</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_sf</span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>fill <span class="op">=</span> <span class="va">muac_mam</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_sf</span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>fill <span class="op">=</span> <span class="va">fev</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">scale_fill_gradientn</span><span class="op">(</span></span>
 <span>    name <span class="op">=</span> <span class="st">""</span>,</span>
 <span>    colours <span class="op">=</span> <span class="fu"><a href="reference/create_palette.html">create_palette_divergent</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">11</span>, name <span class="op">=</span> <span class="st">"piylgn"</span><span class="op">)</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">labs</span><span class="op">(</span></span>
-<span>    title <span class="op">=</span> <span class="st">"Prevalence of moderate child wasting"</span>,</span>
+<span>    title <span class="op">=</span> <span class="st">"Period prevalence of childhood fever"</span>,</span>
 <span>    subtitle <span class="op">=</span> <span class="st">"Divergent Pink-Yellow-Green Colour Palette"</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Warning in create_palette_divergent(n = 11, name = "piylgn"): Divergent</span></span>
-<span><span class="co">#&gt; palettes have maximum 11 colours. Returning 11 colours.</span></span>
 <span></span>
 <span><span class="co">### Purple-Green</span></span>
 <span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">nut_survey_map</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_sf</span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>fill <span class="op">=</span> <span class="va">muac_sam</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_sf</span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>fill <span class="op">=</span> <span class="va">dia</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">scale_fill_gradientn</span><span class="op">(</span></span>
 <span>    name <span class="op">=</span> <span class="st">""</span>,</span>
 <span>    colours <span class="op">=</span> <span class="fu"><a href="reference/create_palette.html">create_palette_divergent</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">11</span>, name <span class="op">=</span> <span class="st">"prgn"</span><span class="op">)</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">labs</span><span class="op">(</span></span>
-<span>    title <span class="op">=</span> <span class="st">"Prevalence of severe child wasting"</span>,</span>
+<span>    title <span class="op">=</span> <span class="st">"Period prevalence of childhood diarrhoea"</span>,</span>
 <span>    subtitle <span class="op">=</span> <span class="st">"Divergent Purple-Green Colour Palette"</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Warning in create_palette_divergent(n = 11, name = "prgn"): Divergent palettes</span></span>
-<span><span class="co">#&gt; have maximum 11 colours. Returning 11 colours.</span></span></code></pre></div>
+<span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-oxford-palette-divergent-1.png" width="50%"><img src="reference/figures/README-oxford-palette-divergent-2.png" width="50%"></p>
 </div>
 </div>
