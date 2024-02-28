@@ -26,8 +26,9 @@ guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-
 `oxfordtheme` aims to provide templates, themes, and theme components
 for colour palettes, typography, and layout compliant with [University
 of Oxford](https://ox.ac.uk)’s [visual identity
-guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines).for
-use in the R language for statistical computing publishing ecosystem.
+guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines)
+for use in the R language for statistical computing graphics and
+publishing ecosystem.
 
 Currently, the package provides colour palettes consistent with the
 colours prescribed by the university visual identity guidelines.
