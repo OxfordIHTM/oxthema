@@ -227,7 +227,7 @@ plot(
       oxford_theme_palettes()$celebratory[3]
     )
   ),
-  main = "Miles per gallon by displacement grouped by number of cylinders",
+  main = "mpg by disp grouped by cyl",
   xlab = "mpg", ylab = "disp",
   frame.plot = FALSE
 )
@@ -242,8 +242,11 @@ legend(
 ### ggplot2
 ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
   geom_point(size = 5) +
-  scale_colour_manual(name = "Cylinders", values = oxford_theme_palettes()$celebratory) +
-  labs(title = "Miles per gallon by displacement grouped by number of cylinders") +
+  scale_colour_manual(
+    name = "Cylinders", 
+    values = oxford_theme_palettes()$celebratory
+  ) +
+  labs(title = "mpg by disp grouped by cyl") +
   theme_minimal()
 ```
 
@@ -284,37 +287,33 @@ ggplot(data = nut_survey_map) +
 <img src="man/figures/README-oxford-palette-sequential-1.png" width="50%" /><img src="man/figures/README-oxford-palette-sequential-2.png" width="50%" />
 
 ``` r
-## Plot acute malnutrition using Oxford divergent palette
+## Plot period prevalence of fever and diarrhoea using Oxford divergent palette
 
 ### Pink-Yellow-Green
 ggplot(data = nut_survey_map) +
-  geom_sf(mapping = aes(fill = muac_mam)) +
+  geom_sf(mapping = aes(fill = fev)) +
   scale_fill_gradientn(
     name = "",
     colours = create_palette_divergent(n = 11, name = "piylgn")
   ) +
   labs(
-    title = "Prevalence of moderate child wasting",
+    title = "Period prevalence of childhood fever",
     subtitle = "Divergent Pink-Yellow-Green Colour Palette"
   ) +
   theme_minimal()
-#> Warning in create_palette_divergent(n = 11, name = "piylgn"): Divergent
-#> palettes have maximum 11 colours. Returning 11 colours.
 
 ### Purple-Green
 ggplot(data = nut_survey_map) +
-  geom_sf(mapping = aes(fill = muac_sam)) +
+  geom_sf(mapping = aes(fill = dia)) +
   scale_fill_gradientn(
     name = "",
     colours = create_palette_divergent(n = 11, name = "prgn")
   ) +
   labs(
-    title = "Prevalence of severe child wasting",
+    title = "Period prevalence of childhood diarrhoea",
     subtitle = "Divergent Purple-Green Colour Palette"
   ) +
   theme_minimal()
-#> Warning in create_palette_divergent(n = 11, name = "prgn"): Divergent palettes
-#> have maximum 11 colours. Returning 11 colours.
 ```
 
 <img src="man/figures/README-oxford-palette-divergent-1.png" width="50%" /><img src="man/figures/README-oxford-palette-divergent-2.png" width="50%" />
