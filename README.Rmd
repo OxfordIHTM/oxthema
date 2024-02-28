@@ -210,13 +210,13 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
 
 ### Yellow-Orange-Brown
 ggplot(data = nut_survey_map) +
-  geom_sf(mapping = aes(fill = muac_gam)) +
+  geom_sf(mapping = aes(fill = muac_mam)) +
   scale_fill_gradientn(
     name = "",
-    colours = create_palette_sequential(n = 5, name = "ylorbr")
+    colours = create_palette_sequential(n = 9, name = "ylorbr")
   ) +
   labs(
-    title = "Prevalence of global child wasting",
+    title = "Prevalence of moderate child wasting",
     subtitle = "Sequential Yellow-Orange-Brown Colour Palette"
   ) +
   theme_minimal()
@@ -226,7 +226,7 @@ ggplot(data = nut_survey_map) +
   geom_sf(mapping = aes(fill = muac_sam)) +
   scale_fill_gradientn(
     name = "",
-    colours = create_palette_sequential(n = 5, name = "ylgnbu")
+    colours = create_palette_sequential(n = 9, name = "ylgnbu")
   ) +
   labs(
     title = "Prevalence of severe child wasting",
