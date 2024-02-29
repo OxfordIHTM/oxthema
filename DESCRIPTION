@@ -16,7 +16,8 @@ License: GPL (>= 3)
 Depends: 
     R (>= 2.10)
 Imports: 
-    stringr
+    stringr,
+    withr
 Suggests: 
     covr,
     sf

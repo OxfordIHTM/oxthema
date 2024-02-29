@@ -61,7 +61,7 @@ oxford_colours |>
   knitr::kable()
 ```
 
-```{r oxford-colours-graphic, echo = FALSE, fig.height = 1}
+```{r oxford-colours-graphic, echo = FALSE, fig.height = 1, fig.align = "center"}
 structure(get_oxford_colours() |> (\(x) x[x != ""])(), class = "palette", name = "Oxford Colours")
 ```
 
@@ -87,7 +87,7 @@ Based on the [University of Oxford](https://ox.ac.uk)'s [visual identity guideli
 oxford_theme_palettes()$heritage
 ```
 
-```{r oxford-palettes-heritage-show, echo = FALSE, fig.height = 1}
+```{r oxford-palettes-heritage-show, echo = FALSE, fig.height = 1, fig.align = "center"}
 structure(oxford_theme_palettes()$heritage, class = "palette", name = "heritage")
 ```
 
@@ -97,7 +97,7 @@ structure(oxford_theme_palettes()$heritage, class = "palette", name = "heritage"
 oxford_theme_palettes()$contemporary
 ```
 
-```{r oxford-palettes-contemporary-show, echo = FALSE, fig.height = 1}
+```{r oxford-palettes-contemporary-show, echo = FALSE, fig.height = 1, fig.align = "center"}
 structure(oxford_theme_palettes()$contemporary, class = "palette", name = "contemporary")
 ```
 
@@ -107,7 +107,7 @@ structure(oxford_theme_palettes()$contemporary, class = "palette", name = "conte
 oxford_theme_palettes()$celebratory
 ```
 
-```{r oxford-palettes-celebratory-show, echo = FALSE, fig.height = 1}
+```{r oxford-palettes-celebratory-show, echo = FALSE, fig.height = 1, fig.align = "center"}
 structure(oxford_theme_palettes()$celebratory, class = "palette", name = "celebratory")
 ```
 
@@ -117,7 +117,7 @@ structure(oxford_theme_palettes()$celebratory, class = "palette", name = "celebr
 oxford_theme_palettes()$corporate
 ```
 
-```{r oxford-palettes-corporate-show, echo = FALSE, fig.height = 1}
+```{r oxford-palettes-corporate-show, echo = FALSE, fig.height = 1, fig.align = "center"}
 structure(oxford_theme_palettes()$corporate, class = "palette", name = "corporate")
 ```
 
