@@ -13,5 +13,6 @@
 #' @importFrom stringr str_pad
 #' @importFrom grDevices col2rgb rgb colorRampPalette
 #' @importFrom graphics rect par image text
+#' @importFrom withr with_par
 #'
 "_PACKAGE"
