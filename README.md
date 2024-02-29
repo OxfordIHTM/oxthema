@@ -96,7 +96,7 @@ the following colours are available from this package:
 | Gold                 |               |                 |          | 10122C        |
 | Silver               |               |                 |          | 10103C        |
 
-![](man/figures/README-oxford-colours-graphic-1.png)<!-- -->
+<img src="man/figures/README-oxford-colours-graphic-1.png" style="display: block; margin: auto;" />
 
 You can access either the name, RGB, CMYK, hex code, and/or Pantone
 values of each Oxford colour through the `get_oxford_colours()` function
@@ -136,7 +136,7 @@ oxford_theme_palettes()$heritage
 #> [1] "#994636" "#E08D79" "#C4A29E" "#A0AF84" "#426A5A"
 ```
 
-![](man/figures/README-oxford-palettes-heritage-show-1.png)<!-- -->
+<img src="man/figures/README-oxford-palettes-heritage-show-1.png" style="display: block; margin: auto;" />
 
 #### Contemporary
 
@@ -145,7 +145,7 @@ oxford_theme_palettes()$contemporary
 #> [1] "#FE615A" "#ED9390" "#E4F0EF" "#789E9E" "#00AAB4"
 ```
 
-![](man/figures/README-oxford-palettes-contemporary-show-1.png)<!-- -->
+<img src="man/figures/README-oxford-palettes-contemporary-show-1.png" style="display: block; margin: auto;" />
 
 #### Celebratory
 
@@ -154,7 +154,7 @@ oxford_theme_palettes()$celebratory
 #> [1] "#15616D" "#776885" "#E2C044" "#D4CDF4" "#7F055F"
 ```
 
-![](man/figures/README-oxford-palettes-celebratory-show-1.png)<!-- -->
+<img src="man/figures/README-oxford-palettes-celebratory-show-1.png" style="display: block; margin: auto;" />
 
 #### Corporate
 
@@ -163,7 +163,7 @@ oxford_theme_palettes()$corporate
 #> [1] "#FB5607" "#B9D6F2" "#95C11F" "#49B6FF" "#1D42A6"
 ```
 
-![](man/figures/README-oxford-palettes-corporate-show-1.png)<!-- -->
+<img src="man/figures/README-oxford-palettes-corporate-show-1.png" style="display: block; margin: auto;" />
 
 ### Oxford theme paletttes for use in plotting
 
