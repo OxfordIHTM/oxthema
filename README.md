@@ -39,7 +39,7 @@ time.
 
 `oxfordtheme` is not yet available on [CRAN](https://cran.r-project.org)
 but can be installed through the [Oxford IHTM R
-universe](https://oxfordihtm.r-universe.dev) resository as follows:
+universe](https://oxfordihtm.r-universe.dev) repository as follows:
 
 ``` r
 install.packages(
@@ -165,7 +165,16 @@ oxford_theme_palettes()$corporate
 
 <img src="man/figures/README-oxford-palettes-corporate-show-1.png" style="display: block; margin: auto;" />
 
-### Oxford theme paletttes for use in plotting
+#### Innovative
+
+``` r
+oxford_theme_palettes()$innovative
+#> [1] "#65E5AE" "#F7EF66" "#15616D" "#D4CDF4" "#E6007E"
+```
+
+<img src="man/figures/README-oxford-palettes-innovative-show-1.png" style="display: block; margin: auto;" />
+
+### Oxford theme palettes for use in plotting
 
 The University of Oxford recommended theme palettes can be used for
 plotting. Below is code examples of how this can be done both with base

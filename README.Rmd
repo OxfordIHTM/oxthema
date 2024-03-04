@@ -38,7 +38,7 @@ Currently, the package provides colour palettes consistent with the colours pres
 
 ## Installation
 
-`oxfordtheme` is not yet available on [CRAN](https://cran.r-project.org) but can be installed through the [Oxford IHTM R universe](https://oxfordihtm.r-universe.dev) resository as follows:
+`oxfordtheme` is not yet available on [CRAN](https://cran.r-project.org) but can be installed through the [Oxford IHTM R universe](https://oxfordihtm.r-universe.dev) repository as follows:
 
 ```R
 install.packages(
@@ -121,7 +121,17 @@ oxford_theme_palettes()$corporate
 structure(oxford_theme_palettes()$corporate, class = "palette", name = "corporate")
 ```
 
-### Oxford theme paletttes for use in plotting
+#### Innovative
+
+```{r oxford-palettes-innovative-code}
+oxford_theme_palettes()$innovative
+```
+
+```{r oxford-palettes-innovative-show, echo = FALSE, fig.height = 1, fig.align = "center"}
+structure(oxford_theme_palettes()$innovative, class = "palette", name = "innovative")
+```
+
+### Oxford theme palettes for use in plotting
 
 The University of Oxford recommended theme palettes can be used for plotting. Below is code examples of how this can be done both with base R plotting function and with `ggplot2`.
 

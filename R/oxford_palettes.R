@@ -20,6 +20,9 @@ oxford_theme_palettes <- function() {
     ),
     corporate = get_oxford_colours(
       pattern = c("orange", "sky blue", "lime green", "cerulean", "royal blue")
+    ),
+    innovative = get_oxford_colours(
+      pattern = c("vivid green", "lemon", "viridian", "lavender", "Oxford pink")
     )
   )
 }

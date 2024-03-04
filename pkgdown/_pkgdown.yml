@@ -53,6 +53,11 @@ reference:
     - oxford_theme_palettes
     - oxford_brewer_palettes
 
+  - title: Fonts
+    contents:
+    - oxford_fonts
+    - check_oxford_fonts
+
   - title: Create palettes
     contents:
     - create_palette_sequential

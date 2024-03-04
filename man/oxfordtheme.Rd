@@ -2,8 +2,8 @@
 % Please edit documentation in R/oxfordtheme.R
 \docType{package}
 \name{oxfordtheme}
-\alias{oxfordtheme}
 \alias{oxfordtheme-package}
+\alias{oxfordtheme}
 \title{Oxford Palette, Theme, and Theme Components}
 \description{
 Palette, theme, and theme components based on University of Oxford's visual
