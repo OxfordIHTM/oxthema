@@ -14,5 +14,6 @@
 #' @importFrom grDevices col2rgb rgb colorRampPalette
 #' @importFrom graphics rect par image text
 #' @importFrom withr with_par
+#' @importFrom systemfonts system_fonts
 #'
 "_PACKAGE"
