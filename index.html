@@ -103,7 +103,7 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p><code>oxfordtheme</code> is not yet available on <a href="https://cran.r-project.org" class="external-link">CRAN</a> but can be installed through the <a href="https://oxfordihtm.r-universe.dev" class="external-link">Oxford IHTM R universe</a> resository as follows:</p>
+<p><code>oxfordtheme</code> is not yet available on <a href="https://cran.r-project.org" class="external-link">CRAN</a> but can be installed through the <a href="https://oxfordihtm.r-universe.dev" class="external-link">Oxford IHTM R universe</a> repository as follows:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span></span>
 <span>  <span class="st">"oxfordtheme"</span>, </span>
@@ -427,16 +427,24 @@
 <span><span class="co">#&gt; [1] "#FB5607" "#B9D6F2" "#95C11F" "#49B6FF" "#1D42A6"</span></span></code></pre></div>
 <p><img src="reference/figures/README-oxford-palettes-corporate-show-1.png" style="display: block; margin: auto;"></p>
 </div>
+<div class="section level4">
+<h4 id="innovative">Innovative<a class="anchor" aria-label="anchor" href="#innovative"></a>
+</h4>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/oxford_theme.html">oxford_theme_palettes</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">innovative</span></span>
+<span><span class="co">#&gt; [1] "#65E5AE" "#F7EF66" "#15616D" "#D4CDF4" "#E6007E"</span></span></code></pre></div>
+<p><img src="reference/figures/README-oxford-palettes-innovative-show-1.png" style="display: block; margin: auto;"></p>
+</div>
 </div>
 <div class="section level3">
-<h3 id="oxford-theme-paletttes-for-use-in-plotting">Oxford theme paletttes for use in plotting<a class="anchor" aria-label="anchor" href="#oxford-theme-paletttes-for-use-in-plotting"></a>
+<h3 id="oxford-theme-palettes-for-use-in-plotting">Oxford theme palettes for use in plotting<a class="anchor" aria-label="anchor" href="#oxford-theme-palettes-for-use-in-plotting"></a>
 </h3>
 <p>The University of Oxford recommended theme palettes can be used for plotting. Below is code examples of how this can be done both with base R plotting function and with <code>ggplot2</code>.</p>
 <div class="section level4">
 <h4 id="bar-plots-in-base-r-and-using-ggplot">Bar plots in base R and using <code>ggplot</code>
 <a class="anchor" aria-label="anchor" href="#bar-plots-in-base-r-and-using-ggplot"></a>
 </h4>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Barplot of cyl and vs of mtcars dataset using heritage Oxford theme</span></span>
 <span></span>
 <span><span class="co">### Base R</span></span>
@@ -477,7 +485,7 @@
 <h4 id="scatter-plots-in-base-r-and-using-ggplot">Scatter plots in base R and using <code>ggplot</code>
 <a class="anchor" aria-label="anchor" href="#scatter-plots-in-base-r-and-using-ggplot"></a>
 </h4>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Scatterplot of mpg and disp of mtcars dataset using celebratory Oxford theme</span></span>
 <span></span>
 <span><span class="co">### Base R</span></span>
@@ -518,7 +526,7 @@
 <div class="section level4">
 <h4 id="plotting-maps-using-oxford-palettes">Plotting maps using Oxford palettes<a class="anchor" aria-label="anchor" href="#plotting-maps-using-oxford-palettes"></a>
 </h4>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Plot acute malnutrition using Oxford sequential palette</span></span>
 <span></span>
 <span><span class="co">### Yellow-Orange-Brown</span></span>
@@ -547,7 +555,7 @@
 <span>  <span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-oxford-palette-sequential-1.png" width="50%"><img src="reference/figures/README-oxford-palette-sequential-2.png" width="50%"></p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Plot period prevalence of fever and diarrhoea using Oxford divergent palette</span></span>
 <span></span>
 <span><span class="co">### Pink-Yellow-Green</span></span>
