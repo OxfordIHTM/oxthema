@@ -212,11 +212,12 @@ ggplot(
   geom_bar() +
   scale_fill_manual(name = "Cylinders", values = oxford_theme_palettes()$heritage) +
   labs(
-    title = "Engine shape by number of cylinders",
-    x = NULL,
-    y = "n"
+    title = "This title is in Oxford Blue",
+    subtitle = "This subtitle is in Oxford ash grey",
+    x = "Engine shape",
+    y = "Counts"
   ) +
-  theme_minimal()
+  theme_oxford()
 ```
 
 <img src="man/figures/README-mtcars-barplot-1.png" width="50%" /><img src="man/figures/README-mtcars-barplot-2.png" width="50%" />
@@ -257,8 +258,11 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
     name = "Cylinders", 
     values = oxford_theme_palettes()$celebratory
   ) +
-  labs(title = "mpg by disp grouped by cyl") +
-  theme_minimal()
+  labs(
+    title = "This title is in Oxford Blue",
+    subtitle = "This subtitle is in Oxford Ash Grey"
+  ) +
+  theme_oxford()
 ```
 
 <img src="man/figures/README-mtcars-scatterplot-1.png" width="50%" /><img src="man/figures/README-mtcars-scatterplot-2.png" width="50%" />
@@ -279,7 +283,7 @@ ggplot(data = nut_survey_map) +
     title = "Prevalence of moderate child wasting",
     subtitle = "Sequential Yellow-Orange-Brown Colour Palette"
   ) +
-  theme_minimal()
+  theme_oxford()
 
 ### Yellow-Green-Blue
 ggplot(data = nut_survey_map) +
@@ -292,7 +296,7 @@ ggplot(data = nut_survey_map) +
     title = "Prevalence of severe child wasting",
     subtitle = "Sequential Yellow-Green-Blue Colour Palette"
   ) +
-  theme_minimal()
+  theme_oxford()
 ```
 
 <img src="man/figures/README-oxford-palette-sequential-1.png" width="50%" /><img src="man/figures/README-oxford-palette-sequential-2.png" width="50%" />
@@ -311,7 +315,7 @@ ggplot(data = nut_survey_map) +
     title = "Period prevalence of childhood fever",
     subtitle = "Divergent Pink-Yellow-Green Colour Palette"
   ) +
-  theme_minimal()
+  theme_oxford()
 
 ### Purple-Green
 ggplot(data = nut_survey_map) +
@@ -324,7 +328,7 @@ ggplot(data = nut_survey_map) +
     title = "Period prevalence of childhood diarrhoea",
     subtitle = "Divergent Purple-Green Colour Palette"
   ) +
-  theme_minimal()
+  theme_oxford()
 ```
 
 <img src="man/figures/README-oxford-palette-divergent-1.png" width="50%" /><img src="man/figures/README-oxford-palette-divergent-2.png" width="50%" />
