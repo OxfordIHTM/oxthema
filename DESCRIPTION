@@ -2,13 +2,11 @@ Package: oxfordtheme
 Type: Package
 Title: Oxford Palette, Theme, and Theme Components
 Version: 0.0.0.9000
-Authors@R: person(
-      given = "Ernest", 
-      family = "Guevarra", 
-      comment = c(ORCID = "0000-0002-4887-4415"), 
-      email = "ernest@guevarra.io", 
-      role = c("aut", "cre")
-    )
+Authors@R: c(
+    person(given = "Ernest", family = "Guevarra", 
+           comment = c(ORCID = "0000-0002-4887-4415"), 
+           email = "ernest@guevarra.io", role = c("aut", "cre", "cph")),
+    person(given = "Greco", family = "Malijan", role = "aut"))
 Description: Palette, theme, and theme components based on University of 
     Oxford's visual identity guidelines
     <https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines>. 
@@ -25,9 +23,9 @@ Suggests:
     sf,
     spelling
 Encoding: UTF-8
+Language: en-GB
 LazyData: true
 RoxygenNote: 7.3.1
 Roxygen: list(markdown = TRUE)
 URL: https://oxford-ihtm.io/oxfordtheme/,https://github.com/OxfordIHTM/oxfordtheme
 BugReports: https://github.com/OxfordIHTM/oxfordtheme/issues
-Language: en-GB

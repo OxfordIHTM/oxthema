@@ -8,7 +8,8 @@
 #' @md
 #' @name oxfordtheme
 #' @docType package
-#' @author Ernest Guevarra (ernest@guevarra.io)
+#' @author Ernest Guevarra
+#' @author Greco Malijan
 #' @keywords internal
 #' @importFrom stringr str_pad
 #' @importFrom grDevices col2rgb rgb colorRampPalette

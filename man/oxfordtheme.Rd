@@ -19,6 +19,8 @@ Useful links:
 
 }
 \author{
-Ernest Guevarra (ernest@guevarra.io)
+Ernest Guevarra
+
+Greco Malijan
 }
 \keyword{internal}
