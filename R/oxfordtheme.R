@@ -15,5 +15,7 @@
 #' @importFrom graphics rect par image text
 #' @importFrom withr with_par
 #' @importFrom systemfonts system_fonts
+#' @importFrom ggplot2 theme margin element_rect element_text element_line
+#'   element_blank
 #'
 "_PACKAGE"

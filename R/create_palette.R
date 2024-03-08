@@ -14,7 +14,7 @@
 #' @param type A character value for type of palette to use. Can be either
 #'   sequential, divergent, or qualitative.
 #'
-#' @return A character vector of desired/required colours with length equivalent
+#' @returns A character vector of desired/required colours with length equivalent
 #'   to `n`
 #'
 #' @examples

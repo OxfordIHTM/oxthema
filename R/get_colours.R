@@ -8,7 +8,7 @@
 #' @param named Logical. Should the output be a named character value or
 #'   vector? Default is FALSE.
 #'
-#' @return A character value or vector of Oxford colour/s as per `model`
+#' @returns A character value or vector of Oxford colour/s as per `model`
 #'   specification. If `named` is TRUE, returns a named character value or
 #'   vector.
 #'
