@@ -474,11 +474,12 @@
 <span>  <span class="fu">geom_bar</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">scale_fill_manual</span><span class="op">(</span>name <span class="op">=</span> <span class="st">"Cylinders"</span>, values <span class="op">=</span> <span class="fu"><a href="reference/oxford_theme.html">oxford_theme_palettes</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">heritage</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">labs</span><span class="op">(</span></span>
-<span>    title <span class="op">=</span> <span class="st">"Engine shape by number of cylinders"</span>,</span>
-<span>    x <span class="op">=</span> <span class="cn">NULL</span>,</span>
-<span>    y <span class="op">=</span> <span class="st">"n"</span></span>
+<span>    title <span class="op">=</span> <span class="st">"This title is in Oxford Blue"</span>,</span>
+<span>    subtitle <span class="op">=</span> <span class="st">"This subtitle is in Oxford ash grey"</span>,</span>
+<span>    x <span class="op">=</span> <span class="st">"Engine shape"</span>,</span>
+<span>    y <span class="op">=</span> <span class="st">"Counts"</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<span>  <span class="fu"><a href="reference/oxford_theme.html">theme_oxford</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-mtcars-barplot-1.png" width="50%"><img src="reference/figures/README-mtcars-barplot-2.png" width="50%"></p>
 </div>
 <div class="section level4">
@@ -519,8 +520,11 @@
 <span>    name <span class="op">=</span> <span class="st">"Cylinders"</span>, </span>
 <span>    values <span class="op">=</span> <span class="fu"><a href="reference/oxford_theme.html">oxford_theme_palettes</a></span><span class="op">(</span><span class="op">)</span><span class="op">$</span><span class="va">celebratory</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">labs</span><span class="op">(</span>title <span class="op">=</span> <span class="st">"mpg by disp grouped by cyl"</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<span>  <span class="fu">labs</span><span class="op">(</span></span>
+<span>    title <span class="op">=</span> <span class="st">"This title is in Oxford Blue"</span>,</span>
+<span>    subtitle <span class="op">=</span> <span class="st">"This subtitle is in Oxford Ash Grey"</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="reference/oxford_theme.html">theme_oxford</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-mtcars-scatterplot-1.png" width="50%"><img src="reference/figures/README-mtcars-scatterplot-2.png" width="50%"></p>
 </div>
 <div class="section level4">
@@ -540,7 +544,7 @@
 <span>    title <span class="op">=</span> <span class="st">"Prevalence of moderate child wasting"</span>,</span>
 <span>    subtitle <span class="op">=</span> <span class="st">"Sequential Yellow-Orange-Brown Colour Palette"</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="reference/oxford_theme.html">theme_oxford</a></span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co">### Yellow-Green-Blue</span></span>
 <span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">nut_survey_map</span><span class="op">)</span> <span class="op">+</span></span>
@@ -553,7 +557,7 @@
 <span>    title <span class="op">=</span> <span class="st">"Prevalence of severe child wasting"</span>,</span>
 <span>    subtitle <span class="op">=</span> <span class="st">"Sequential Yellow-Green-Blue Colour Palette"</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<span>  <span class="fu"><a href="reference/oxford_theme.html">theme_oxford</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-oxford-palette-sequential-1.png" width="50%"><img src="reference/figures/README-oxford-palette-sequential-2.png" width="50%"></p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Plot period prevalence of fever and diarrhoea using Oxford divergent palette</span></span>
@@ -569,7 +573,7 @@
 <span>    title <span class="op">=</span> <span class="st">"Period prevalence of childhood fever"</span>,</span>
 <span>    subtitle <span class="op">=</span> <span class="st">"Divergent Pink-Yellow-Green Colour Palette"</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="reference/oxford_theme.html">theme_oxford</a></span><span class="op">(</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co">### Purple-Green</span></span>
 <span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">nut_survey_map</span><span class="op">)</span> <span class="op">+</span></span>
@@ -582,7 +586,7 @@
 <span>    title <span class="op">=</span> <span class="st">"Period prevalence of childhood diarrhoea"</span>,</span>
 <span>    subtitle <span class="op">=</span> <span class="st">"Divergent Purple-Green Colour Palette"</span></span>
 <span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<span>  <span class="fu"><a href="reference/oxford_theme.html">theme_oxford</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-oxford-palette-divergent-1.png" width="50%"><img src="reference/figures/README-oxford-palette-divergent-2.png" width="50%"></p>
 </div>
 </div>
@@ -636,7 +640,8 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Ernest Guevarra <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-4887-4415" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Ernest Guevarra <br><small class="roles"> Author, maintainer, copyright holder </small> <a href="https://orcid.org/0000-0002-4887-4415" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Greco Malijan <br><small class="roles"> Author </small>  </li>
 </ul>
 </div>
 
@@ -658,7 +663,7 @@
 
     <footer><div class="pkgdown-footer-left">
   <p></p>
-<p>Developed by Ernest Guevarra.</p>
+<p>Developed by Ernest Guevarra, Greco Malijan.</p>
 </div>
 
 <div class="pkgdown-footer-right">
