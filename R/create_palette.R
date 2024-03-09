@@ -10,7 +10,6 @@
 #' @param n Number of colours desired/required. Oxford palettes have at least
 #'   5 colours. All colour schemes are derived from the University of Oxford
 #'   [visual identity guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines).
-#'   #If NULL (default), use all colours.
 #' @param type A character value for type of palette to use. Can be either
 #'   sequential, divergent, or qualitative.
 #'
