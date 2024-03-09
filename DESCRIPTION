@@ -21,7 +21,8 @@ Imports:
 Suggests: 
     covr,
     sf,
-    spelling
+    spelling,
+    testthat (>= 3.0.0)
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
@@ -29,3 +30,4 @@ RoxygenNote: 7.3.1
 Roxygen: list(markdown = TRUE)
 URL: https://oxford-ihtm.io/oxthema/,https://github.com/OxfordIHTM/oxthema
 BugReports: https://github.com/OxfordIHTM/oxthema/issues
+Config/testthat/edition: 3

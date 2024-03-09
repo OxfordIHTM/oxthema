@@ -13,17 +13,12 @@ create_palette_divergent(n, name)
 
 create_palette_qualitative(n, name)
 
-create_brewer_palette(
-  n,
-  name,
-  type = c("sequential", "divergent", "qualitative")
-)
+create_brewer_palette(n, name, type = c("sequential", "divergent"))
 }
 \arguments{
 \item{n}{Number of colours desired/required. Oxford palettes have at least
 5 colours. All colour schemes are derived from the University of Oxford
-\href{https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines}{visual identity guidelines}.
-#If NULL (default), use all colours.}
+\href{https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines}{visual identity guidelines}.}
 
 \item{name}{Name of Oxford palette to use}
 

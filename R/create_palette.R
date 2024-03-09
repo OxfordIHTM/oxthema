@@ -10,7 +10,6 @@
 #' @param n Number of colours desired/required. Oxford palettes have at least
 #'   5 colours. All colour schemes are derived from the University of Oxford
 #'   [visual identity guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines).
-#'   #If NULL (default), use all colours.
 #' @param type A character value for type of palette to use. Can be either
 #'   sequential, divergent, or qualitative.
 #'
@@ -108,11 +107,23 @@ create_palette_divergent <- function(n, name) {
 create_palette_qualitative <- function(n, name) {
   ## Check if specified palette is qualitative ----
   if (
-    !name %in%
-    c("pastel", "dark", "heritage", "contemporary", "celebratory", "corporate")
+    !name %in% c(
+      "pastel", "dark", "heritage", "contemporary",
+      "celebratory", "corporate", "innovative"
+    )
   ) stop (
     "Selected palette is not a qualitative palette. Please verify and try again."
   )
+
+  ## Check if number of colours is compatible with theme packs ----
+  if (n > 5 & !name %in% c("pastel", "dark")) {
+    warning (
+      paste(
+        "The Oxford theme packs palette has maximum 5 colours. Returning 5 colours."
+      )
+    )
+    n <- 8
+  }
 
   ## Check if number of colours is compatible with pastel ----
   if (n > 8 & name == "pastel") {
@@ -134,11 +145,16 @@ create_palette_qualitative <- function(n, name) {
     n <- 7
   }
 
-  ## Get base palette ----
-  pal <- oxford_brewer_palettes()[[name]]
+  if (name %in% c("pastel", "dark")) {
+    ## Get base palette ----
+    pal <- oxford_brewer_palettes()[[name]]
+  } else {
+    ## Get base palette ----
+    pal <- oxford_theme_palettes()[[name]]
+  }
 
   ## Update palette to n ----
-  pal <- grDevices::colorRampPalette(pal)(n)
+  pal <- pal[seq_len(n)]
 
   ## Create palette class ----
   class(pal) <- "palette"
@@ -153,7 +169,7 @@ create_palette_qualitative <- function(n, name) {
 #' @export
 #'
 create_brewer_palette <- function(n, name,
-                                  type = c("sequential", "divergent", "qualitative")) {
+                                  type = c("sequential", "divergent")) {
   ## Determine type of palette ----
   type <- match.arg(type)
 
@@ -161,8 +177,6 @@ create_brewer_palette <- function(n, name,
   if (type == "sequential") pal <- create_palette_sequential(n = n, name = name)
 
   if (type == "divergent") pal <- create_palette_divergent(n = n, name = name)
-
-  if (type == "qualitative") pal <- create_palette_qualitative(n = n, name = name)
 
   ## Return palette ----
   pal
