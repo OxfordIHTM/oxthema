@@ -13,11 +13,7 @@ create_palette_divergent(n, name)
 
 create_palette_qualitative(n, name)
 
-create_brewer_palette(
-  n,
-  name,
-  type = c("sequential", "divergent", "qualitative")
-)
+create_brewer_palette(n, name, type = c("sequential", "divergent"))
 }
 \arguments{
 \item{n}{Number of colours desired/required. Oxford palettes have at least
