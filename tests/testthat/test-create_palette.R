@@ -26,9 +26,16 @@ testthat::expect_equal(length(xx), 5)
 
 testthat::expect_warning(create_palette_qualitative(8, "dark"))
 testthat::expect_warning(create_palette_qualitative(9, "pastel"))
+testthat::expect_warning(create_palette_qualitative(6, "innovative"))
 testthat::expect_error(create_palette_qualitative(5, "blues"))
 
 xx <- create_brewer_palette(n = 7, name = "blues", type = "sequential")
 
 testthat::expect_s3_class(xx, class = "palette")
 testthat::expect_equal(length(xx), 7)
+
+xx <- create_brewer_palette(n = 7, name = "brbg", type = "divergent")
+
+testthat::expect_s3_class(xx, class = "palette")
+testthat::expect_equal(length(xx), 7)
+
