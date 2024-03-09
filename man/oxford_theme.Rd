@@ -152,7 +152,7 @@ A \link{ggplot2} theme.
 }
 \description{
 This generic/base \link{ggplot2} theme is the template from which all other
-themes in the \link{oxfordtheme} package is built on. This theme is inspired by
+themes in the \link{oxthema} package is built on. This theme is inspired by
 Bob Rudis' \href{https://github.com/hrbrmstr/hrbrthemes}{hrbrthemes} package
 drawing heavily on its typography-centric focus. This function uses the
 \emph{Roboto} Google font which is the core Oxford san serif font. It is freely

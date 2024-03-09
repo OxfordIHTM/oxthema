@@ -1,6 +1,6 @@
-title: oxfordtheme
+title: oxthema
 
-url: https://oxford-ihtm.io/oxfordtheme/
+url: https://oxford-ihtm.io/oxthema/
 
 template:
   bootstrap: 5
@@ -46,7 +46,7 @@ navbar:
 reference:
   - title: Description
     contents:
-    - oxfordtheme
+    - oxthema
 
   - title: Palettes
     contents:

@@ -6,7 +6,7 @@
 #' <https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines>.
 #'
 #' @md
-#' @name oxfordtheme
+#' @name oxthema
 #' @docType package
 #' @author Ernest Guevarra
 #' @author Greco Malijan
