@@ -336,6 +336,7 @@ ggplot(data = nut_survey_map) +
 ## Authors
 
 - [Ernest Guevarra](https://github.com/ernestguevarra)
+- [Greco Malijan](https://github.com/grecomalijan)
 
 ## Community guidelines
 
