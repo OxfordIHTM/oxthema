@@ -28,7 +28,7 @@ get_oxford_colour <- function(pattern = NULL,
   model <- match.arg(model)
 
   ## Get df ----
-  df <- oxfordtheme::oxford_colours
+  df <- oxthema::oxford_colours
 
   ## Determine if there is something specific to search for ----
   if (!is.null(pattern)) {

@@ -1,4 +1,4 @@
-Package: oxfordtheme
+Package: oxthema
 Type: Package
 Title: Oxford Palette, Theme, and Theme Components
 Version: 0.0.0.9000
@@ -27,5 +27,5 @@ Language: en-GB
 LazyData: true
 RoxygenNote: 7.3.1
 Roxygen: list(markdown = TRUE)
-URL: https://oxford-ihtm.io/oxfordtheme/,https://github.com/OxfordIHTM/oxfordtheme
-BugReports: https://github.com/OxfordIHTM/oxfordtheme/issues
+URL: https://oxford-ihtm.io/oxthema/,https://github.com/OxfordIHTM/oxthema
+BugReports: https://github.com/OxfordIHTM/oxthema/issues

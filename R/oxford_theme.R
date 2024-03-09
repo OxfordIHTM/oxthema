@@ -2,7 +2,7 @@
 #' A generic/base [ggplot2] theme for the oxfordtheme package
 #'
 #' This generic/base [ggplot2] theme is the template from which all other
-#' themes in the [oxfordtheme] package is built on. This theme is inspired by
+#' themes in the [oxthema] package is built on. This theme is inspired by
 #' Bob Rudis' [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes) package
 #' drawing heavily on its typography-centric focus. This function uses the
 #' *Roboto* Google font which is the core Oxford san serif font. It is freely
