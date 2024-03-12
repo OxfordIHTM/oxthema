@@ -73,6 +73,7 @@ reference:
   - title: Utilities
     contents:
     - cmyk2rgb
+    - print.palette
 
   - title: Supporting datasets
     contents:
