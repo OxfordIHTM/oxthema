@@ -32,12 +32,17 @@ get_oxford_colour <- function(pattern = NULL,
 
   ## Determine if there is something specific to search for ----
   if (!is.null(pattern)) {
+    ## Get list for searchable fields ----
+    search_fields <- list(df[["organisation"]], df[["name"]], df[["code"]])
+
     ## Get colours vector ----
-    ox_cols <- df[c("name", model)][stringr::str_detect(df$name, pattern = pattern), ]
+    ox_cols <- lapply(search_fields, stringr::str_detect, pattern = pattern) |>
+      (\(x) do.call(cbind, x))() |>
+      rowSums() |>
+      (\(x) ifelse(x == 0, FALSE, TRUE))() |>
+      (\(x) df[x, c("name", model)])()
 
     if (named) {
-      #ox_cols <- structure(ox_cols[[model]], names = ox_cols[["name"]])
-
       ox_cols <- ox_cols |>
         (\(x)
           {
