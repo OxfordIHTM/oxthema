@@ -6,7 +6,7 @@
 #' @param M An integer value for magenta
 #' @param K An integer value for key (black)
 #'
-#' @return A named vector for R, G, and B for RGB
+#' @returns A named vector for R, G, and B for RGB
 #'
 #' @examples
 #' cmyk2rgb(100, 80, 0, 60)
@@ -39,12 +39,23 @@ cmyk2rgb <- function(C, M, Y, K) {
 
 
 #'
+#' Print a palette
+#'
+#' @param x A character value or a vector of values of class palette.
+#' @param ... Other arguments
+#'
+#' @returns Shows image of a palette with the specified colours.
+#'
+#' @examples
+#' \dontrun{
+#'   pal <- oxford_theme_palettes()$heritage
+#'   class(pal) <- palette
+#' }
+#'
 #' @export
 #'
 print.palette <- function(x, ...) {
   n <- length(x)
-  # old <- par(mar = c(0.5, 0.5, 0.5, 0.5))
-  # on.exit(par(old))
 
   withr::with_par(
     new = list(mar = c(0.5, 0.5, 0.5, 0.5)),
