@@ -4,7 +4,7 @@
 #' @examples
 #' oxford_theme_palettes()
 #'
-#' @rdname oxford_theme
+#' @rdname oxford_palette
 #' @export
 #'
 oxford_theme_palettes <- function() {
@@ -34,7 +34,7 @@ oxford_theme_palettes <- function() {
 #' @examples
 #' oxford_brewer_palettes()
 #'
-#' @rdname oxford_brewer_palette
+#' @rdname oxford_palette
 #' @export
 #'
 oxford_brewer_palettes <- function() {

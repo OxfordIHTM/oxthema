@@ -1,0 +1,19 @@
+---
+title: "University of Oxford Palette, Theme and Theme Components"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{University of Oxford Palette, Theme and Theme Components}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, echo = FALSE}
+library(oxthema)
+```

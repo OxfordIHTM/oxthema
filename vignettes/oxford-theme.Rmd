@@ -1,0 +1,144 @@
+---
+title: "Oxford Theme"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Oxford Theme}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, echo = FALSE}
+library(oxthema)
+library(ggplot2)
+```
+
+The `oxthema`  package has a generic/base [ggplot2] theme which is the template from which all other themes in the [oxthema] package is built on. This theme is inspired by Bob Rudis' [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes) package drawing heavily on its typography-centric focus. This function uses the *Roboto* Google font which is the core Oxford san serif font. It is freely downloadable and easily installed on any system.
+
+## Oxford theme palettes for use in plotting
+
+The University of Oxford recommended theme palettes can be used for plotting. Below is code examples of how this can be done both with base R plotting function and with `ggplot2`.
+
+### Bar plot
+
+```{r mtcars-barplot, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+## Barplot of cyl and vs of mtcars dataset using heritage Oxford theme
+
+### ggplot2
+ggplot(
+  data = mtcars, 
+  mapping = aes(
+      x = factor(vs, levels = c(0, 1), labels = c("v-shaped", "straight")), 
+      fill = factor(cyl)
+    )  
+  ) +
+  geom_bar() +
+  scale_fill_manual(name = "Cylinders", values = oxford_theme_palettes()$heritage) +
+  labs(
+    title = "This title is in Oxford Blue",
+    subtitle = "This subtitle is in Oxford ash grey",
+    x = "Engine shape",
+    y = "Counts"
+  ) +
+  theme_oxford()
+```
+
+### Scatter plot
+
+```{r mtcars-scatterplot, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+## Scatterplot of mpg and disp of mtcars dataset using celebratory Oxford theme
+
+### ggplot2
+ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
+  geom_point(size = 5) +
+  scale_colour_manual(
+    name = "Cylinders", 
+    values = oxford_theme_palettes()$celebratory
+  ) +
+  labs(
+    title = "This title is in Oxford Blue",
+    subtitle = "This subtitle is in Oxford Ash Grey"
+  ) +
+  theme_oxford()
+```
+
+### Plotting maps using Oxford palettes
+
+#### Sequential palette
+
+```{r oxford-palette-sequential1, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 8}
+## Plot acute malnutrition using Oxford sequential palette
+
+### Yellow-Orange-Brown
+ggplot(data = nut_survey_map) +
+  geom_sf(mapping = aes(fill = muac_mam)) +
+  scale_fill_gradientn(
+    name = "",
+    colours = create_palette_sequential(n = 9, name = "ylorbr")
+  ) +
+  labs(
+    title = "Prevalence of moderate child wasting",
+    subtitle = "Sequential Yellow-Orange-Brown Colour Palette"
+  ) +
+  theme_oxford()
+```
+
+```{r oxford-palette-sequential2, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 8}
+## Plot acute malnutrition using Oxford sequential palette
+
+### Yellow-Green-Blue
+ggplot(data = nut_survey_map) +
+  geom_sf(mapping = aes(fill = muac_sam)) +
+  scale_fill_gradientn(
+    name = "",
+    colours = create_palette_sequential(n = 9, name = "ylgnbu")
+  ) +
+  labs(
+    title = "Prevalence of severe child wasting",
+    subtitle = "Sequential Yellow-Green-Blue Colour Palette"
+  ) +
+  theme_oxford()
+```
+
+#### Divergent palette
+
+```{r oxford-palette-divergent1, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 8}
+## Plot period prevalence of fever and diarrhoea using Oxford divergent palette
+
+### Pink-Yellow-Green
+ggplot(data = nut_survey_map) +
+  geom_sf(mapping = aes(fill = fev)) +
+  scale_fill_gradientn(
+    name = "",
+    colours = create_palette_divergent(n = 11, name = "piylgn")
+  ) +
+  labs(
+    title = "Period prevalence of childhood fever",
+    subtitle = "Divergent Pink-Yellow-Green Colour Palette"
+  ) +
+  theme_oxford()
+```
+
+```{r oxford-palette-divergent2, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 8}
+## Plot period prevalence of fever and diarrhoea using Oxford divergent palette
+
+### Purple-Green
+ggplot(data = nut_survey_map) +
+  geom_sf(mapping = aes(fill = dia)) +
+  scale_fill_gradientn(
+    name = "",
+    colours = create_palette_divergent(n = 11, name = "prgn")
+  ) +
+  labs(
+    title = "Period prevalence of childhood diarrhoea",
+    subtitle = "Divergent Purple-Green Colour Palette"
+  ) +
+  theme_oxford()
+```
+

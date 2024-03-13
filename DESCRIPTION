@@ -20,6 +20,8 @@ Imports:
     withr
 Suggests: 
     covr,
+    knitr,
+    rmarkdown,
     sf,
     spelling,
     testthat (>= 3.0.0)
@@ -31,3 +33,4 @@ Roxygen: list(markdown = TRUE)
 URL: https://oxford-ihtm.io/oxthema/,https://github.com/OxfordIHTM/oxthema
 BugReports: https://github.com/OxfordIHTM/oxthema/issues
 Config/testthat/edition: 3
+VignetteBuilder: knitr

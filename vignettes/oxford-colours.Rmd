@@ -1,0 +1,42 @@
+---
+title: "Oxford Colours"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Oxford Colours}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, echo = FALSE}
+library(oxthema)
+```
+
+Based on the [University of Oxford](https://ox.ac.uk)'s [visual identity guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines), the following colours are available from this package:
+
+```{r oxford-colours, echo = FALSE}
+oxford_colours |>
+  knitr::kable()
+```
+
+```{r oxford-colours-graphic, echo = FALSE, fig.height = 1, fig.align = "center"}
+structure(get_oxford_colours() |> (\(x) x[x != ""])(), class = "palette", name = "Oxford Colours")
+```
+
+You can access either the name, RGB, CMYK, hex code, and/or Pantone values of each Oxford colour through the `get_oxford_colours()` function as follows:
+
+```{r get-colours}
+## Get hex code for Oxford blue
+get_oxford_colours(pattern = "Oxford blue")
+
+## Get hex code for all colours with "blue" in their name (show name in output)
+get_oxford_colours(pattern = "blue", named = TRUE)
+```
+
+The `get_oxford_colours()` function can thus be used to create your own bespoke combination of colours from the Oxford colours palette and create your own theme (see next section for University of Oxford officially recommended themes using the Oxford colours).
