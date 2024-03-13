@@ -18,8 +18,19 @@
     </button>
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
-      <ul class="navbar-nav me-auto"><li class="active nav-item">
+      <ul class="navbar-nav me-auto"><li class="nav-item">
+  <a class="nav-link" href="../articles/oxthema.html">Get started</a>
+</li>
+<li class="active nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
+</li>
+<li class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
+  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <a class="dropdown-item" href="../articles/oxford-colours.html">Oxford Colours</a>
+    <a class="dropdown-item" href="../articles/oxford-palettes.html">Oxford Palettes</a>
+    <a class="dropdown-item" href="../articles/oxford-theme.html">Oxford Theme</a>
+  </div>
 </li>
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
@@ -75,6 +86,22 @@
         </dt>
         <dd>Oxford Palette, Theme, and Theme Components</dd>
       </dl></div><div class="section level2">
+      <h2 id="colours">Colours<a class="anchor" aria-label="anchor" href="#colours"></a></h2>
+      
+      
+
+      
+    </div><div id="" class="section level2">
+      
+      
+      
+
+      <dl><dt>
+          
+          <code><a href="get_oxford_colour.html">get_oxford_colour()</a></code> <code><a href="get_oxford_colour.html">get_oxford_colours()</a></code> 
+        </dt>
+        <dd>Get named Oxford colours vector</dd>
+      </dl></div><div class="section level2">
       <h2 id="palettes">Palettes<a class="anchor" aria-label="anchor" href="#palettes"></a></h2>
       
       
@@ -87,14 +114,14 @@
 
       <dl><dt>
           
-          <code><a href="oxford_theme.html">oxford_theme_palettes()</a></code> <code><a href="oxford_theme.html">theme_oxford()</a></code> 
+          <code><a href="oxford_palette.html">oxford_theme_palettes()</a></code> <code><a href="oxford_palette.html">oxford_brewer_palettes()</a></code> 
         </dt>
         <dd>Oxford theme palettes from visual identity guidelines</dd>
       </dl><dl><dt>
           
-          <code><a href="oxford_brewer_palette.html">oxford_brewer_palettes()</a></code> 
+          <code><a href="create_palette.html">create_palette_sequential()</a></code> <code><a href="create_palette.html">create_palette_divergent()</a></code> <code><a href="create_palette.html">create_palette_qualitative()</a></code> <code><a href="create_palette.html">create_brewer_palette()</a></code> 
         </dt>
-        <dd>Oxford base map palettes</dd>
+        <dd>Create new palettes based on Oxford palettes</dd>
       </dl></div><div class="section level2">
       <h2 id="fonts">Fonts<a class="anchor" aria-label="anchor" href="#fonts"></a></h2>
       
@@ -112,7 +139,7 @@
         </dt>
         <dd>Oxford core and additional fonts</dd>
       </dl></div><div class="section level2">
-      <h2 id="create-palettes">Create palettes<a class="anchor" aria-label="anchor" href="#create-palettes"></a></h2>
+      <h2 id="themes">Themes<a class="anchor" aria-label="anchor" href="#themes"></a></h2>
       
       
 
@@ -124,25 +151,9 @@
 
       <dl><dt>
           
-          <code><a href="create_palette.html">create_palette_sequential()</a></code> <code><a href="create_palette.html">create_palette_divergent()</a></code> <code><a href="create_palette.html">create_palette_qualitative()</a></code> <code><a href="create_palette.html">create_brewer_palette()</a></code> 
+          <code><a href="oxford_theme.html">theme_oxford()</a></code> 
         </dt>
-        <dd>Create new palettes based on Oxford palettes</dd>
-      </dl></div><div class="section level2">
-      <h2 id="get-colours">Get colours<a class="anchor" aria-label="anchor" href="#get-colours"></a></h2>
-      
-      
-
-      
-    </div><div id="" class="section level2">
-      
-      
-      
-
-      <dl><dt>
-          
-          <code><a href="get_oxford_colour.html">get_oxford_colour()</a></code> <code><a href="get_oxford_colour.html">get_oxford_colours()</a></code> 
-        </dt>
-        <dd>Get named Oxford colours vector</dd>
+        <dd>A generic/base ggplot2 theme for the oxthema package</dd>
       </dl></div><div class="section level2">
       <h2 id="utilities">Utilities<a class="anchor" aria-label="anchor" href="#utilities"></a></h2>
       
