@@ -23,7 +23,7 @@ The `oxthema`  package has a generic/base [ggplot2] theme which is the template 
 
 ## Oxford theme palettes for use in plotting
 
-The University of Oxford recommended theme palettes can be used for plotting. Below is code examples of how this can be done both with base R plotting function and with `ggplot2`.
+The University of Oxford recommended theme palettes can be used for plotting. Below is code examples of how this can be done with `ggplot2`.
 
 ### Bar plot
 
