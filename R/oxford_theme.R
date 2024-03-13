@@ -1,5 +1,5 @@
 #'
-#' A generic/base [ggplot2] theme for the oxfordtheme package
+#' A generic/base [ggplot2] theme for the oxthema package
 #'
 #' This generic/base [ggplot2] theme is the template from which all other
 #' themes in the [oxthema] package is built on. This theme is inspired by

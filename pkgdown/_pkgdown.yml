@@ -21,17 +21,13 @@ navbar:
     right: [twitter, facebook, linkedin, github]
 
   components:
-    # articles:
-    #   text: Articles
-    #   menu:
-    #   - text: "ICD-11 Foundation"
-    #     href: articles/icd11_foundation.html
-    #   - text: "Detecting inflammation"
-    #     href: articles/inflammation.html
-    #   - text: "Detecting iron deficiency"
-    #     href: articles/iron-deficiency.html
-    #   - text: "Detecting iodine deficiency"
-    #     href: articles/iodine-deficiency.html
+    articles:
+      text: Articles
+      menu:
+      - text: "Oxford Colours"
+        href: articles/oxford-colours.html
+      - text: "Oxford Palettes"
+        href: articles/oxford-palettes.html
     twitter:
       icon: "fab fa-twitter fa-lg"
       href: http://twitter.com/OxIHTM
@@ -48,27 +44,28 @@ reference:
     contents:
     - oxthema
 
+  - title: Colours
+    contents:
+    - get_oxford_colour
+    - get_oxford_colours
+
   - title: Palettes
     contents:
     - oxford_theme_palettes
     - oxford_brewer_palettes
+    - create_palette_sequential
+    - create_palette_divergent
+    - create_palette_qualitative
+    - create_brewer_palette
 
   - title: Fonts
     contents:
     - oxford_fonts
     - check_oxford_fonts
 
-  - title: Create palettes
+  - title: Themes
     contents:
-    - create_palette_sequential
-    - create_palette_divergent
-    - create_palette_qualitative
-    - create_brewer_palette
-
-  - title: Get colours
-    contents:
-    - get_oxford_colour
-    - get_oxford_colours
+    - theme_oxford
 
   - title: Utilities
     contents:
