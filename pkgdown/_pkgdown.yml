@@ -28,6 +28,8 @@ navbar:
         href: articles/oxford-colours.html
       - text: "Oxford Palettes"
         href: articles/oxford-palettes.html
+      - text: "Oxford Theme"
+        href: articles/oxford-theme.html
     twitter:
       icon: "fab fa-twitter fa-lg"
       href: http://twitter.com/OxIHTM
