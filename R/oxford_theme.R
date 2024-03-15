@@ -119,10 +119,17 @@ theme_oxford <- function(base_family = "Roboto",
   )
 
   ## Set plot background design ----
-  design <- design +
-    ggplot2::theme(
-      plot.background = ggplot2::element_rect(fill = plot_background_fill)
-    )
+  if (is.null(plot_background_fill)) {
+    design <- design +
+      ggplot2::theme(
+        plot.background = element_blank()
+      )
+  } else {
+    design <- design +
+      ggplot2::theme(
+        plot.background = ggplot2::element_rect(fill = plot_background_fill)
+      )
+  }
 
   ## Set legend design ----
   design <- design +
