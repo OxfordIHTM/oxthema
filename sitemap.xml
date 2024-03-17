@@ -13,6 +13,9 @@
     <loc>https://oxford-ihtm.io/oxthema/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://oxford-ihtm.io/oxthema/articles/addon-themes.html</loc>
+  </url>
+  <url>
     <loc>https://oxford-ihtm.io/oxthema/articles/index.html</loc>
   </url>
   <url>
@@ -65,5 +68,8 @@
   </url>
   <url>
     <loc>https://oxford-ihtm.io/oxthema/reference/print.palette.html</loc>
+  </url>
+  <url>
+    <loc>https://oxford-ihtm.io/oxthema/reference/theme_forest.html</loc>
   </url>
 </urlset>

@@ -2,11 +2,12 @@ pandoc: 3.1.11
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
+  addon-themes: addon-themes.html
   oxford-colours: oxford-colours.html
   oxford-palettes: oxford-palettes.html
   oxford-theme: oxford-theme.html
   oxthema: oxthema.html
-last_built: 2024-03-15T07:09Z
+last_built: 2024-03-17T04:42Z
 urls:
   reference: https://oxford-ihtm.io/oxthema/reference
   article: https://oxford-ihtm.io/oxthema/articles
