@@ -1,0 +1,370 @@
+---
+title: "Oxford forestploter Themes"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Oxford forestploter Themes}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  dev = "ragg_png"
+)
+```
+
+```{r setup, echo = FALSE, message = FALSE}
+library(oxthema)
+library(forestploter)
+library(grid)
+library(showtext)
+library(sysfonts)
+
+font_add_google("Roboto")
+font_add_google("Marcellus")
+font_add_google("Montserrat")
+font_add_google("Noto Serif Display")
+font_add_google("Bebas Neue")
+font_add_google("Phudu", db_cache = FALSE)
+```
+
+## Oxford theme for `forestploter` package
+
+Using the example data in the `forestploter` and processing it in the same way as show in the `forestploter` README as per code below:
+
+```{r fp-data, echo = TRUE}
+# Read and process example data from forestploter package
+
+## Read example data from forestploter package
+dt <- read.csv(
+  system.file("extdata", "example_data.csv", package = "forestploter")
+)
+
+## Indent the subgroup if there is a number in the placebo column
+dt$Subgroup <- ifelse(
+  is.na(dt$Placebo), dt$Subgroup, paste0("   ", dt$Subgroup)
+)
+
+## NA to blank
+dt$Treatment <- ifelse(is.na(dt$Treatment), "", dt$Treatment)
+dt$Placebo   <- ifelse(is.na(dt$Placebo), "", dt$Placebo)
+dt$se        <- (log(dt$hi) - log(dt$est)) / 1.96
+
+## Add a blank column for the forest plot to display CI.
+## Adjust the column width with space. 
+dt$` ` <- paste(rep(" ", 20), collapse = " ")
+
+## Create confidence interval column to display
+dt$`HR (95% CI)` <- ifelse(
+  is.na(dt$se), "",
+  sprintf("%.2f (%.2f to %.2f)", dt$est, dt$low, dt$hi)
+)
+```
+
+we demonstrate how to use the based `theme_oxford_forest()` to provide a custom theme to a `forestploter` forest plot as follows:
+
+```{r fp-theme, eval = FALSE}
+# Create forest plot from dt and then apply theme_oxford_forest()
+
+## Create forest plot
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "This title is in Roboto plain font in Oxford blue",
+            footnote = "Footnote is in Roboto plain font\nin Oxford royal blue",
+            theme = theme_oxford_forest())
+
+## Print plot
+plot(p)
+```
+
+
+```{r fp-theme-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 7, fig.showtext = TRUE, fig.retina = 1}
+# enable showtext
+showtext_auto()
+
+## Create forest plot
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "This title is in Roboto plain font in Oxford blue",
+            footnote = "Footnote is in Roboto plain font\nin Oxford royal blue",
+            theme = theme_oxford_forest())
+
+# Print plot
+plot(p)
+```
+
+### Using Oxford heritage forest plot theme
+
+Using the same example data, we use the `theme_heritage_forest()` to theme the output forest plot as follows:
+
+```{r fp-heritage, eval = FALSE}
+# Create forest plot from dt and then apply theme_heritage_forest()
+
+## Create forest plot
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "Title is in Marcellus plain font in Oxford blue",
+            footnote = "Footnote is in Marcellus plain font\nin Oxford green",
+            theme = theme_heritage_forest())
+
+## Print plot
+plot(p)
+```
+
+
+```{r fp-heritage-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 7, fig.showtext = TRUE, fig.retina = 1}
+# enable showtext
+showtext_auto()
+
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "Title is in Marcellus plain font in Oxford blue",
+            footnote = "Footnote is in Marcellus plain font\nin Oxford green",
+            theme = theme_heritage_forest())
+
+# Print plot
+plot(p)
+```
+
+
+### Using Oxford contemporary forest plot theme
+
+Using the same example data, we use the `theme_contemporary_forest()` to theme the output forest plot as follows:
+
+```{r fp-contemporary, eval = FALSE}
+# Create forest plot from dt and then apply theme_contemporary_forest()
+
+## Create forest plot
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "Title is in Montserrat plain font in Oxford blue",
+            footnote = "Footnote is in Montserrat plain font\nin Oxford aqua",
+            theme = theme_contemporary_forest())
+
+## Print plot
+plot(p)
+```
+
+
+```{r fp-contemporary-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 7, fig.showtext = TRUE, fig.retina = 1}
+# enable showtext
+showtext_auto()
+
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "Title is in Montserrat plain font in Oxford blue",
+            footnote = "Footnote is in Montserrat plain font\nin Oxford aqua",
+            theme = theme_contemporary_forest())
+
+# Print plot
+plot(p)
+```
+
+
+### Using Oxford celebratory forest plot theme
+
+Using the same example data, we use the `theme_celebratory_forest()` to theme the output forest plot as follows:
+
+```{r fp-celebratory, eval = FALSE}
+# Create forest plot from dt and then apply theme_celebratory_forest()
+
+## Create forest plot
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "Title is in Noto Serif Display plain font in Oxford blue",
+            footnote = "Footnote is in Noto Serif Display plain font\nin Oxford viridian",
+            theme = theme_celebratory_forest())
+
+## Print plot
+plot(p)
+```
+
+
+```{r fp-celebratory-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 7, fig.showtext = TRUE, fig.retina = 1}
+# enable showtext
+showtext_auto()
+
+# Create forest plot from dt and then apply theme_celebratory_forest()
+
+## Create forest plot
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "Title is in Noto Serif Display plain font in Oxford blue",
+            footnote = "Footnote is in Noto Serif Display plain font\nin Oxford viridian",
+            theme = theme_celebratory_forest())
+
+# Print plot
+plot(p)
+```
+
+
+### Using Oxford corporate forest plot theme
+
+Using the same example data, we use the `theme_corporate_forest()` to theme the output forest plot as follows:
+
+```{r fp-corporate, eval = FALSE}
+# Create forest plot from dt and then apply theme_corporate_forest()
+
+## Create forest plot
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "Title is in Bebas Neue plain font in Oxford blue",
+            footnote = "Footnote is in Bebas Neue plain font\nin Oxford royal blue",
+            theme = theme_corporate_forest())
+
+## Print plot
+plot(p)
+```
+
+
+```{r fp-corporate-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 7, fig.showtext = TRUE, fig.retina = 1}
+# enable showtext
+showtext_auto()
+
+# Create forest plot from dt and then apply theme_corporate_forest()
+
+## Create forest plot
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "Title is in Bebas Neue plain font in Oxford blue",
+            footnote = "Footnote is in Bebas Neue plain font\nin Oxford royal blue",
+            theme = theme_corporate_forest())
+
+# Print plot
+plot(p)
+```
+
+
+### Using Oxford innovative forest plot theme
+
+Using the same example data, we use the `theme_innovative_forest()` to theme the output forest plot as follows:
+
+```{r fp-innovative, eval = FALSE}
+# Create forest plot from dt and then apply theme_innovative_forest()
+
+## Create forest plot
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "Title is in Phudu plain font in Oxford blue",
+            footnote = "Footnote is in Phudu plain font\nin Oxford viridian",
+            theme = theme_innovative_forest())
+
+## Print plot
+plot(p)
+```
+
+
+```{r fp-innovative-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 7, fig.showtext = TRUE, fig.retina = 1}
+# enable showtext
+showtext_auto()
+
+# Create forest plot from dt and then apply theme_innovative_forest()
+
+## Create forest plot
+p <- forest(dt[ , c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            title = "Title is in Phudu plain font in Oxford blue",
+            footnote = "Footnote is in Phudu plain font\nin Oxford viridian",
+            theme = theme_innovative_forest())
+
+# Print plot
+plot(p)
+```
