@@ -19,7 +19,7 @@ library(oxthema)
 library(ggplot2)
 ```
 
-The `oxthema`  package has a generic/base [ggplot2] theme which is the template from which all other themes in the [oxthema] package is built on. This theme is inspired by Bob Rudis' [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes) package drawing heavily on its typography-centric focus. This function uses the *Roboto* Google font which is the core Oxford san serif font. It is freely downloadable and easily installed on any system.
+The `oxthema`  package has a generic/base `ggplot2` theme which is the template from which all other themes in the `oxthema` package is built on. This theme is inspired by Bob Rudis' [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes) package drawing heavily on its typography-centric focus. This function uses the *Roboto* Google font which is the core Oxford san serif font. It is freely downloadable and easily installed on any system.
 
 ## Oxford theme palettes for use in plotting
 
@@ -46,7 +46,7 @@ ggplot(
     x = "Engine shape",
     y = "Counts"
   ) +
-  theme_oxford()
+  theme_oxford(grid = "Y")
 ```
 
 ### Scatter plot
@@ -65,7 +65,7 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
     title = "This title is in Oxford Blue",
     subtitle = "This subtitle is in Oxford Ash Grey"
   ) +
-  theme_oxford()
+  theme_oxford(grid = "XY")
 ```
 
 ### Plotting maps using Oxford palettes

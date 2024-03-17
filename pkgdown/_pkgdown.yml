@@ -30,6 +30,8 @@ navbar:
         href: articles/oxford-palettes.html
       - text: "Oxford Theme"
         href: articles/oxford-theme.html
+      - text: "Add-on Themes"
+        href: articles/addon-themes.html
     twitter:
       icon: "fab fa-twitter fa-lg"
       href: http://twitter.com/OxIHTM
@@ -68,6 +70,10 @@ reference:
   - title: Themes
     contents:
     - theme_oxford
+
+  - title: Add-on Themes
+    contents:
+    - theme_oxford_forest
 
   - title: Utilities
     contents:
