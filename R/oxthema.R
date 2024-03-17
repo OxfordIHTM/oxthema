@@ -18,5 +18,6 @@
 #' @importFrom systemfonts system_fonts
 #' @importFrom ggplot2 theme margin element_rect element_text element_line
 #'   element_blank
+#' @importFrom forestploter forest_theme
 #'
 "_PACKAGE"

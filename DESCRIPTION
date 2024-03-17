@@ -14,6 +14,7 @@ License: GPL (>= 3)
 Depends: 
     R (>= 2.10)
 Imports: 
+    forestploter,
     ggplot2,
     stringr,
     systemfonts,
