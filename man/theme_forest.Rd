@@ -2,20 +2,115 @@
 % Please edit documentation in R/oxford_theme_forest.R
 \name{theme_oxford_forest}
 \alias{theme_oxford_forest}
+\alias{theme_heritage_forest}
+\alias{theme_contemporary_forest}
+\alias{theme_celebratory_forest}
+\alias{theme_corporate_forest}
+\alias{theme_innovative_forest}
 \title{Oxford theme for \link{forestploter} package}
 \usage{
 theme_oxford_forest(
-  base_size = 11,
+  base_size = 11.5,
   base_family = "Roboto",
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
   refline_col = get_oxford_colour("red"),
-  vertline_col = get_oxford_colour("red"),
+  vertline_col = get_oxford_colour("ash"),
   summary_col = get_oxford_colour("ash"),
   summary_fill = summary_col,
   footnote_cex = 0.7,
-  footnote_fontface = "bold",
+  footnote_fontface = "plain",
   footnote_col = get_oxford_colour("royal"),
+  title_col = get_oxford_colour("Oxford blue"),
+  title_fontfamily = base_family,
+  arrow_fill = get_oxford_colour("Oxford blue"),
+  arrow_col = arrow_fill
+)
+
+theme_heritage_forest(
+  base_size = 11,
+  base_family = "Marcellus",
+  ci_col = get_oxford_colour("Oxford blue"),
+  ci_fill = ci_col,
+  refline_col = get_oxford_colour("sienna"),
+  vertline_col = get_oxford_colour("peach"),
+  summary_col = get_oxford_colour("green"),
+  summary_fill = summary_col,
+  footnote_cex = 0.8,
+  footnote_fontface = "plain",
+  footnote_col = get_oxford_colour("green"),
+  title_col = get_oxford_colour("Oxford blue"),
+  title_fontfamily = base_family,
+  arrow_fill = get_oxford_colour("Oxford blue"),
+  arrow_col = arrow_fill
+)
+
+theme_contemporary_forest(
+  base_size = 10.5,
+  base_family = "Montserrat",
+  ci_col = get_oxford_colour("Oxford blue"),
+  ci_fill = ci_col,
+  refline_col = get_oxford_colour("coral"),
+  vertline_col = get_oxford_colour("potters"),
+  summary_col = get_oxford_colour("aqua"),
+  summary_fill = summary_col,
+  footnote_cex = 0.7,
+  footnote_fontface = "plain",
+  footnote_col = get_oxford_colour("aqua"),
+  title_col = get_oxford_colour("Oxford blue"),
+  title_fontfamily = base_family,
+  arrow_fill = get_oxford_colour("Oxford blue"),
+  arrow_col = arrow_fill
+)
+
+theme_celebratory_forest(
+  base_size = 10.5,
+  base_family = "Noto Serif Display",
+  ci_col = get_oxford_colour("Oxford blue"),
+  ci_fill = ci_col,
+  refline_col = get_oxford_colour("plum"),
+  vertline_col = get_oxford_colour("mauve"),
+  summary_col = get_oxford_colour("viridian"),
+  summary_fill = summary_col,
+  footnote_cex = 0.7,
+  footnote_fontface = "plain",
+  footnote_col = get_oxford_colour("viridian"),
+  title_col = get_oxford_colour("Oxford blue"),
+  title_fontfamily = base_family,
+  arrow_fill = get_oxford_colour("Oxford blue"),
+  arrow_col = arrow_fill
+)
+
+theme_corporate_forest(
+  base_size = 10.5,
+  base_family = "Bebas Neue",
+  ci_col = get_oxford_colour("Oxford blue"),
+  ci_fill = ci_col,
+  refline_col = get_oxford_colour("orange"),
+  vertline_col = get_oxford_colour("sky"),
+  summary_col = get_oxford_colour("royal"),
+  summary_fill = summary_col,
+  footnote_cex = 0.7,
+  footnote_fontface = "plain",
+  footnote_col = get_oxford_colour("royal"),
+  title_col = get_oxford_colour("Oxford blue"),
+  title_fontfamily = base_family,
+  arrow_fill = get_oxford_colour("Oxford blue"),
+  arrow_col = arrow_fill
+)
+
+theme_innovative_forest(
+  base_size = 10.5,
+  base_family = "Phudu",
+  ci_col = get_oxford_colour("Oxford blue"),
+  ci_fill = ci_col,
+  refline_col = get_oxford_colour("Oxford pink"),
+  vertline_col = get_oxford_colour("vivid"),
+  summary_col = get_oxford_colour("viridian"),
+  summary_fill = summary_col,
+  footnote_cex = 0.7,
+  footnote_fontface = "plain",
+  footnote_col = get_oxford_colour("viridian"),
   title_col = get_oxford_colour("Oxford blue"),
   title_fontfamily = base_family,
   arrow_fill = get_oxford_colour("Oxford blue"),
@@ -35,13 +130,13 @@ the grouped forest plot. Default set to \emph{Oxford blue}}
 provided for the grouped forest plot. Default to value of \code{ci_col}.}
 
 \item{refline_col}{Line colour for the reference line. Default set to
-\emph{Oxford sienna}.}
+\emph{Oxford red}.}
 
 \item{vertline_col}{Line colour for the extra vertical line. Default set to
-\emph{Oxford sienna}.}
+\emph{Oxford ash grey}.}
 
 \item{summary_col}{Colour for borders of the summary diamond shape. Default
-set to \emph{Oxford dusk}}
+set to \emph{Oxford ash grey}}
 
 \item{summary_fill}{Colour for filling the summary diamond shape. Default set
 to value of \code{summary_col}.}
@@ -51,7 +146,7 @@ to value of \code{summary_col}.}
 \item{footnote_fontface}{The font face for footnote.}
 
 \item{footnote_col}{Colour of the footnote. Default set to
-\emph{Oxford sage green}.}
+\emph{Oxford royal blue}.}
 
 \item{title_col}{Colour of title. Default set to \emph{Oxford blue}}
 

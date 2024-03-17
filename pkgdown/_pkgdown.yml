@@ -30,8 +30,8 @@ navbar:
         href: articles/oxford-palettes.html
       - text: "Oxford Theme"
         href: articles/oxford-theme.html
-      - text: "Add-on Themes"
-        href: articles/addon-themes.html
+      - text: "Oxford forestploter Themes"
+        href: articles/oxford-forestploter-themes.html
     twitter:
       icon: "fab fa-twitter fa-lg"
       href: http://twitter.com/OxIHTM
