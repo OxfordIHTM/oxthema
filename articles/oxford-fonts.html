@@ -129,14 +129,6 @@ Google fonts and as such are downloadable from the <a href="https://fonts.google
 <div class="section level3">
 <h3 id="noto-serif">Noto Serif<a class="anchor" aria-label="anchor" href="#noto-serif"></a>
 </h3>
-<pre><code><span><span class="co">#&gt; Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :</span></span>
-<span><span class="co">#&gt; font family 'Noto Serif' not found, will use 'sans' instead</span></span>
-<span></span>
-<span><span class="co">#&gt; Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :</span></span>
-<span><span class="co">#&gt; font family 'Noto Serif' not found, will use 'sans' instead</span></span>
-<span></span>
-<span><span class="co">#&gt; Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :</span></span>
-<span><span class="co">#&gt; font family 'Noto Serif' not found, will use 'sans' instead</span></span></code></pre>
 <p><img src="oxford-fonts_files/figure-html/noto-serif-show-1.png" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -186,7 +178,7 @@ fonts<a class="anchor" aria-label="anchor" href="#checking-availability-of-core-
 <code><a href="../reference/oxford_font.html">check_oxford_fonts()</a></code> function which checks the availability
 of the core and complementary display fonts in your machine as
 follows:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/oxford_font.html">check_oxford_fonts</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>and returns a message on which of the fonts are available and not
 available. An example output is shown below:</p>
@@ -293,13 +285,13 @@ files<a class="anchor" aria-label="anchor" href="#making-fonts-work-with--rmd-an
 essential to be able to set the graphics device to <code>AGG</code>
 within that knitting environment. This can be set as a
 <code>knitr</code> option in the setup code chunk as follows:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="in">```{r, include = FALSE}</span></span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="in">knitr::opts_chunk$set(</span></span>
-<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="in">  collapse = TRUE,</span></span>
-<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="in">  comment = "#&gt;",</span></span>
-<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="in">  dev = "ragg_png"</span></span>
-<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="in">)</span></span>
-<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="in">```{r, include = FALSE}</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="in">knitr::opts_chunk$set(</span></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="in">  collapse = TRUE,</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="in">  comment = "#&gt;",</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="in">  dev = "ragg_png"</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
