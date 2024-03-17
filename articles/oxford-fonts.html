@@ -48,12 +48,13 @@
 <li class="nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
-<li class="nav-item dropdown">
+<li class="active nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/oxford-colours.html">Oxford Colours</a>
     <a class="dropdown-item" href="../articles/oxford-palettes.html">Oxford Palettes</a>
-    <a class="dropdown-item" href="../articles/oxford-theme.html">Oxford Theme</a>
+    <a class="dropdown-item" href="../articles/oxford-fonts.html">Oxford Fonts</a>
+    <a class="dropdown-item" href="../articles/oxford-ggplot2-themes.html">Oxford ggplot2 Themes</a>
     <a class="dropdown-item" href="../articles/oxford-forestploter-themes.html">Oxford forestploter Themes</a>
   </div>
 </li>
@@ -108,6 +109,8 @@
 
     
     
+<pre><code><span><span class="co">#&gt; Loading required package: sysfonts</span></span>
+<span><span class="co">#&gt; Loading required package: showtextdb</span></span></code></pre>
 <p>The <code>oxthema</code> package uses the fonts prescribed by
 Oxford’s visual identity guidelines.</p>
 <div class="section level2">
@@ -118,6 +121,24 @@ Oxford’s visual identity guidelines.</p>
 managed staff desktop (CONNECT and Orchard) machines. Hence, they should
 be readily available when using R from these machines. Also, both are
 Google fonts and as such are downloadable from the <a href="https://fonts.google.com/" class="external-link">Google Fonts website</a>.</p>
+<div class="section level3">
+<h3 id="roboto">Roboto<a class="anchor" aria-label="anchor" href="#roboto"></a>
+</h3>
+<p><img src="oxford-fonts_files/figure-html/roboto-show-1.png" style="display: block; margin: auto;"></p>
+</div>
+<div class="section level3">
+<h3 id="noto-serif">Noto Serif<a class="anchor" aria-label="anchor" href="#noto-serif"></a>
+</h3>
+<pre><code><span><span class="co">#&gt; Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :</span></span>
+<span><span class="co">#&gt; font family 'Noto Serif' not found, will use 'sans' instead</span></span>
+<span></span>
+<span><span class="co">#&gt; Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :</span></span>
+<span><span class="co">#&gt; font family 'Noto Serif' not found, will use 'sans' instead</span></span>
+<span></span>
+<span><span class="co">#&gt; Warning in grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y, :</span></span>
+<span><span class="co">#&gt; font family 'Noto Serif' not found, will use 'sans' instead</span></span></code></pre>
+<p><img src="oxford-fonts_files/figure-html/noto-serif-show-1.png" style="display: block; margin: auto;"></p>
+</div>
 </div>
 <div class="section level2">
 <h2 id="complementary-display-fonts">Complementary display fonts<a class="anchor" aria-label="anchor" href="#complementary-display-fonts"></a>
@@ -131,6 +152,31 @@ used sparingly alongside <em>Roboto</em> and <em>Noto Serif</em>. They
 are also installed on managed staff desktop (CONNECT and Orchard)
 machines. They are also <a href="https://fonts.google.com/" class="external-link">Google
 Fonts</a> hence freely available to download from the <a href="https://fonts.google.com/" class="external-link">Google Fonts website</a>.</p>
+<div class="section level3">
+<h3 id="marcellus">Marcellus<a class="anchor" aria-label="anchor" href="#marcellus"></a>
+</h3>
+<p><img src="oxford-fonts_files/figure-html/marcellus-show-1.png" style="display: block; margin: auto;"></p>
+</div>
+<div class="section level3">
+<h3 id="monserrat">Monserrat<a class="anchor" aria-label="anchor" href="#monserrat"></a>
+</h3>
+<p><img src="oxford-fonts_files/figure-html/montserrat-show-1.png" style="display: block; margin: auto;"></p>
+</div>
+<div class="section level3">
+<h3 id="noto-serif-display">Noto Serif Display<a class="anchor" aria-label="anchor" href="#noto-serif-display"></a>
+</h3>
+<p><img src="oxford-fonts_files/figure-html/noto-serif-dp-show-1.png" style="display: block; margin: auto;"></p>
+</div>
+<div class="section level3">
+<h3 id="bebas-neue">Bebas Neue<a class="anchor" aria-label="anchor" href="#bebas-neue"></a>
+</h3>
+<p><img src="oxford-fonts_files/figure-html/bebas-show-1.png" style="display: block; margin: auto;"></p>
+</div>
+<div class="section level3">
+<h3 id="phudu">Phudu<a class="anchor" aria-label="anchor" href="#phudu"></a>
+</h3>
+<p><img src="oxford-fonts_files/figure-html/phudu-show-1.png" style="display: block; margin: auto;"></p>
+</div>
 </div>
 <div class="section level2">
 <h2 id="checking-availability-of-core-fonts-and-complementary-display-fonts">Checking availability of core fonts and complementary display
@@ -140,7 +186,7 @@ fonts<a class="anchor" aria-label="anchor" href="#checking-availability-of-core-
 <code><a href="../reference/oxford_font.html">check_oxford_fonts()</a></code> function which checks the availability
 of the core and complementary display fonts in your machine as
 follows:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/oxford_font.html">check_oxford_fonts</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>and returns a message on which of the fonts are available and not
 available. An example output is shown below:</p>
@@ -217,6 +263,44 @@ addition to <em>Roboto</em> and <em>Noto Serif</em> core fonts.</p>
 <div class="section level2">
 <h2 id="ensuring-that-oxford-fonts-show-appropriately">Ensuring that Oxford fonts show appropriately<a class="anchor" aria-label="anchor" href="#ensuring-that-oxford-fonts-show-appropriately"></a>
 </h2>
+<p>Installing the Oxford fonts into your system is half of the battle in
+ensuring that your outputs that use the <code>oxthema</code> themes will
+use the appropriate fonts.</p>
+<p>There are times that even with the fonts installed, outputs as viewed
+in RStudio viewer or as PDF, Postscript, or HTML still do not show the
+appropriate fonts even when the fonts are already installed. The
+following steps are what you can do to ensure that the appropriate fonts
+are what gets used in your outputs.</p>
+<div class="section level3">
+<h3 id="set-rstudio-graphics-device-to-agg">Set RStudio graphics device to AGG<a class="anchor" aria-label="anchor" href="#set-rstudio-graphics-device-to-agg"></a>
+</h3>
+<p>In RStudio, go to
+<code>Global Options** -&gt; General -&gt; Graphics</code> and then for
+the <code>Backend</code> dropdown menu select <code>AGG</code> as shown
+in the image below.</p>
+<p><img src="https://www.cararthompson.com/posts/2024-01-12-using-fonts-in-r-for-dataviz/images/fonts-device.png" style="display: block; margin: auto;"></p>
+<p>The appropriate fonts should now render nicely within the RStudio
+plot viewer pane. Once the fonts are working with the RStudio plot
+viewer, you should be able to save your plots into a file with the
+appropriate fonts.</p>
+</div>
+<div class="section level3">
+<h3 id="making-fonts-work-with--rmd-and--qmd-files">Making fonts work with <code>.Rmd</code> and <code>.qmd</code>
+files<a class="anchor" aria-label="anchor" href="#making-fonts-work-with--rmd-and--qmd-files"></a>
+</h3>
+<p>Because plots created within an <code>.Rmd</code> or
+<code>.qmd</code> are generated within its own environment, it would be
+essential to be able to set the graphics device to <code>AGG</code>
+within that knitting environment. This can be set as a
+<code>knitr</code> option in the setup code chunk as follows:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="in">```{r, include = FALSE}</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="in">knitr::opts_chunk$set(</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="in">  collapse = TRUE,</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="in">  comment = "#&gt;",</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="in">  dev = "ragg_png"</span></span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+</div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>
