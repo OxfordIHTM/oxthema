@@ -18,6 +18,10 @@ knitr::opts_chunk$set(
 ```{r setup, echo = FALSE}
 library(oxthema)
 library(ggplot2)
+library(showtext)
+library(sysfonts)
+
+font_add_google("Roboto")
 ```
 
 The `oxthema`  package has a generic/base `ggplot2` theme which is the template from which all other themes in the `oxthema` package is built on. This theme is inspired by Bob Rudis' [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes) package drawing heavily on its typography-centric focus. This function uses the *Roboto* Google font which is the core Oxford san serif font. It is freely downloadable and easily installed on any system.
@@ -28,7 +32,10 @@ The University of Oxford recommended theme palettes can be used for plotting. Be
 
 ### Bar plot
 
-```{r mtcars-barplot, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+```{r mtcars-barplot, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
+## enable showtext
+showtext_auto()
+
 ## Barplot of cyl and vs of mtcars dataset using heritage Oxford theme
 
 ### ggplot2
@@ -52,7 +59,7 @@ ggplot(
 
 ### Scatter plot
 
-```{r mtcars-scatterplot, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 5}
+```{r mtcars-scatterplot, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 5, fig.retina = 1}
 ## Scatterplot of mpg and disp of mtcars dataset using celebratory Oxford theme
 
 ### ggplot2
@@ -73,7 +80,7 @@ ggplot(data = mtcars, mapping = aes(x = mpg, y = disp, colour = factor(cyl))) +
 
 #### Sequential palette
 
-```{r oxford-palette-sequential1, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 8}
+```{r oxford-palette-sequential1, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 8, fig.retina = 1}
 ## Plot acute malnutrition using Oxford sequential palette
 
 ### Yellow-Orange-Brown
