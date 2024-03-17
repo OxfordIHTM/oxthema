@@ -22,9 +22,12 @@ Imports:
 Suggests: 
     covr,
     knitr,
+    ragg,
     rmarkdown,
     sf,
+    showtext,
     spelling,
+    sysfonts,
     testthat (>= 3.0.0)
 Encoding: UTF-8
 Language: en-GB
