@@ -68,3 +68,6 @@ print.palette <- function(x, ...) {
     }
   )
 }
+
+
+
