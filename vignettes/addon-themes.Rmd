@@ -23,7 +23,6 @@ library(showtext)
 library(sysfonts)
 
 font_add_google("Roboto")
-showtext_auto()
 ```
 
 ## Oxford theme for `forestploter`
@@ -51,7 +50,7 @@ dt$`HR (95% CI)` <- ifelse(is.na(dt$se), "",
                                      dt$est, dt$low, dt$hi))
 ```
 
-```{r fp-theme, fig.align = "center", fig.width = 8, fig.height = 6, fig.showtext = TRUE, fig.retina = 1}
+```{r fp-theme, eval = FALSE}
 # Define theme
 tm <- theme_oxford_forest()
 
@@ -72,3 +71,27 @@ p <- forest(dt[,c(1:3, 20:21)],
 plot(p)
 ```
 
+
+```{r fp-theme-show, fig.align = "center", fig.width = 8, fig.height = 6, fig.showtext = TRUE, fig.retina = 1}
+# enable showtext
+showtext_auto()
+
+# Define theme
+tm <- theme_oxford_forest()
+
+p <- forest(dt[,c(1:3, 20:21)],
+            est = dt$est,
+            lower = dt$low, 
+            upper = dt$hi,
+            sizes = dt$se,
+            ci_column = 4,
+            ref_line = 1,
+            arrow_lab = c("Placebo Better", "Treatment Better"),
+            xlim = c(0, 4),
+            ticks_at = c(0.5, 1, 2, 3),
+            footnote = "This footnote is in Oxford ash grey",
+            theme = tm)
+
+# Print plot
+plot(p)
+```
