@@ -16,6 +16,16 @@ knitr::opts_chunk$set(
 
 ```{r setup, echo = FALSE}
 library(oxthema)
+library(ggplot2)
+library(showtext)
+library(sysfonts)
+
+font_add_google("Roboto")
+font_add_google("Marcellus")
+font_add_google("Montserrat")
+font_add_google("Noto Serif Display")
+font_add_google("Bebas Neue")
+font_add_google("Phudu", db_cache = FALSE)
 ```
 
 The `oxthema` package uses the fonts prescribed by Oxford's visual identity guidelines.
@@ -24,9 +34,165 @@ The `oxthema` package uses the fonts prescribed by Oxford's visual identity guid
 
 The core University fonts are *Roboto* (san serif font) and *Noto Serif* (serif font). These fonts are installed in all managed staff desktop (CONNECT and Orchard) machines. Hence, they should be readily available when using R from these machines. Also, both are Google fonts and as such are downloadable from the [Google Fonts website](https://fonts.google.com/).
 
+### Roboto
+
+```{r roboto-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 3, fig.showtext = TRUE, fig.retina = 1}
+showtext_auto()
+
+p <- ggplot(NULL, aes(x = 0, y = 0.5)) + 
+  ylim(0.5, 0.5) +
+  theme_minimal() +
+  theme(
+    rect = element_blank(),
+    line = element_blank(),
+    axis.title = element_blank(), 
+    axis.ticks = element_blank(),
+    axis.text = element_blank()
+  ) +
+  annotate(
+    "text", x = 1, y = 0.5, 
+    family = "Roboto", size = 18,
+    label = "Dominus illuminatio mea"
+  )
+
+print(p)
+```
+
+### Noto Serif
+
+```{r noto-serif-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 3, fig.showtext = TRUE, fig.retina = 1}
+p <- ggplot(NULL, aes(x = 0, y = 0.5)) + 
+  ylim(0.5, 0.5) +
+  theme_minimal() +
+  theme(
+    rect = element_blank(),
+    line = element_blank(),
+    axis.title = element_blank(), 
+    axis.ticks = element_blank(),
+    axis.text = element_blank()
+  ) +
+  annotate(
+    "text", x = 1, y = 0.5, 
+    family = "Noto Serif", size = 16,
+    label = "Dominus illuminatio mea"
+  )
+
+print(p)
+```
+
 ## Complementary display fonts
 
 In addition to the core University fonts, there are currently alternative complementary display fonts that are suggested/recommended as part of the University [theme packs](https://communications.admin.ox.ac.uk/communications-resources/visual-identity/identity-guidelines/theme-packs). These fonts include *Marcellus*, *Montserrat*, *Bebas Neue*, and *Phudu*. Display fonts are meant to be used sparingly alongside *Roboto* and *Noto Serif*. They are also installed on managed staff desktop (CONNECT and Orchard) machines. They are also [Google Fonts](https://fonts.google.com/) hence freely available to download from the [Google Fonts website](https://fonts.google.com/).
+
+### Marcellus
+
+```{r marcellus-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 3, fig.showtext = TRUE, fig.retina = 1}
+p <- ggplot(NULL, aes(x = 0, y = 0.5)) + 
+  ylim(0.5, 0.5) +
+  theme_minimal() +
+  theme(
+    rect = element_blank(),
+    line = element_blank(),
+    axis.title = element_blank(), 
+    axis.ticks = element_blank(),
+    axis.text = element_blank()
+  ) +
+  annotate(
+    "text", x = 1, y = 0.5, 
+    family = "Marcellus", size = 18,
+    label = "Dominus illuminatio mea"
+  )
+
+print(p)
+```
+
+### Monserrat
+
+```{r montserrat-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 3, fig.showtext = TRUE, fig.retina = 1}
+p <- ggplot(NULL, aes(x = 0, y = 0.5)) + 
+  ylim(0.5, 0.5) +
+  theme_minimal() +
+  theme(
+    rect = element_blank(),
+    line = element_blank(),
+    axis.title = element_blank(), 
+    axis.ticks = element_blank(),
+    axis.text = element_blank()
+  ) +
+  annotate(
+    "text", x = 1, y = 0.5, 
+    family = "Montserrat", size = 15,
+    label = "Dominus illuminatio mea"
+  )
+
+print(p)
+```
+
+### Noto Serif Display
+
+```{r noto-serif-dp-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 3, fig.showtext = TRUE, fig.retina = 1}
+p <- ggplot(NULL, aes(x = 0, y = 0.5)) + 
+  ylim(0.5, 0.5) +
+  theme_minimal() +
+  theme(
+    rect = element_blank(),
+    line = element_blank(),
+    axis.title = element_blank(), 
+    axis.ticks = element_blank(),
+    axis.text = element_blank()
+  ) +
+  annotate(
+    "text", x = 1, y = 0.5, 
+    family = "Noto Serif Display", size = 16,
+    label = "Dominus illuminatio mea"
+  )
+
+print(p)
+```
+
+### Bebas Neue
+
+```{r bebas-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 3, fig.showtext = TRUE, fig.retina = 1}
+p <- ggplot(NULL, aes(x = 0, y = 0.5)) + 
+  ylim(0.5, 0.5) +
+  theme_minimal() +
+  theme(
+    rect = element_blank(),
+    line = element_blank(),
+    axis.title = element_blank(), 
+    axis.ticks = element_blank(),
+    axis.text = element_blank()
+  ) +
+  annotate(
+    "text", x = 1, y = 0.5, 
+    family = "Bebas Neue", size = 22,
+    label = "Dominus illuminatio mea"
+  )
+
+print(p)
+```
+
+### Phudu
+
+```{r phudu-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 3, fig.showtext = TRUE, fig.retina = 1}
+p <- ggplot(NULL, aes(x = 0, y = 0.5)) + 
+  ylim(0.5, 0.5) +
+  theme_minimal() +
+  theme(
+    rect = element_blank(),
+    line = element_blank(),
+    axis.title = element_blank(), 
+    axis.ticks = element_blank(),
+    axis.text = element_blank()
+  ) +
+  annotate(
+    "text", x = 1, y = 0.5, 
+    family = "Phudu", size = 18,
+    label = "Dominus illuminatio mea"
+  )
+
+print(p)
+```
 
 ## Checking availability of core fonts and complementary display fonts
 
@@ -62,3 +228,30 @@ Innovative | Phudu
 
 ## Ensuring that Oxford fonts show appropriately
 
+Installing the Oxford fonts into your system is half of the battle in ensuring that your outputs that use the `oxthema` themes will use the appropriate fonts.
+
+There are times that even with the fonts installed, outputs as viewed in RStudio viewer or as PDF, Postscript, or HTML still do not show the appropriate fonts even when the fonts are already installed. The following steps are what you can do to ensure that the appropriate fonts are what gets used in your outputs.
+
+### Set RStudio graphics device to AGG
+
+In RStudio, go to `Global Options** -> General -> Graphics` and then for the `Backend` dropdown menu select `AGG` as shown in the image below.
+
+```{r rstudio-settings, echo = FALSE, fig.align = "center", fig.width = 6}
+knitr::include_graphics(path = "https://www.cararthompson.com/posts/2024-01-12-using-fonts-in-r-for-dataviz/images/fonts-device.png")
+```
+
+The appropriate fonts should now render nicely within the RStudio plot viewer pane. Once the fonts are working with the RStudio plot viewer, you should be able to save your plots into a file with the appropriate fonts.
+
+### Making fonts work with `.Rmd` and `.qmd` files
+
+Because plots created within an `.Rmd` or `.qmd` are generated within its own environment, it would be essential to be able to set the graphics device to `AGG` within that knitting environment. This can be set as a `knitr` option in the setup code chunk as follows:
+
+````markdown
+`r ''````{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  dev = "ragg_png"
+)
+```
+````
