@@ -1,0 +1,64 @@
+---
+title: "Oxford Fonts"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Oxford Fonts}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, echo = FALSE}
+library(oxthema)
+```
+
+The `oxthema` package uses the fonts prescribed by Oxford's visual identity guidelines.
+
+## Core fonts
+
+The core University fonts are *Roboto* (san serif font) and *Noto Serif* (serif font). These fonts are installed in all managed staff desktop (CONNECT and Orchard) machines. Hence, they should be readily available when using R from these machines. Also, both are Google fonts and as such are downloadable from the [Google Fonts website](https://fonts.google.com/).
+
+## Complementary display fonts
+
+In addition to the core University fonts, there are currently alternative complementary display fonts that are suggested/recommended as part of the University [theme packs](https://communications.admin.ox.ac.uk/communications-resources/visual-identity/identity-guidelines/theme-packs). These fonts include *Marcellus*, *Montserrat*, *Bebas Neue*, and *Phudu*. Display fonts are meant to be used sparingly alongside *Roboto* and *Noto Serif*. They are also installed on managed staff desktop (CONNECT and Orchard) machines. They are also [Google Fonts](https://fonts.google.com/) hence freely available to download from the [Google Fonts website](https://fonts.google.com/).
+
+## Checking availability of core fonts and complementary display fonts
+
+The `oxthema` package has the `check_oxford_fonts()` function which checks the availability of the core and complementary display fonts in your machine as follows:
+
+```{r font-check, echo = TRUE, eval = FALSE}
+check_oxford_fonts()
+```
+
+and returns a message on which of the fonts are available and not available. An example output is shown below:
+
+```{r font-check-show, echo = FALSE, eval = TRUE}
+check_oxford_fonts()
+```
+
+If the font check functions indicates that some or all of the Oxford fonts are not available, we recommend taking note of the missing fonts and then downloading and installing them from the [Google Fonts website](https://fonts.google.com/).
+
+Guidance on downloading, installing, and managing fonts, including Google Fonts, can be found [here](https://fonts.google.com/knowledge/using_type/installing_and_managing_fonts).
+
+## Usage of Oxford fonts in the `oxthema` package
+
+In the `oxthema` package, we use by default *Roboto* and *Noto Serif* accordingly in the various base themes.
+
+In addition to the base themes, we have developed theme variations based on the University [theme packs](https://communications.admin.ox.ac.uk/communications-resources/visual-identity/identity-guidelines/theme-packs) that use the associated complementary display fonts in addition to *Roboto* and *Noto Serif* core fonts.
+
+**Theme name** | **Complementary display font**
+:--- | :---
+Heritage | Marcellus
+Contemporary | Montserrat
+Celebratory | Noto Serif Display
+Corporate | Bebas Neue
+Innovative | Phudu
+
+## Ensuring that Oxford fonts show appropriately
+

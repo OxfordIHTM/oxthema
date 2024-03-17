@@ -178,3 +178,6 @@ Oxford theme for \link{forestploter} package
 theme_oxford_forest()
 
 }
+\author{
+Ernest Guevarra and Greco Malijan
+}

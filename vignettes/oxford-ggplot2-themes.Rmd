@@ -1,8 +1,8 @@
 ---
-title: "Oxford Theme"
+title: "Oxford ggplot2 Themes"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Oxford Theme}
+  %\VignetteIndexEntry{Oxford ggplot2 Themes}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -24,7 +24,7 @@ library(sysfonts)
 font_add_google("Roboto")
 ```
 
-The `oxthema`  package has a generic/base `ggplot2` theme which is the template from which all other themes in the `oxthema` package is built on. This theme is inspired by Bob Rudis' [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes) package drawing heavily on its typography-centric focus. This function uses the *Roboto* Google font which is the core Oxford san serif font. It is freely downloadable and easily installed on any system.
+The `oxthema`  package has a generic/base `ggplot2` theme which is the template from which all other themes in the `oxthema` package is/will be built on. This theme is inspired by Bob Rudis' [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes) package drawing heavily on its typography-centric focus. This function uses the *Roboto* Google font which is the core Oxford san serif font. It is freely downloadable and easily installed on any system.
 
 ## Oxford theme palettes for use in plotting
 
