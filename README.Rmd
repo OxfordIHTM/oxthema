@@ -10,11 +10,6 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "man/figures/README-"
 )
-
-library(oxthema)
-library(ggplot2)
-
-requireNamespace("sf", quietly = TRUE)
 ```
 
 # oxthema: Oxford Palette, Theme, and Theme Components <img src="man/figures/logo.png" width="200" align="right" />
@@ -35,7 +30,7 @@ Palette, theme, and theme components based on [University of Oxford](https://ox.
 
 `oxthema` aims to provide templates, themes, and theme components for colour palettes, typography, and layout compliant with [University of Oxford](https://ox.ac.uk)'s [visual identity guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines) for use in the R language for statistical computing graphics and publishing ecosystem.
 
-Currently, the package provides colour palettes consistent with the colours prescribed by the university visual identity guidelines. Additional templates, themes, and theme components will be included over time.
+The package provides colours, palettes, and fonts consistent with the university visual identity guidelines. The package also includes themes for specific packages and functionalities that make use of colours, palettes, and fonts. The package currently has themes for `ggplot2` and for `forestploter` packages.
 
 ## Installation
 
@@ -59,7 +54,11 @@ The following vignettes provide details on how to make full use of the `oxthema`
 
 * [Oxford palettes](https://oxford-ihtm.io/oxthema/articles/oxford-palettes.html)
 
-* [Oxford theme](https://oxford-ihtm.io/oxthema/articles/oxford-theme.html)
+* [Oxford fonts](https://oxford-ihtm.io/oxthema/articles/oxford-fonts.html)
+
+* [Oxford ggplot2 themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-theme.html)
+
+* [Oxford forestploter themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
 
 
 ## Authors

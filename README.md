@@ -31,10 +31,11 @@ guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-
 for use in the R language for statistical computing graphics and
 publishing ecosystem.
 
-Currently, the package provides colour palettes consistent with the
-colours prescribed by the university visual identity guidelines.
-Additional templates, themes, and theme components will be included over
-time.
+The package provides colours, palettes, and fonts consistent with the
+university visual identity guidelines. The package also includes themes
+for specific packages and functionalities that make use of colours,
+palettes, and fonts. The package currently has themes for `ggplot2` and
+for `forestploter` packages.
 
 ## Installation
 
@@ -64,7 +65,13 @@ The following vignettes provide details on how to make full use of the
   palettes](https://oxford-ihtm.io/oxthema/articles/oxford-palettes.html)
 
 - [Oxford
-  theme](https://oxford-ihtm.io/oxthema/articles/oxford-theme.html)
+  fonts](https://oxford-ihtm.io/oxthema/articles/oxford-fonts.html)
+
+- [Oxford ggplot2
+  themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-theme.html)
+
+- [Oxford forestploter
+  themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
 
 ## Authors
 
