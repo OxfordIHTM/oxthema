@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup, echo = FALSE}
+```{r setup, echo = FALSE, message = FALSE}
 library(oxthema)
 library(ggplot2)
 library(showtext)
@@ -97,7 +97,7 @@ ggplot(data = nut_survey_map) +
   theme_oxford()
 ```
 
-```{r oxford-palette-sequential2, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 8}
+```{r oxford-palette-sequential2, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 8, fig.retina = 1}
 ## Plot acute malnutrition using Oxford sequential palette
 
 ### Yellow-Green-Blue
@@ -116,7 +116,7 @@ ggplot(data = nut_survey_map) +
 
 #### Divergent palette
 
-```{r oxford-palette-divergent1, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 8}
+```{r oxford-palette-divergent1, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 8, fig.retina = 1}
 ## Plot period prevalence of fever and diarrhoea using Oxford divergent palette
 
 ### Pink-Yellow-Green
@@ -133,7 +133,7 @@ ggplot(data = nut_survey_map) +
   theme_oxford()
 ```
 
-```{r oxford-palette-divergent2, echo = FALSE, fig.align = "center", fig.height = 6, fig.width = 8}
+```{r oxford-palette-divergent2, echo = FALSE, fig.align = "center", fig.showtext = TRUE, fig.height = 6, fig.width = 8, fig.retina = 1}
 ## Plot period prevalence of fever and diarrhoea using Oxford divergent palette
 
 ### Purple-Green
