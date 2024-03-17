@@ -12,6 +12,7 @@
 theme_oxford_forest(
   base_size = 11.5,
   base_family = "Roboto",
+  bg_col = get_oxford_colour("cool"),
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
   refline_col = get_oxford_colour("red"),
@@ -30,6 +31,7 @@ theme_oxford_forest(
 theme_heritage_forest(
   base_size = 11,
   base_family = "Marcellus",
+  bg_col = get_oxford_colour("sage"),
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
   refline_col = get_oxford_colour("sienna"),
@@ -48,6 +50,7 @@ theme_heritage_forest(
 theme_contemporary_forest(
   base_size = 10.5,
   base_family = "Montserrat",
+  bg_col = get_oxford_colour("cool"),
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
   refline_col = get_oxford_colour("coral"),
@@ -66,6 +69,7 @@ theme_contemporary_forest(
 theme_celebratory_forest(
   base_size = 10.5,
   base_family = "Noto Serif Display",
+  bg_col = get_oxford_colour("lavender"),
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
   refline_col = get_oxford_colour("plum"),
@@ -84,6 +88,7 @@ theme_celebratory_forest(
 theme_corporate_forest(
   base_size = 10.5,
   base_family = "Bebas Neue",
+  bg_col = get_oxford_colour("sky"),
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
   refline_col = get_oxford_colour("orange"),
@@ -102,6 +107,7 @@ theme_corporate_forest(
 theme_innovative_forest(
   base_size = 10.5,
   base_family = "Phudu",
+  bg_col = get_oxford_colour("lavender"),
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
   refline_col = get_oxford_colour("Oxford pink"),
@@ -122,6 +128,9 @@ theme_innovative_forest(
 
 \item{base_family}{The font family to use for the text. Default to
 main Oxford font \emph{Roboto}}
+
+\item{bg_col}{Background colour for alternating rows. Default to
+\emph{Oxford cool grey}.}
 
 \item{ci_col}{Colour of the CI. A vector of colour should be provided for
 the grouped forest plot. Default set to \emph{Oxford blue}}
