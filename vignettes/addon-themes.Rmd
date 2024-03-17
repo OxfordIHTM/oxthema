@@ -10,7 +10,8 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  dev = "ragg_png"
 )
 ```
 
@@ -18,6 +19,11 @@ knitr::opts_chunk$set(
 library(oxthema)
 library(forestploter)
 library(grid)
+library(showtext)
+library(sysfonts)
+
+font_add_google("Roboto")
+showtext_auto()
 ```
 
 ## Oxford theme for `forestploter`
@@ -45,7 +51,7 @@ dt$`HR (95% CI)` <- ifelse(is.na(dt$se), "",
                                      dt$est, dt$low, dt$hi))
 ```
 
-```{r fp-theme, fig.align = "center", fig.width = 8, fig.height = 6}
+```{r fp-theme, fig.align = "center", fig.width = 8, fig.height = 6, fig.showtext = TRUE, fig.retina = 1}
 # Define theme
 tm <- theme_oxford_forest()
 
