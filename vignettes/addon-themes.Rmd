@@ -72,7 +72,7 @@ plot(p)
 ```
 
 
-```{r fp-theme-show, fig.align = "center", fig.width = 8, fig.height = 6, fig.showtext = TRUE, fig.retina = 1}
+```{r fp-theme-show, echo = FALSE, fig.align = "center", fig.width = 8, fig.height = 6, fig.showtext = TRUE, fig.retina = 1}
 # enable showtext
 showtext_auto()
 
