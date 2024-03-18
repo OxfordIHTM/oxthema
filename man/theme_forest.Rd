@@ -30,7 +30,7 @@ theme_oxford_forest(
 
 theme_heritage_forest(
   base_size = 11,
-  base_family = "Marcellus",
+  base_family = "Roboto",
   bg_col = get_oxford_colour("sage"),
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
@@ -42,14 +42,14 @@ theme_heritage_forest(
   footnote_fontface = "plain",
   footnote_col = get_oxford_colour("green"),
   title_col = get_oxford_colour("Oxford blue"),
-  title_fontfamily = base_family,
+  title_fontfamily = "Marcellus",
   arrow_fill = get_oxford_colour("Oxford blue"),
   arrow_col = arrow_fill
 )
 
 theme_contemporary_forest(
   base_size = 10.5,
-  base_family = "Montserrat",
+  base_family = "Roboto",
   bg_col = get_oxford_colour("cool"),
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
@@ -61,14 +61,14 @@ theme_contemporary_forest(
   footnote_fontface = "plain",
   footnote_col = get_oxford_colour("aqua"),
   title_col = get_oxford_colour("Oxford blue"),
-  title_fontfamily = base_family,
+  title_fontfamily = "Montserrat",
   arrow_fill = get_oxford_colour("Oxford blue"),
   arrow_col = arrow_fill
 )
 
 theme_celebratory_forest(
   base_size = 10.5,
-  base_family = "Noto Serif Display",
+  base_family = "Roboto",
   bg_col = get_oxford_colour("lavender"),
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
@@ -80,14 +80,14 @@ theme_celebratory_forest(
   footnote_fontface = "plain",
   footnote_col = get_oxford_colour("viridian"),
   title_col = get_oxford_colour("Oxford blue"),
-  title_fontfamily = base_family,
+  title_fontfamily = "Noto Serif Display",
   arrow_fill = get_oxford_colour("Oxford blue"),
   arrow_col = arrow_fill
 )
 
 theme_corporate_forest(
   base_size = 10.5,
-  base_family = "Bebas Neue",
+  base_family = "Roboto",
   bg_col = get_oxford_colour("sky"),
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
@@ -99,14 +99,14 @@ theme_corporate_forest(
   footnote_fontface = "plain",
   footnote_col = get_oxford_colour("royal"),
   title_col = get_oxford_colour("Oxford blue"),
-  title_fontfamily = base_family,
+  title_fontfamily = "Bebas Neue",
   arrow_fill = get_oxford_colour("Oxford blue"),
   arrow_col = arrow_fill
 )
 
 theme_innovative_forest(
   base_size = 10.5,
-  base_family = "Phudu",
+  base_family = "Roboto",
   bg_col = get_oxford_colour("lavender"),
   ci_col = get_oxford_colour("Oxford blue"),
   ci_fill = ci_col,
@@ -118,7 +118,7 @@ theme_innovative_forest(
   footnote_fontface = "plain",
   footnote_col = get_oxford_colour("viridian"),
   title_col = get_oxford_colour("Oxford blue"),
-  title_fontfamily = base_family,
+  title_fontfamily = "Phudu",
   arrow_fill = get_oxford_colour("Oxford blue"),
   arrow_col = arrow_fill
 )
@@ -152,7 +152,7 @@ to value of \code{summary_col}.}
 
 \item{footnote_cex}{Multiplier applied to font size for footnote.}
 
-\item{footnote_fontface}{The font face for footnote.}
+\item{footnote_fontface}{The font face for footnote. Default to \emph{plain}.}
 
 \item{footnote_col}{Colour of the footnote. Default set to
 \emph{Oxford royal blue}.}
