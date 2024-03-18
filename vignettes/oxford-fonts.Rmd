@@ -213,7 +213,6 @@ If the font check function indicates that some or all of the Oxford fonts are no
 
 Guidance on downloading, installing, and managing fonts, including Google Fonts, can be found [here](https://fonts.google.com/knowledge/using_type/installing_and_managing_fonts).
 
-<br>
 
 ## Usage of Oxford fonts in the `oxthema` package
 
@@ -229,7 +228,6 @@ Celebratory | Noto Serif Display
 Corporate | Bebas Neue
 Innovative | Phudu
 
-<br>
 
 ## Ensuring that Oxford fonts show appropriately
 
