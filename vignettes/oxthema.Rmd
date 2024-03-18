@@ -28,7 +28,7 @@ Visual identity guidelines serve as a blueprint for maintaining consistency in h
 
 * [Oxford fonts](https://oxford-ihtm.io/oxthema/articles/oxford-fonts.html)
 
-* [Oxford ggplot2 themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-theme.html)
+* [Oxford ggplot2 themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-themes.html)
 
 * [Oxford forestploter themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
 
