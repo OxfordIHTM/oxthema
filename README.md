@@ -22,8 +22,6 @@ Colours, palettes, fonts, and themes based on [University of
 Oxford](https://ox.ac.uk)’s [visual identity
 guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines).
 
-<br>
-
 ## What does `oxthema` do?
 
 `oxthema` aims to provide templates, themes, and theme components for
@@ -38,8 +36,6 @@ university visual identity guidelines. The package also includes themes
 for specific packages and functionalities that make use of colours,
 palettes, and fonts. The package currently has themes for `ggplot2` and
 for `forestploter` packages.
-
-<br>
 
 ## Installation
 
@@ -56,8 +52,6 @@ install.packages(
   )
 )
 ```
-
-<br>
 
 ## Usage
 
@@ -79,14 +73,10 @@ The following vignettes provide details on how to make full use of the
 - [Oxford forestploter
   themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
 
-<br>
-
 ## Authors
 
 - [Ernest Guevarra](https://github.com/ernestguevarra)
 - [Greco Malijan](https://github.com/grecomalijan)
-
-<br>
 
 ## Community guidelines
 
