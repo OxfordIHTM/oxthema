@@ -79,8 +79,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "This title is in Roboto plain font in Oxford blue",
-            footnote = "Footnote is in Roboto plain font\nin Oxford royal blue",
+            title = "Title in Roboto plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford royal blue",
             theme = theme_oxford_forest())
 
 ## Print plot
@@ -103,8 +103,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "This title is in Roboto plain font in Oxford blue",
-            footnote = "Footnote is in Roboto plain font\nin Oxford royal blue",
+            title = "Title in Roboto plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford royal blue",
             theme = theme_oxford_forest())
 
 # Print plot
@@ -129,8 +129,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "Title is in Marcellus plain font in Oxford blue",
-            footnote = "Footnote is in Marcellus plain font\nin Oxford green",
+            title = "Title in Marcellus plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford green",
             theme = theme_heritage_forest())
 
 ## Print plot
@@ -152,8 +152,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "Title is in Marcellus plain font in Oxford blue",
-            footnote = "Footnote is in Marcellus plain font\nin Oxford green",
+            title = "Title in Marcellus plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford green",
             theme = theme_heritage_forest())
 
 # Print plot
@@ -179,8 +179,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "Title is in Montserrat plain font in Oxford blue",
-            footnote = "Footnote is in Montserrat plain font\nin Oxford aqua",
+            title = "Title in Montserrat plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford aqua",
             theme = theme_contemporary_forest())
 
 ## Print plot
@@ -202,8 +202,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "Title is in Montserrat plain font in Oxford blue",
-            footnote = "Footnote is in Montserrat plain font\nin Oxford aqua",
+            title = "Title in Montserrat plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford aqua",
             theme = theme_contemporary_forest())
 
 # Print plot
@@ -229,8 +229,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "Title is in Noto Serif Display plain font in Oxford blue",
-            footnote = "Footnote is in Noto Serif Display plain font\nin Oxford viridian",
+            title = "Title in Noto Serif Display plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford viridian",
             theme = theme_celebratory_forest())
 
 ## Print plot
@@ -255,8 +255,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "Title is in Noto Serif Display plain font in Oxford blue",
-            footnote = "Footnote is in Noto Serif Display plain font\nin Oxford viridian",
+            title = "Title in Noto Serif Display plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford viridian",
             theme = theme_celebratory_forest())
 
 # Print plot
@@ -282,8 +282,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "Title is in Bebas Neue plain font in Oxford blue",
-            footnote = "Footnote is in Bebas Neue plain font\nin Oxford royal blue",
+            title = "Title in Bebas Neue plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford royal blue",
             theme = theme_corporate_forest())
 
 ## Print plot
@@ -308,8 +308,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "Title is in Bebas Neue plain font in Oxford blue",
-            footnote = "Footnote is in Bebas Neue plain font\nin Oxford royal blue",
+            title = "Title in Bebas Neue plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford royal blue",
             theme = theme_corporate_forest())
 
 # Print plot
@@ -335,8 +335,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "Title is in Phudu plain font in Oxford blue",
-            footnote = "Footnote is in Phudu plain font\nin Oxford viridian",
+            title = "Title in Phudu plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford viridian",
             theme = theme_innovative_forest())
 
 ## Print plot
@@ -361,8 +361,8 @@ p <- forest(dt[ , c(1:3, 20:21)],
             arrow_lab = c("Placebo Better", "Treatment Better"),
             xlim = c(0, 4),
             ticks_at = c(0.5, 1, 2, 3),
-            title = "Title is in Phudu plain font in Oxford blue",
-            footnote = "Footnote is in Phudu plain font\nin Oxford viridian",
+            title = "Title in Phudu plain font in Oxford blue",
+            footnote = "Footnote in Roboto plain font\nin Oxford viridian",
             theme = theme_innovative_forest())
 
 # Print plot

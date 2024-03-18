@@ -19,7 +19,7 @@
 #' @param summary_fill Colour for filling the summary diamond shape. Default set
 #'   to value of `summary_col`.
 #' @param footnote_cex Multiplier applied to font size for footnote.
-#' @param footnote_fontface The font face for footnote.
+#' @param footnote_fontface The font face for footnote. Default to *plain*.
 #' @param footnote_col Colour of the footnote. Default set to
 #'   *Oxford royal blue*.
 #' @param title_col Colour of title. Default set to *Oxford blue*
@@ -86,7 +86,7 @@ theme_oxford_forest <- function(base_size = 11.5,
 #'
 
 theme_heritage_forest <- function(base_size = 11,
-                                  base_family = "Marcellus",
+                                  base_family = "Roboto",
                                   bg_col = get_oxford_colour("sage"),
                                   ci_col = get_oxford_colour("Oxford blue"),
                                   ci_fill = ci_col,
@@ -98,7 +98,7 @@ theme_heritage_forest <- function(base_size = 11,
                                   footnote_fontface = "plain",
                                   footnote_col = get_oxford_colour("green"),
                                   title_col = get_oxford_colour("Oxford blue"),
-                                  title_fontfamily = base_family,
+                                  title_fontfamily = "Marcellus",
                                   arrow_fill = get_oxford_colour("Oxford blue"),
                                   arrow_col = arrow_fill) {
   forestploter::forest_theme(
@@ -131,7 +131,7 @@ theme_heritage_forest <- function(base_size = 11,
 #'
 
 theme_contemporary_forest <- function(base_size = 10.5,
-                                      base_family = "Montserrat",
+                                      base_family = "Roboto",
                                       bg_col = get_oxford_colour("cool"),
                                       ci_col = get_oxford_colour("Oxford blue"),
                                       ci_fill = ci_col,
@@ -143,7 +143,7 @@ theme_contemporary_forest <- function(base_size = 10.5,
                                       footnote_fontface = "plain",
                                       footnote_col = get_oxford_colour("aqua"),
                                       title_col = get_oxford_colour("Oxford blue"),
-                                      title_fontfamily = base_family,
+                                      title_fontfamily = "Montserrat",
                                       arrow_fill = get_oxford_colour("Oxford blue"),
                                       arrow_col = arrow_fill) {
   forestploter::forest_theme(
@@ -176,7 +176,7 @@ theme_contemporary_forest <- function(base_size = 10.5,
 #'
 
 theme_celebratory_forest <- function(base_size = 10.5,
-                                     base_family = "Noto Serif Display",
+                                     base_family = "Roboto",
                                      bg_col = get_oxford_colour("lavender"),
                                      ci_col = get_oxford_colour("Oxford blue"),
                                      ci_fill = ci_col,
@@ -188,7 +188,7 @@ theme_celebratory_forest <- function(base_size = 10.5,
                                      footnote_fontface = "plain",
                                      footnote_col = get_oxford_colour("viridian"),
                                      title_col = get_oxford_colour("Oxford blue"),
-                                     title_fontfamily = base_family,
+                                     title_fontfamily = "Noto Serif Display",
                                      arrow_fill = get_oxford_colour("Oxford blue"),
                                      arrow_col = arrow_fill) {
   forestploter::forest_theme(
@@ -221,7 +221,7 @@ theme_celebratory_forest <- function(base_size = 10.5,
 #'
 
 theme_corporate_forest <- function(base_size = 10.5,
-                                   base_family = "Bebas Neue",
+                                   base_family = "Roboto",
                                    bg_col = get_oxford_colour("sky"),
                                    ci_col = get_oxford_colour("Oxford blue"),
                                    ci_fill = ci_col,
@@ -233,7 +233,7 @@ theme_corporate_forest <- function(base_size = 10.5,
                                    footnote_fontface = "plain",
                                    footnote_col = get_oxford_colour("royal"),
                                    title_col = get_oxford_colour("Oxford blue"),
-                                   title_fontfamily = base_family,
+                                   title_fontfamily = "Bebas Neue",
                                    arrow_fill = get_oxford_colour("Oxford blue"),
                                    arrow_col = arrow_fill) {
   forestploter::forest_theme(
@@ -266,7 +266,7 @@ theme_corporate_forest <- function(base_size = 10.5,
 #'
 
 theme_innovative_forest <- function(base_size = 10.5,
-                                    base_family = "Phudu",
+                                    base_family = "Roboto",
                                     bg_col = get_oxford_colour("lavender"),
                                     ci_col = get_oxford_colour("Oxford blue"),
                                     ci_fill = ci_col,
@@ -278,7 +278,7 @@ theme_innovative_forest <- function(base_size = 10.5,
                                     footnote_fontface = "plain",
                                     footnote_col = get_oxford_colour("viridian"),
                                     title_col = get_oxford_colour("Oxford blue"),
-                                    title_fontfamily = base_family,
+                                    title_fontfamily = "Phudu",
                                     arrow_fill = get_oxford_colour("Oxford blue"),
                                     arrow_col = arrow_fill) {
   forestploter::forest_theme(
