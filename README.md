@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# oxthema: Oxford Palette, Theme, and Theme Components <img src="man/figures/logo.png" width="200" align="right" />
+# oxthema: Oxford Colours, Palettes, Fonts, and Themes <img src="man/figures/logo.png" width="200" align="right" />
 
 <!-- badges: start -->
 
@@ -18,9 +18,11 @@ coverage](https://codecov.io/gh/OxfordIHTM/oxthema/branch/main/graph/badge.svg)]
 [![DOI](https://zenodo.org/badge/711630340.svg)](https://zenodo.org/doi/10.5281/zenodo.10721129)
 <!-- badges: end -->
 
-Palette, theme, and theme components based on [University of
+Colours, palettes, fonts, and themes based on [University of
 Oxford](https://ox.ac.uk)’s [visual identity
 guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines).
+
+<br>
 
 ## What does `oxthema` do?
 
@@ -37,6 +39,8 @@ for specific packages and functionalities that make use of colours,
 palettes, and fonts. The package currently has themes for `ggplot2` and
 for `forestploter` packages.
 
+<br>
+
 ## Installation
 
 `oxthema` is not yet available on [CRAN](https://cran.r-project.org) but
@@ -52,6 +56,8 @@ install.packages(
   )
 )
 ```
+
+<br>
 
 ## Usage
 
@@ -73,10 +79,14 @@ The following vignettes provide details on how to make full use of the
 - [Oxford forestploter
   themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
 
+<br>
+
 ## Authors
 
 - [Ernest Guevarra](https://github.com/ernestguevarra)
 - [Greco Malijan](https://github.com/grecomalijan)
+
+<br>
 
 ## Community guidelines
 
