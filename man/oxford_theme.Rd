@@ -2,7 +2,7 @@
 % Please edit documentation in R/oxford_theme_ggplot2.R
 \name{theme_oxford}
 \alias{theme_oxford}
-\title{A generic/base [ggplot2[] theme for the oxthema package}
+\title{A generic/base \link{ggplot2} theme for the oxthema package}
 \usage{
 theme_oxford(
   base_family = "Roboto",
@@ -148,7 +148,7 @@ NULL.}
 A \link{ggplot2} theme.
 }
 \description{
-This generic/base [ggplot2[] theme is the template from which all other
+This generic/base \link{ggplot2} theme is the template from which all other
 themes in the \link{oxthema} package is built on. This theme is inspired by
 Bob Rudis' \href{https://github.com/hrbrmstr/hrbrthemes}{hrbrthemes} package
 drawing heavily on its typography-centric focus. This function uses the

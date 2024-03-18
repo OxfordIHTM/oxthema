@@ -1,7 +1,7 @@
 #'
-#' A generic/base [ggplot2[] theme for the oxthema package
+#' A generic/base [ggplot2] theme for the oxthema package
 #'
-#' This generic/base [ggplot2[] theme is the template from which all other
+#' This generic/base [ggplot2] theme is the template from which all other
 #' themes in the [oxthema] package is built on. This theme is inspired by
 #' Bob Rudis' [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes) package
 #' drawing heavily on its typography-centric focus. This function uses the

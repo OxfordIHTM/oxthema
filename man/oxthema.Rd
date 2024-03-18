@@ -4,9 +4,9 @@
 \name{oxthema}
 \alias{oxthema-package}
 \alias{oxthema}
-\title{Oxford Palette, Theme, and Theme Components}
+\title{Oxford Colours, Palettes, Fonts, and Themes}
 \description{
-Palette, theme, and theme components based on University of Oxford's visual
+Colours, palettes, fonts, and themes based on University of Oxford's visual
 identity guidelines
 \url{https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines}.
 }

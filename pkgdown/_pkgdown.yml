@@ -52,6 +52,7 @@ reference:
 
   - title: Colours
     contents:
+    - oxford_colours
     - get_oxford_colour
     - get_oxford_colours
 
@@ -72,9 +73,6 @@ reference:
   - title: Themes
     contents:
     - theme_oxford
-
-  - title: Add-on Themes
-    contents:
     - theme_oxford_forest
 
   - title: Utilities
@@ -84,6 +82,5 @@ reference:
 
   - title: Supporting datasets
     contents:
-    - oxford_colours
     - nut_survey_map
 

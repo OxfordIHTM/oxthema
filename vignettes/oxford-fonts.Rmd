@@ -209,9 +209,11 @@ and returns a message on which of the fonts are available and not available. An 
 check_oxford_fonts()
 ```
 
-If the font check functions indicates that some or all of the Oxford fonts are not available, we recommend taking note of the missing fonts and then downloading and installing them from the [Google Fonts website](https://fonts.google.com/).
+If the font check function indicates that some or all of the Oxford fonts are not available, we recommend taking note of the missing fonts and then downloading and installing them from the [Google Fonts website](https://fonts.google.com/).
 
 Guidance on downloading, installing, and managing fonts, including Google Fonts, can be found [here](https://fonts.google.com/knowledge/using_type/installing_and_managing_fonts).
+
+<br>
 
 ## Usage of Oxford fonts in the `oxthema` package
 
@@ -227,6 +229,8 @@ Celebratory | Noto Serif Display
 Corporate | Bebas Neue
 Innovative | Phudu
 
+<br>
+
 ## Ensuring that Oxford fonts show appropriately
 
 Installing the Oxford fonts into your system is half of the battle in ensuring that your outputs that use the `oxthema` themes will use the appropriate fonts.
@@ -237,7 +241,7 @@ There are times that even with the fonts installed, outputs as viewed in RStudio
 
 In RStudio, go to `Global Options** -> General -> Graphics` and then for the `Backend` dropdown menu select `AGG` as shown in the image below.
 
-```{r rstudio-settings, echo = FALSE, fig.align = "center", fig.width = 6}
+```{r rstudio-settings, echo = FALSE, fig.align = "center", out.width = "60%"}
 knitr::include_graphics(path = "https://www.cararthompson.com/posts/2024-01-12-using-fonts-in-r-for-dataviz/images/fonts-device.png")
 ```
 

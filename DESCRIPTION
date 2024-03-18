@@ -1,13 +1,13 @@
 Package: oxthema
 Type: Package
-Title: Oxford Palette, Theme, and Theme Components
+Title: Oxford Colours, Palettes, Fonts, and Themes
 Version: 0.0.0.9000
 Authors@R: c(
     person(given = "Ernest", family = "Guevarra", 
            comment = c(ORCID = "0000-0002-4887-4415"), 
            email = "ernest@guevarra.io", role = c("aut", "cre", "cph")),
     person(given = "Greco", family = "Malijan", role = "aut"))
-Description: Palette, theme, and theme components based on University of 
+Description: Colours, palettes, fonts, and themes based on University of 
     Oxford's visual identity guidelines
     <https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines>. 
 License: GPL (>= 3)
