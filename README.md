@@ -68,7 +68,7 @@ The following vignettes provide details on how to make full use of the
   fonts](https://oxford-ihtm.io/oxthema/articles/oxford-fonts.html)
 
 - [Oxford ggplot2
-  themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-theme.html)
+  themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-themes.html)
 
 - [Oxford forestploter
   themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
