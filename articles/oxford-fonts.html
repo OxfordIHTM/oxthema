@@ -109,8 +109,6 @@
 
     
     
-<pre><code><span><span class="co">#&gt; Loading required package: sysfonts</span></span>
-<span><span class="co">#&gt; Loading required package: showtextdb</span></span></code></pre>
 <p>The <code>oxthema</code> package uses the fonts prescribed by
 Oxford’s visual identity guidelines.</p>
 <div class="section level2">
@@ -178,12 +176,11 @@ fonts<a class="anchor" aria-label="anchor" href="#checking-availability-of-core-
 <code><a href="../reference/oxford_font.html">check_oxford_fonts()</a></code> function which checks the availability
 of the core and complementary display fonts in your machine as
 follows:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/oxford_font.html">check_oxford_fonts</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>and returns a message on which of the fonts are available and not
 available. An example output is shown below:</p>
-<pre><code><span><span class="co">#&gt; None of the Oxford fonts (Roboto, Noto Serif, Marcellus, Montserrat, Noto Serif Display, Bebas Neue, Phuduare installed in your system. Please download and install at least one of them.</span></span>
-<span><span class="co">#&gt; $available_fonts</span></span>
+<pre><code><span><span class="co">#&gt; $available_fonts</span></span>
 <span><span class="co">#&gt; NULL</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; $not_available_fonts</span></span>
@@ -285,13 +282,13 @@ files<a class="anchor" aria-label="anchor" href="#making-fonts-work-with--rmd-an
 essential to be able to set the graphics device to <code>AGG</code>
 within that knitting environment. This can be set as a
 <code>knitr</code> option in the setup code chunk as follows:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="in">```{r, include = FALSE}</span></span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="in">knitr::opts_chunk$set(</span></span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="in">  collapse = TRUE,</span></span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="in">  comment = "#&gt;",</span></span>
-<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="in">  dev = "ragg_png"</span></span>
-<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="in">)</span></span>
-<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="in">```{r, include = FALSE}</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="in">knitr::opts_chunk$set(</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="in">  collapse = TRUE,</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="in">  comment = "#&gt;",</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="in">  dev = "ragg_png"</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="in">```</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
