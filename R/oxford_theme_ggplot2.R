@@ -14,7 +14,7 @@
 #'   `base_family`.
 #' @param plot_title_face Font face ("plain", "italic", "bold", "bold.italic")
 #'   for plot title. Default is "bold".
-#' @param plot_title_size Plot title text size in pts. Default is 18.
+#' @param plot_title_size Plot title text size in pts. Default is 16.
 #' @param plot_title_margin Margin at the bottom of the plot title. Default
 #'   set at 10.
 #' @param plot_title_colour Colour of the plot title text. Default
@@ -32,7 +32,7 @@
 #'   `base_family`.
 #' @param strip_text_face Font face ("plain", "italic", "bold", "bold.italic")
 #'   for facet label. Default is "plain".
-#' @param strip_text_size Facet label text size in pts. Default is 12.
+#' @param strip_text_size Facet label text size in pts. Default is 10.
 #' @param caption_family Font family to use for the caption text. Default is
 #'   `base_family`.
 #' @param caption_face Font face ("plain", "italic", "bold", "bold.italic") for
@@ -79,7 +79,7 @@
 theme_oxford <- function(base_family = "Roboto",
                          base_size = 11.5,
                          plot_title_family = base_family,
-                         plot_title_size = 18,
+                         plot_title_size = 16,
                          plot_title_face = "bold",
                          plot_title_colour = get_oxford_colour("Oxford blue"),
                          plot_title_margin = 10,
@@ -89,7 +89,7 @@ theme_oxford <- function(base_family = "Roboto",
                          subtitle_colour = get_oxford_colour("ash"),
                          subtitle_margin = 15,
                          strip_text_family = base_family,
-                         strip_text_size = 12,
+                         strip_text_size = 10,
                          strip_text_face = "plain",
                          caption_family = base_family,
                          caption_size = 9,
