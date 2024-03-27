@@ -13,8 +13,8 @@
 #' @param plot_title_family Font family to use for the plot title. Default is
 #'   `base_family`.
 #' @param plot_title_face Font face ("plain", "italic", "bold", "bold.italic")
-#'   for plot title. Default is "bold".
-#' @param plot_title_size Plot title text size in pts. Default is 18.
+#'   for plot title. Default is "plain".
+#' @param plot_title_size Plot title text size in pts. Default is 16.
 #' @param plot_title_margin Margin at the bottom of the plot title. Default
 #'   set at 10.
 #' @param plot_title_colour Colour of the plot title text. Default
@@ -79,8 +79,8 @@
 theme_oxford <- function(base_family = "Roboto",
                          base_size = 11.5,
                          plot_title_family = base_family,
-                         plot_title_size = 18,
-                         plot_title_face = "bold",
+                         plot_title_size = 16,
+                         plot_title_face = "plain",
                          plot_title_colour = get_oxford_colour("Oxford blue"),
                          plot_title_margin = 10,
                          subtitle_family = base_family,

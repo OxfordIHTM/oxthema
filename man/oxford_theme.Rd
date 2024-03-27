@@ -8,8 +8,8 @@ theme_oxford(
   base_family = "Roboto",
   base_size = 11.5,
   plot_title_family = base_family,
-  plot_title_size = 18,
-  plot_title_face = "bold",
+  plot_title_size = 16,
+  plot_title_face = "plain",
   plot_title_colour = get_oxford_colour("Oxford blue"),
   plot_title_margin = 10,
   subtitle_family = base_family,
@@ -52,10 +52,10 @@ theme_oxford(
 \item{plot_title_family}{Font family to use for the plot title. Default is
 \code{base_family}.}
 
-\item{plot_title_size}{Plot title text size in pts. Default is 18.}
+\item{plot_title_size}{Plot title text size in pts. Default is 16.}
 
 \item{plot_title_face}{Font face ("plain", "italic", "bold", "bold.italic")
-for plot title. Default is "bold".}
+for plot title. Default is "plain".}
 
 \item{plot_title_colour}{Colour of the plot title text. Default
 is Oxford Blue.}
