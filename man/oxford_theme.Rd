@@ -18,7 +18,7 @@ theme_oxford(
   subtitle_colour = get_oxford_colour("ash"),
   subtitle_margin = 15,
   strip_text_family = base_family,
-  strip_text_size = 10,
+  strip_text_size = 12,
   strip_text_face = "plain",
   caption_family = base_family,
   caption_size = 9,
@@ -80,7 +80,7 @@ set at 15.}
 \item{strip_text_family}{Font family to use for the facet label. Default is
 \code{base_family}.}
 
-\item{strip_text_size}{Facet label text size in pts. Default is 10.}
+\item{strip_text_size}{Facet label text size in pts. Default is 12.}
 
 \item{strip_text_face}{Font face ("plain", "italic", "bold", "bold.italic")
 for facet label. Default is "plain".}
