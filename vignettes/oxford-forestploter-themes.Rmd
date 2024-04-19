@@ -38,9 +38,7 @@ Using the example data in the `forestploter` and processing it in the same way a
 # Read and process example data from forestploter package
 
 ## Read example data from forestploter package
-dt <- read.csv(
-  system.file("extdata", "example_data.csv", package = "forestploter")
-)
+dt <- read.csv("https://raw.githubusercontent.com/adayim/forestploter/main/inst/extdata/example_data.csv")
 
 ## Indent the subgroup if there is a number in the placebo column
 dt$Subgroup <- ifelse(
