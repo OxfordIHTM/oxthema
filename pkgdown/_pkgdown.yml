@@ -9,7 +9,7 @@ template:
   bootstrap: 5
   bootswatch: litera
   theme: haddock
-  ganalytics: #
+  ganalytics: G-0VE94708M6
 
 home:
   links:
