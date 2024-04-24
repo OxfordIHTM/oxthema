@@ -37,6 +37,13 @@ for specific packages and functionalities that make use of colours,
 palettes, and fonts. The package currently has themes for `ggplot2` and
 for `forestploter` packages.
 
+To see a list of features that we are either actively working on, are
+considering, or need help on, visit our [GitHub
+issues](https://github.com/OxfordIHTM/oxthema/issues) page.
+
+`oxthema` is currently in pre-release (alpha release) to allow for alpha
+testing of current functionalities.
+
 ## Installation
 
 `oxthema` is not yet available on [CRAN](https://cran.r-project.org) but
