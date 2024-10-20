@@ -48,7 +48,7 @@ testing of current functionalities.
 
 `oxthema` is not yet available on [CRAN](https://cran.r-project.org) but
 can be installed through the [Oxford IHTM R
-universe](https://oxfordihtm.r-universe.dev) repository as follows:
+Universe](https://oxfordihtm.r-universe.dev) repository as follows:
 
 ``` r
 install.packages(
@@ -65,25 +65,20 @@ install.packages(
 The following vignettes provide details on how to make full use of the
 `oxthema` package:
 
-- [Oxford
-  colours](https://oxford-ihtm.io/oxthema/articles/oxford-colours.html)
+  - [Oxford
+    colours](https://oxford-ihtm.io/oxthema/articles/oxford-colours.html)
 
-- [Oxford
-  palettes](https://oxford-ihtm.io/oxthema/articles/oxford-palettes.html)
+  - [Oxford
+    palettes](https://oxford-ihtm.io/oxthema/articles/oxford-palettes.html)
 
-- [Oxford
-  fonts](https://oxford-ihtm.io/oxthema/articles/oxford-fonts.html)
+  - [Oxford
+    fonts](https://oxford-ihtm.io/oxthema/articles/oxford-fonts.html)
 
-- [Oxford ggplot2
-  themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-themes.html)
+  - [Oxford ggplot2
+    themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-themes.html)
 
-- [Oxford forestploter
-  themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
-
-## Authors
-
-- [Ernest Guevarra](https://github.com/ernestguevarra)
-- [Greco Malijan](https://github.com/grecomalijan)
+  - [Oxford forestploter
+    themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
 
 ## Community guidelines
 
