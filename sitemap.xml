@@ -1,78 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/404.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/CONTRIBUTING.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/articles/oxford-colours.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/articles/oxford-fonts.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-themes.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/articles/oxford-palettes.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/articles/oxthema.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/index.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/cmyk2rgb.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/create_palette.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/get_oxford_colour.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/nut_survey_map.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/oxford_colours.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/oxford_font.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/oxford_palette.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/oxford_theme.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/oxthema.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/print.palette.html</loc>
-  </url>
-  <url>
-    <loc>https://oxford-ihtm.io/oxthema/reference/theme_forest.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://oxford-ihtm.io/oxthema/404.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/CONTRIBUTING.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/LICENSE.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/articles/index.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/articles/oxford-colours.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/articles/oxford-fonts.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-themes.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/articles/oxford-palettes.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/articles/oxthema.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/authors.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/index.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/cmyk2rgb.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/create_palette.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/get_oxford_colour.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/index.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/nut_survey_map.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/oxford_colours.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/oxford_font.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/oxford_palette.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/oxford_theme.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/oxthema.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/print.palette.html</loc></url>
+<url><loc>https://oxford-ihtm.io/oxthema/reference/theme_forest.html</loc></url>
 </urlset>
+
