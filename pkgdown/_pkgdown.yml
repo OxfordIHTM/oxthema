@@ -7,8 +7,8 @@ development:
 
 template:
   bootstrap: 5
-  bootswatch: litera
-  theme: haddock
+  bootswatch: journal
+  theme: breeze-light
   ganalytics: G-Q6WH77FEH4
 
 home:
@@ -17,11 +17,11 @@ home:
     href: https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines
 
 navbar:
-  bg: primary
+  bg: info
   type: light
   structure:
     left:  [home, intro, reference, articles, news]
-    right: [twitter, facebook, linkedin, github]
+    right: [search, linkedin, mastodon, github]
 
   components:
     articles:
@@ -37,15 +37,12 @@ navbar:
         href: articles/oxford-ggplot2-themes.html
       - text: "Oxford forestploter Themes"
         href: articles/oxford-forestploter-themes.html
-    twitter:
-      icon: "fab fa-twitter fa-lg"
-      href: http://twitter.com/OxIHTM
-    facebook:
-      icon: "fab fa-facebook fa-lg"
-      href: https://www.facebook.com/MSc-in-International-Health-and-Tropical-Medicine-University-of-Oxford-433056700228246/
     linkedin:
       icon: "fab fa-linkedin fa-lg"
-      href: https://www.linkedin.com/company/international-health-and-tropical-medicine
+      href: https://www.linkedin.com/company/oxford-ihealth
+    mastodon:
+      icon: "fab fa-mastodon fa-lg"
+      href: https://mastodon.social/@ihealth
 
 
 reference:
