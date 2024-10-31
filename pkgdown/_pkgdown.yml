@@ -7,7 +7,7 @@ development:
 
 template:
   bootstrap: 5
-  bootswatch: journal
+  bootswatch: sandstone
   theme: breeze-light
   ganalytics: G-Q6WH77FEH4
 
@@ -17,7 +17,7 @@ home:
     href: https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines
 
 navbar:
-  bg: info
+  bg: primary
   type: light
   structure:
     left:  [home, intro, reference, articles, news]

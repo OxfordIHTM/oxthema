@@ -34,8 +34,8 @@ publishing ecosystem.
 The package provides colours, palettes, and fonts consistent with the
 university visual identity guidelines. The package also includes themes
 for specific packages and functionalities that make use of colours,
-palettes, and fonts. The package currently has themes for `ggplot2` and
-for `forestploter` packages.
+palettes, and fonts. The package currently has themes for `{ggplot2}`
+and for `{forestploter}` packages.
 
 To see a list of features that we are either actively working on, are
 considering, or need help on, visit our [GitHub
@@ -47,16 +47,13 @@ testing of current functionalities.
 ## Installation
 
 `oxthema` is not yet available on [CRAN](https://cran.r-project.org) but
-can be installed through the [Oxford IHTM R
+can be installed through the [Oxford iHealth R
 Universe](https://oxfordihtm.r-universe.dev) repository as follows:
 
 ``` r
 install.packages(
   "oxthema", 
-  repos = c(
-    'https://oxfordihtm.r-universe.dev', 
-    'https://cloud.r-project.org'
-  )
+  repos = c('https://oxfordihtm.r-universe.dev', 'https://cloud.r-project.org')
 )
 ```
 
