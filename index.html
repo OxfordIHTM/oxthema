@@ -25,7 +25,7 @@
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
 
 
-    <nav class="navbar navbar-expand-lg fixed-top bg-info" data-bs-theme="light" aria-label="Site navigation"><div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="light" aria-label="Site navigation"><div class="container">
 
     <a class="navbar-brand me-2" href="index.html">oxthema</a>
 
@@ -77,21 +77,18 @@
 <h2 id="what-does-oxthema-do">What does <code>oxthema</code> do?<a class="anchor" aria-label="anchor" href="#what-does-oxthema-do"></a>
 </h2>
 <p><code>oxthema</code> aims to provide templates, themes, and theme components for colour palettes, typography, and layout compliant with <a href="https://ox.ac.uk" class="external-link">University of Oxford</a>’s <a href="https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines" class="external-link">visual identity guidelines</a> for use in the R language for statistical computing graphics and publishing ecosystem.</p>
-<p>The package provides colours, palettes, and fonts consistent with the university visual identity guidelines. The package also includes themes for specific packages and functionalities that make use of colours, palettes, and fonts. The package currently has themes for <code>ggplot2</code> and for <code>forestploter</code> packages.</p>
+<p>The package provides colours, palettes, and fonts consistent with the university visual identity guidelines. The package also includes themes for specific packages and functionalities that make use of colours, palettes, and fonts. The package currently has themes for <a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a> and for <a href="https://github.com/adayim/forestploter" class="external-link">forestploter</a> packages.</p>
 <p>To see a list of features that we are either actively working on, are considering, or need help on, visit our <a href="https://github.com/OxfordIHTM/oxthema/issues" class="external-link">GitHub issues</a> page.</p>
 <p><code>oxthema</code> is currently in pre-release (alpha release) to allow for alpha testing of current functionalities.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p><code>oxthema</code> is not yet available on <a href="https://cran.r-project.org" class="external-link">CRAN</a> but can be installed through the <a href="https://oxfordihtm.r-universe.dev" class="external-link">Oxford IHTM R Universe</a> repository as follows:</p>
+<p><code>oxthema</code> is not yet available on <a href="https://cran.r-project.org" class="external-link">CRAN</a> but can be installed through the <a href="https://oxfordihtm.r-universe.dev" class="external-link">Oxford iHealth R Universe</a> repository as follows:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span></span>
 <span>  <span class="st">"oxthema"</span>, </span>
-<span>  repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span></span>
-<span>    <span class="st">'https://oxfordihtm.r-universe.dev'</span>, </span>
-<span>    <span class="st">'https://cloud.r-project.org'</span></span>
-<span>  <span class="op">)</span></span>
+<span>  repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'https://oxfordihtm.r-universe.dev'</span>, <span class="st">'https://cloud.r-project.org'</span><span class="op">)</span></span>
 <span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
