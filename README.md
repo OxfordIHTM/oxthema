@@ -41,8 +41,8 @@ To see a list of features that we are either actively working on, are
 considering, or need help on, visit our [GitHub
 issues](https://github.com/OxfordIHTM/oxthema/issues) page.
 
-`{oxthema}` is currently in pre-release (alpha release) to allow for
-alpha testing of current functionalities.
+`{oxthema}` is currently in pre-release (beta release) to allow for beta
+testing of current functionalities.
 
 ## Installation
 
@@ -55,6 +55,15 @@ install.packages(
   "oxthema", 
   repos = c('https://oxfordihtm.r-universe.dev', 'https://cloud.r-project.org')
 )
+```
+
+`{oxthema}` can also be installed from
+[GitHub](https://github.com/OxfordIHTM/oxthema) using the `{pak}`
+package with:
+
+``` r
+if (!require("pak")) install.packages("pak")
+pak::pak("OxfordIHTM/oxthema")
 ```
 
 ## Usage
@@ -114,3 +123,10 @@ guidelines](https://oxford-ihtm.io/oxthema/CONTRIBUTING.html).
 This project is released with a [Contributor Code of
 Conduct](https://oxford-ihtm.io/oxthema/CODE_OF_CONDUCT.html). By
 participating in this project you agree to abide by its terms.
+
+ 
+
+[![This is a project under the Oxford iHealth initiative of the MSc in
+International Health and Tropical Medicine of the Nuffield Department of
+Medicine, University of
+Oxford](https://github.com/OxfordIHTM/ihealth-images/blob/main/ihealth/ihealth_footer.png?raw=true)](https://oxford-ihtm.io)

@@ -8,7 +8,7 @@ message: 'To cite package "oxthema" in publications use:'
 type: software
 license: GPL-3.0-or-later
 title: 'oxthema: Oxford Colours, Palettes, Fonts, and Themes'
-version: 0.1.0
+version: 0.0.0.9001
 doi: 10.5281/zenodo.10721129
 abstract: Colours, palettes, fonts, and themes based on University of Oxford's visual
   identity guidelines <https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines>.
@@ -26,7 +26,7 @@ preferred-citation:
   - name: Ernest Guevarra
   - name: Greco Malijan
   year: '2026'
-  notes: R package version 0.1.0
+  notes: R package version 0.0.9001
   url: https://oxford-ihtm.io/oxthema/
   doi: 10.5281/zenodo.10721129
 repository-code: https://github.com/OxfordIHTM/oxthema
