@@ -422,7 +422,7 @@ theme_oxford_forest()
 #>             fontface = fontface, fontsize = fontsize, lineheight = lineheight, 
 #>             alpha = alpha))
 #> }
-#> <bytecode: 0x562eeee1f3f8>
+#> <bytecode: 0x55d8cb06fcd8>
 #> <environment: namespace:gridExtra>
 #> 
 #> $tab_theme$core$fg_params
@@ -459,7 +459,7 @@ theme_oxford_forest()
 #>             alpha = alpha, lty = lty, lwd = lwd, lex = lex, lineend = lineend, 
 #>             linejoin = linejoin, linemitre = linemitre, cex = cex))
 #> }
-#> <bytecode: 0x562eeee20d68>
+#> <bytecode: 0x55d8cb06bae0>
 #> <environment: namespace:gridExtra>
 #> 
 #> $tab_theme$core$bg_params
@@ -492,7 +492,7 @@ theme_oxford_forest()
 #>             fontface = fontface, fontsize = fontsize, lineheight = lineheight, 
 #>             alpha = alpha))
 #> }
-#> <bytecode: 0x562eeee1f3f8>
+#> <bytecode: 0x55d8cb06fcd8>
 #> <environment: namespace:gridExtra>
 #> 
 #> $tab_theme$colhead$fg_params
@@ -532,7 +532,7 @@ theme_oxford_forest()
 #>             alpha = alpha, lty = lty, lwd = lwd, lex = lex, lineend = lineend, 
 #>             linejoin = linejoin, linemitre = linemitre, cex = cex))
 #> }
-#> <bytecode: 0x562eeee20d68>
+#> <bytecode: 0x55d8cb06bae0>
 #> <environment: namespace:gridExtra>
 #> 
 #> $tab_theme$colhead$bg_params
@@ -565,7 +565,7 @@ theme_oxford_forest()
 #>             fontface = fontface, fontsize = fontsize, lineheight = lineheight, 
 #>             alpha = alpha))
 #> }
-#> <bytecode: 0x562eeee1f3f8>
+#> <bytecode: 0x55d8cb06fcd8>
 #> <environment: namespace:gridExtra>
 #> 
 #> $tab_theme$rowhead$fg_params
@@ -605,7 +605,7 @@ theme_oxford_forest()
 #>             alpha = alpha, lty = lty, lwd = lwd, lex = lex, lineend = lineend, 
 #>             linejoin = linejoin, linemitre = linemitre, cex = cex))
 #> }
-#> <bytecode: 0x562eeee20d68>
+#> <bytecode: 0x55d8cb06bae0>
 #> <environment: namespace:gridExtra>
 #> 
 #> $tab_theme$rowhead$bg_params

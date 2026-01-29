@@ -15,13 +15,13 @@ Source:
 Ernest Guevarra, Greco Malijan (2026). *oxthema: Oxford Palette, Theme,
 and Theme Components.*.
 [doi:10.5281/zenodo.10721129](https://doi.org/10.5281/zenodo.10721129),
-R package version 0.1.0, <https://oxford-ihtm.io/oxthema/>.
+R package version 0.0.9001, <https://oxford-ihtm.io/oxthema/>.
 
     @Manual{,
       title = {oxthema: Oxford Palette, Theme, and Theme Components.},
       author = {{Ernest Guevarra} and {Greco Malijan}},
       year = {2026},
-      note = {R package version 0.1.0},
+      note = {R package version 0.0.9001},
       url = {https://oxford-ihtm.io/oxthema/},
       doi = {https://doi.org/10.5281/zenodo.10721129},
     }
