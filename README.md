@@ -11,6 +11,8 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R-CMD-check](https://github.com/OxfordIHTM/oxthema/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/OxfordIHTM/oxthema/actions/workflows/R-CMD-check.yaml)
+[![Test
+R-universe](https://github.com/OxfordIHTM/oxthema/actions/workflows/r-universe-test.yml/badge.svg)](https://github.com/OxfordIHTM/oxthema/actions/workflows/r-universe-test.yml)
 [![test-coverage](https://github.com/OxfordIHTM/oxthema/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/OxfordIHTM/oxthema/actions/workflows/test-coverage.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/OxfordIHTM/oxthema/graph/badge.svg)](https://app.codecov.io/gh/OxfordIHTM/oxthema)
