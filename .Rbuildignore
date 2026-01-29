@@ -9,3 +9,4 @@
 ^docs$
 ^pkgdown$
 ^README\.html$
+^CITATION\.cff$

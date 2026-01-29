@@ -4,7 +4,6 @@ CMD
 CodeFactor
 Codecov
 ColorBrewer
-IHTM
 Lifecycle
 MUAC
 Neue
@@ -15,7 +14,6 @@ RColorBrewer
 RStudio
 Roboto
 Rudis
-WIP
 ac
 bl
 cmyk
@@ -26,6 +24,7 @@ forestploter
 gam
 ggplot
 hrbrthemes
+iHealth
 localityID
 mam
 muac

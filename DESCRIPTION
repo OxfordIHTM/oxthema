@@ -1,7 +1,7 @@
 Package: oxthema
 Type: Package
 Title: Oxford Colours, Palettes, Fonts, and Themes
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: c(
     person(given = "Ernest", family = "Guevarra", 
            comment = c(ORCID = "0000-0002-4887-4415"), 
@@ -12,7 +12,7 @@ Description: Colours, palettes, fonts, and themes based on University of
     <https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines>. 
 License: GPL (>= 3)
 Depends: 
-    R (>= 2.10)
+    R (>= 4.1.0)
 Imports: 
     forestploter,
     ggplot2,
@@ -32,7 +32,7 @@ Suggests:
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.3
 Roxygen: list(markdown = TRUE)
 URL: https://oxford-ihtm.io/oxthema/,https://github.com/OxfordIHTM/oxthema
 BugReports: https://github.com/OxfordIHTM/oxthema/issues

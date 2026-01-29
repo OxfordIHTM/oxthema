@@ -9,7 +9,17 @@ template:
   bootstrap: 5
   bootswatch: sandstone
   theme: breeze-light
-  ganalytics: G-Q6WH77FEH4
+  includes:
+    in_header: |
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6WH77FEH4"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q6WH77FEH4');
+      </script>
 
 home:
   links:
@@ -21,7 +31,7 @@ navbar:
   type: light
   structure:
     left:  [home, intro, reference, articles, news]
-    right: [search, linkedin, mastodon, github]
+    right: [search, website, mastodon, bluesky, linkedin, github]
 
   components:
     articles:
@@ -37,13 +47,22 @@ navbar:
         href: articles/oxford-ggplot2-themes.html
       - text: "Oxford forestploter Themes"
         href: articles/oxford-forestploter-themes.html
-    linkedin:
-      icon: "fab fa-linkedin fa-lg"
-      href: https://www.linkedin.com/company/oxford-ihealth
+    website:
+      icon: "fa-globe"
+      href: https://oxford-ihtm.io
+      aria-label: Website
     mastodon:
       icon: "fab fa-mastodon fa-lg"
       href: https://mastodon.social/@ihealth
-
+      aria-label: Mastodon
+    bluesky:
+      icon: "fab fa-bluesky fa-lg"
+      href: https://bsky.app/profile/oxford-ihealth.org
+      aria-label: Bluesky
+    linkedin:
+      icon: "fab fa-linkedin fa-lg"
+      href: https://www.linkedin.com/company/oxford-ihealth
+      aria-label: LinkedIn
 
 reference:
   - title: Description

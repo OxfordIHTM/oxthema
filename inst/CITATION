@@ -1,10 +1,10 @@
 bibentry(
   bibtype = "Manual",
-  header  = "To cite oxfordtheme in publications use:",
+  header  = "To cite oxthema in publications use:",
   title    = "oxthema: Oxford Palette, Theme, and Theme Components.",
   author   = c(person("Ernest Guevarra"), person("Greco Malijan")),
-  year     = "2024",
-  note     = "R package version 0.0.9000",
-  url      = "https://oxford-ihtm.io/oxfordtheme/",
-  doi      = "https://zenodo.org/doi/10.5281/zenodo.10721129"
+  year     = "2026",
+  note     = "R package version 0.1.0",
+  url      = "https://oxford-ihtm.io/oxthema/",
+  doi      = "https://doi.org/10.5281/zenodo.10721129"
 )

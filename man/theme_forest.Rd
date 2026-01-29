@@ -7,7 +7,7 @@
 \alias{theme_celebratory_forest}
 \alias{theme_corporate_forest}
 \alias{theme_innovative_forest}
-\title{Oxford theme for \link{forestploter} package}
+\title{Oxford theme for \link[forestploter:forestploter-package]{forestploter::forestploter} package}
 \usage{
 theme_oxford_forest(
   base_size = 11.5,
@@ -172,7 +172,7 @@ to value of \code{summary_col}.}
 A list of specified theme parameters.
 }
 \description{
-Oxford theme for \link{forestploter} package
+Oxford theme for \link[forestploter:forestploter-package]{forestploter::forestploter} package
 }
 \examples{
 theme_oxford_forest()
