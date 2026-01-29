@@ -1,7 +1,7 @@
 Package: oxthema
 Type: Package
 Title: Oxford Colours, Palettes, Fonts, and Themes
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Authors@R: c(
     person(given = "Ernest", family = "Guevarra", 
            comment = c(ORCID = "0000-0002-4887-4415"), 

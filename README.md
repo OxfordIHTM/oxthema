@@ -97,8 +97,8 @@ citation("oxthema")
 #> 
 #>   Ernest Guevarra, Greco Malijan (2026). _oxthema: Oxford Palette,
 #>   Theme, and Theme Components._. doi:10.5281/zenodo.10721129
-#>   <https://doi.org/10.5281/zenodo.10721129>, R package version 0.1.0,
-#>   <https://oxford-ihtm.io/oxthema/>.
+#>   <https://doi.org/10.5281/zenodo.10721129>, R package version
+#>   0.0.9002, <https://oxford-ihtm.io/oxthema/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
@@ -106,7 +106,7 @@ citation("oxthema")
 #>     title = {oxthema: Oxford Palette, Theme, and Theme Components.},
 #>     author = {{Ernest Guevarra} and {Greco Malijan}},
 #>     year = {2026},
-#>     note = {R package version 0.1.0},
+#>     note = {R package version 0.0.9002},
 #>     url = {https://oxford-ihtm.io/oxthema/},
 #>     doi = {https://doi.org/10.5281/zenodo.10721129},
 #>   }
@@ -123,6 +123,11 @@ guidelines](https://oxford-ihtm.io/oxthema/CONTRIBUTING.html).
 This project is released with a [Contributor Code of
 Conduct](https://oxford-ihtm.io/oxthema/CODE_OF_CONDUCT.html). By
 participating in this project you agree to abide by its terms.
+
+If you are interested in [Oxford iHealth](https://oxford-ihtm.io)’s work
+and would like to join the community or contribute to it’s various
+projects, visit the [Oxford iHealth website](https://oxford-ihtm.io) and
+its [community page](https://oxford-ihtm.io/community/) to learn more.
 
  
 

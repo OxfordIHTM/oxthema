@@ -12,13 +12,13 @@ template:
   includes:
     in_header: |
       <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6WH77FEH4"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-V6GDWK0YEF"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-Q6WH77FEH4');
+        gtag('config', 'G-V6GDWK0YEF');
       </script>
 
 home:
