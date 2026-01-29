@@ -14,6 +14,6 @@ jobs:
           fetch-depth: 0
       - uses: yesolutions/mirror-action@master
         with:
-          REMOTE: https://codeberg.org/OxfordIHTM/oxthema
+          REMOTE: https://codeberg.org/oxford-ihealth/oxthema
           GIT_USERNAME: ${{ secrets.CODEBERG_USERNAME }}
           GIT_PASSWORD: ${{ secrets.CODEBERG_TOKEN }}
