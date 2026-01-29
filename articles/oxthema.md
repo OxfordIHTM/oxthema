@@ -1,0 +1,34 @@
+# University of Oxford Colours, Palettes, Fonts, and Themes
+
+Visual identity guidelines serve as a blueprint for maintaining
+consistency in how an organisation presents itself visually. They
+emphasise the importance of correctly utilising visual elements to
+represent the organisation’s identity and values. By adhering to these
+guidelines, uniformity is achieved across all communications, which
+contributes to fostering a consistent and positive image for the
+organisation. This unified visual presentation aids in conveying and
+promoting the organisation’s academic excellence and cultural
+significance effectively. The University of Oxford visual identity
+guidelines creates such a framework through a set of colours, palettes,
+fonts, and themes for use in various forms of communication materials
+and media.
+
+`oxthema` provides utilities for applying the University of Oxford’s
+visual identity and/or branding guidelines. Currently, `oxthema` has
+colours, palettes, fonts, and themes that is consistent with these
+guidelines.
+
+- [Oxford
+  colours](https://oxford-ihtm.io/oxthema/articles/oxford-colours.html)
+
+- [Oxford
+  palettes](https://oxford-ihtm.io/oxthema/articles/oxford-palettes.html)
+
+- [Oxford
+  fonts](https://oxford-ihtm.io/oxthema/articles/oxford-fonts.html)
+
+- [Oxford ggplot2
+  themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-themes.html)
+
+- [Oxford forestploter
+  themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
