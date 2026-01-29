@@ -1,0 +1,317 @@
+# --------------------------------------------
+# CITATION file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# --------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "oxthema" in publications use:'
+type: software
+license: GPL-3.0-or-later
+title: 'oxthema: Oxford Colours, Palettes, Fonts, and Themes'
+version: 0.1.0
+doi: 10.5281/zenodo.10721129
+abstract: Colours, palettes, fonts, and themes based on University of Oxford's visual
+  identity guidelines <https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines>.
+authors:
+- family-names: Guevarra
+  given-names: Ernest
+  email: ernest@guevarra.io
+  orcid: https://orcid.org/0000-0002-4887-4415
+- family-names: Malijan
+  given-names: Greco
+preferred-citation:
+  type: manual
+  title: 'oxthema: Oxford Palette, Theme, and Theme Components.'
+  authors:
+  - name: Ernest Guevarra
+  - name: Greco Malijan
+  year: '2026'
+  notes: R package version 0.1.0
+  url: https://oxford-ihtm.io/oxthema/
+  doi: 10.5281/zenodo.10721129
+repository-code: https://github.com/OxfordIHTM/oxthema
+url: https://oxford-ihtm.io/oxthema/
+contact:
+- family-names: Guevarra
+  given-names: Ernest
+  email: ernest@guevarra.io
+  orcid: https://orcid.org/0000-0002-4887-4415
+keywords:
+- ggplot-themes
+- oxford
+- r
+- rstats
+references:
+- type: software
+  title: 'R: A Language and Environment for Statistical Computing'
+  notes: Depends
+  url: https://www.R-project.org/
+  authors:
+  - name: R Core Team
+  institution:
+    name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2026'
+  version: '>= 4.1.0'
+- type: software
+  title: forestploter
+  abstract: 'forestploter: Create a Flexible Forest Plot'
+  notes: Imports
+  url: https://github.com/adayim/forestploter
+  repository: https://CRAN.R-project.org/package=forestploter
+  authors:
+  - family-names: Dayimu
+    given-names: Alimu
+    email: ad938@cam.ac.uk
+    orcid: https://orcid.org/0000-0001-9998-7463
+  year: '2026'
+  doi: 10.32614/CRAN.package.forestploter
+- type: software
+  title: ggplot2
+  abstract: 'ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics'
+  notes: Imports
+  url: https://ggplot2.tidyverse.org
+  repository: https://CRAN.R-project.org/package=ggplot2
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+    orcid: https://orcid.org/0000-0003-4757-117X
+  - family-names: Chang
+    given-names: Winston
+    orcid: https://orcid.org/0000-0002-1576-2126
+  - family-names: Henry
+    given-names: Lionel
+  - family-names: Pedersen
+    given-names: Thomas Lin
+    email: thomas.pedersen@posit.co
+    orcid: https://orcid.org/0000-0002-5147-4711
+  - family-names: Takahashi
+    given-names: Kohske
+  - family-names: Wilke
+    given-names: Claus
+    orcid: https://orcid.org/0000-0002-7470-9261
+  - family-names: Woo
+    given-names: Kara
+    orcid: https://orcid.org/0000-0002-5125-4188
+  - family-names: Yutani
+    given-names: Hiroaki
+    orcid: https://orcid.org/0000-0002-3385-7233
+  - family-names: Dunnington
+    given-names: Dewey
+    orcid: https://orcid.org/0000-0002-9415-4582
+  - family-names: Brand
+    given-names: Teun
+    name-particle: van den
+    orcid: https://orcid.org/0000-0002-9335-7468
+  year: '2026'
+  doi: 10.32614/CRAN.package.ggplot2
+- type: software
+  title: stringr
+  abstract: 'stringr: Simple, Consistent Wrappers for Common String Operations'
+  notes: Imports
+  url: https://stringr.tidyverse.org
+  repository: https://CRAN.R-project.org/package=stringr
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+  year: '2026'
+  doi: 10.32614/CRAN.package.stringr
+- type: software
+  title: systemfonts
+  abstract: 'systemfonts: System Native Font Finding'
+  notes: Imports
+  url: https://systemfonts.r-lib.org
+  repository: https://CRAN.R-project.org/package=systemfonts
+  authors:
+  - family-names: Pedersen
+    given-names: Thomas Lin
+    email: thomas.pedersen@posit.co
+    orcid: https://orcid.org/0000-0002-5147-4711
+  - family-names: Ooms
+    given-names: Jeroen
+    email: jeroen@berkeley.edu
+    orcid: https://orcid.org/0000-0002-4035-0289
+  - family-names: Govett
+    given-names: Devon
+  year: '2026'
+  doi: 10.32614/CRAN.package.systemfonts
+- type: software
+  title: withr
+  abstract: 'withr: Run Code ''With'' Temporarily Modified Global State'
+  notes: Imports
+  url: https://withr.r-lib.org
+  repository: https://CRAN.R-project.org/package=withr
+  authors:
+  - family-names: Hester
+    given-names: Jim
+  - family-names: Henry
+    given-names: Lionel
+    email: lionel@posit.co
+  - family-names: Müller
+    given-names: Kirill
+    email: krlmlr+r@mailbox.org
+  - family-names: Ushey
+    given-names: Kevin
+    email: kevinushey@gmail.com
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+  - family-names: Chang
+    given-names: Winston
+  year: '2026'
+  doi: 10.32614/CRAN.package.withr
+- type: software
+  title: covr
+  abstract: 'covr: Test Coverage for Packages'
+  notes: Suggests
+  url: https://covr.r-lib.org
+  repository: https://CRAN.R-project.org/package=covr
+  authors:
+  - family-names: Hester
+    given-names: Jim
+    email: james.f.hester@gmail.com
+  year: '2026'
+  doi: 10.32614/CRAN.package.covr
+- type: software
+  title: knitr
+  abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
+  notes: Suggests
+  url: https://yihui.org/knitr/
+  repository: https://CRAN.R-project.org/package=knitr
+  authors:
+  - family-names: Xie
+    given-names: Yihui
+    email: xie@yihui.name
+    orcid: https://orcid.org/0000-0003-0645-5666
+  year: '2026'
+  doi: 10.32614/CRAN.package.knitr
+- type: software
+  title: ragg
+  abstract: 'ragg: Graphic Devices Based on AGG'
+  notes: Suggests
+  url: https://ragg.r-lib.org
+  repository: https://CRAN.R-project.org/package=ragg
+  authors:
+  - family-names: Pedersen
+    given-names: Thomas Lin
+    email: thomas.pedersen@posit.co
+    orcid: https://orcid.org/0000-0002-5147-4711
+  - family-names: Shemanarev
+    given-names: Maxim
+  year: '2026'
+  doi: 10.32614/CRAN.package.ragg
+- type: software
+  title: rmarkdown
+  abstract: 'rmarkdown: Dynamic Documents for R'
+  notes: Suggests
+  url: https://pkgs.rstudio.com/rmarkdown/
+  repository: https://CRAN.R-project.org/package=rmarkdown
+  authors:
+  - family-names: Allaire
+    given-names: JJ
+    email: jj@posit.co
+  - family-names: Xie
+    given-names: Yihui
+    email: xie@yihui.name
+    orcid: https://orcid.org/0000-0003-0645-5666
+  - family-names: Dervieux
+    given-names: Christophe
+    email: cderv@posit.co
+    orcid: https://orcid.org/0000-0003-4474-2498
+  - family-names: McPherson
+    given-names: Jonathan
+    email: jonathan@posit.co
+  - family-names: Luraschi
+    given-names: Javier
+  - family-names: Ushey
+    given-names: Kevin
+    email: kevin@posit.co
+  - family-names: Atkins
+    given-names: Aron
+    email: aron@posit.co
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+  - family-names: Cheng
+    given-names: Joe
+    email: joe@posit.co
+  - family-names: Chang
+    given-names: Winston
+    email: winston@posit.co
+  - family-names: Iannone
+    given-names: Richard
+    email: rich@posit.co
+    orcid: https://orcid.org/0000-0003-3925-190X
+  year: '2026'
+  doi: 10.32614/CRAN.package.rmarkdown
+- type: software
+  title: sf
+  abstract: 'sf: Simple Features for R'
+  notes: Suggests
+  url: https://r-spatial.github.io/sf/
+  repository: https://CRAN.R-project.org/package=sf
+  authors:
+  - family-names: Pebesma
+    given-names: Edzer
+    email: edzer.pebesma@uni-muenster.de
+    orcid: https://orcid.org/0000-0001-8049-7069
+  year: '2026'
+  doi: 10.32614/CRAN.package.sf
+- type: software
+  title: showtext
+  abstract: 'showtext: Using Fonts More Easily in R Graphs'
+  notes: Suggests
+  url: https://github.com/yixuan/showtext
+  repository: https://CRAN.R-project.org/package=showtext
+  authors:
+  - family-names: Qiu
+    given-names: Yixuan
+  - family-names: details.
+    given-names: authors/contributors of the included software. See file AUTHORS for
+  year: '2026'
+  doi: 10.32614/CRAN.package.showtext
+- type: software
+  title: spelling
+  abstract: 'spelling: Tools for Spell Checking in R'
+  notes: Suggests
+  url: https://ropensci.r-universe.dev/spelling
+  repository: https://CRAN.R-project.org/package=spelling
+  authors:
+  - family-names: Ooms
+    given-names: Jeroen
+    email: jeroenooms@gmail.com
+    orcid: https://orcid.org/0000-0002-4035-0289
+  - family-names: Hester
+    given-names: Jim
+    email: james.hester@rstudio.com
+  year: '2026'
+  doi: 10.32614/CRAN.package.spelling
+- type: software
+  title: sysfonts
+  abstract: 'sysfonts: Loading Fonts into R'
+  notes: Suggests
+  url: https://github.com/yixuan/sysfonts
+  repository: https://CRAN.R-project.org/package=sysfonts
+  authors:
+  - family-names: Qiu
+    given-names: Yixuan
+  - family-names: details.
+    given-names: authors/contributors of the included fonts. See file AUTHORS for
+  year: '2026'
+  doi: 10.32614/CRAN.package.sysfonts
+- type: software
+  title: testthat
+  abstract: 'testthat: Unit Testing for R'
+  notes: Suggests
+  url: https://testthat.r-lib.org
+  repository: https://CRAN.R-project.org/package=testthat
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+  year: '2026'
+  doi: 10.32614/CRAN.package.testthat
+  version: '>= 3.0.0'
+

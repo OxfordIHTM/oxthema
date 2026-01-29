@@ -13,7 +13,7 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
 [![R-CMD-check](https://github.com/OxfordIHTM/oxthema/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/OxfordIHTM/oxthema/actions/workflows/R-CMD-check.yaml)
 [![test-coverage](https://github.com/OxfordIHTM/oxthema/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/OxfordIHTM/oxthema/actions/workflows/test-coverage.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/OxfordIHTM/oxthema/branch/main/graph/badge.svg)](https://app.codecov.io/gh/OxfordIHTM/oxthema?branch=main)
+coverage](https://codecov.io/gh/OxfordIHTM/oxthema/graph/badge.svg)](https://app.codecov.io/gh/OxfordIHTM/oxthema)
 [![CodeFactor](https://www.codefactor.io/repository/github/oxfordihtm/oxthema/badge)](https://www.codefactor.io/repository/github/oxfordihtm/oxthema)
 [![DOI](https://zenodo.org/badge/711630340.svg)](https://zenodo.org/doi/10.5281/zenodo.10721129)
 <!-- badges: end -->
@@ -22,9 +22,9 @@ Colours, palettes, fonts, and themes based on [University of
 Oxford](https://ox.ac.uk)’s [visual identity
 guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines).
 
-## What does `oxthema` do?
+## What does the package do?
 
-`oxthema` aims to provide templates, themes, and theme components for
+`{oxthema}` aims to provide templates, themes, and theme components for
 colour palettes, typography, and layout compliant with [University of
 Oxford](https://ox.ac.uk)’s [visual identity
 guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines)
@@ -41,13 +41,13 @@ To see a list of features that we are either actively working on, are
 considering, or need help on, visit our [GitHub
 issues](https://github.com/OxfordIHTM/oxthema/issues) page.
 
-`oxthema` is currently in pre-release (alpha release) to allow for alpha
-testing of current functionalities.
+`{oxthema}` is currently in pre-release (alpha release) to allow for
+alpha testing of current functionalities.
 
 ## Installation
 
-`oxthema` is not yet available on [CRAN](https://cran.r-project.org) but
-can be installed through the [Oxford iHealth R
+`{oxthema}` is not yet available on [CRAN](https://cran.r-project.org)
+but can be installed through the [Oxford iHealth R
 Universe](https://oxfordihtm.r-universe.dev) repository as follows:
 
 ``` r
@@ -60,22 +60,48 @@ install.packages(
 ## Usage
 
 The following vignettes provide details on how to make full use of the
-`oxthema` package:
+`{oxthema}` package:
 
-  - [Oxford
-    colours](https://oxford-ihtm.io/oxthema/articles/oxford-colours.html)
+- [Oxford
+  colours](https://oxford-ihtm.io/oxthema/articles/oxford-colours.html)
 
-  - [Oxford
-    palettes](https://oxford-ihtm.io/oxthema/articles/oxford-palettes.html)
+- [Oxford
+  palettes](https://oxford-ihtm.io/oxthema/articles/oxford-palettes.html)
 
-  - [Oxford
-    fonts](https://oxford-ihtm.io/oxthema/articles/oxford-fonts.html)
+- [Oxford
+  fonts](https://oxford-ihtm.io/oxthema/articles/oxford-fonts.html)
 
-  - [Oxford ggplot2
-    themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-themes.html)
+- [Oxford ggplot2
+  themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-themes.html)
 
-  - [Oxford forestploter
-    themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
+- [Oxford forestploter
+  themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
+
+## Citation
+
+If you use the `{oxthema}` in your work, please cite using the suggested
+citation provided by a call to the `citation` function as follows:
+
+``` r
+citation("oxthema")
+#> To cite oxthema in publications use:
+#> 
+#>   Ernest Guevarra, Greco Malijan (2026). _oxthema: Oxford Palette,
+#>   Theme, and Theme Components._. doi:10.5281/zenodo.10721129
+#>   <https://doi.org/10.5281/zenodo.10721129>, R package version 0.1.0,
+#>   <https://oxford-ihtm.io/oxthema/>.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {oxthema: Oxford Palette, Theme, and Theme Components.},
+#>     author = {{Ernest Guevarra} and {Greco Malijan}},
+#>     year = {2026},
+#>     note = {R package version 0.1.0},
+#>     url = {https://oxford-ihtm.io/oxthema/},
+#>     doi = {https://doi.org/10.5281/zenodo.10721129},
+#>   }
+```
 
 ## Community guidelines
 

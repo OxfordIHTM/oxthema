@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R-CMD-check](https://github.com/OxfordIHTM/oxthema/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/OxfordIHTM/oxthema/actions/workflows/R-CMD-check.yaml)
 [![test-coverage](https://github.com/OxfordIHTM/oxthema/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/OxfordIHTM/oxthema/actions/workflows/test-coverage.yaml)
-[![Codecov test coverage](https://codecov.io/gh/OxfordIHTM/oxthema/branch/main/graph/badge.svg)](https://app.codecov.io/gh/OxfordIHTM/oxthema?branch=main)
+[![Codecov test coverage](https://codecov.io/gh/OxfordIHTM/oxthema/graph/badge.svg)](https://app.codecov.io/gh/OxfordIHTM/oxthema)
 [![CodeFactor](https://www.codefactor.io/repository/github/oxfordihtm/oxthema/badge)](https://www.codefactor.io/repository/github/oxfordihtm/oxthema)
 [![DOI](https://zenodo.org/badge/711630340.svg)](https://zenodo.org/doi/10.5281/zenodo.10721129)
 <!-- badges: end -->
@@ -27,20 +27,20 @@ knitr::opts_chunk$set(
 Colours, palettes, fonts, and themes based on [University of Oxford](https://ox.ac.uk)'s [visual identity guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines). 
 
 
-## What does `oxthema` do?
+## What does the package do?
 
-`oxthema` aims to provide templates, themes, and theme components for colour palettes, typography, and layout compliant with [University of Oxford](https://ox.ac.uk)'s [visual identity guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines) for use in the R language for statistical computing graphics and publishing ecosystem.
+`{oxthema}` aims to provide templates, themes, and theme components for colour palettes, typography, and layout compliant with [University of Oxford](https://ox.ac.uk)'s [visual identity guidelines](https://communications.web.ox.ac.uk/communications-resources/visual-identity/identity-guidelines) for use in the R language for statistical computing graphics and publishing ecosystem.
 
 The package provides colours, palettes, and fonts consistent with the university visual identity guidelines. The package also includes themes for specific packages and functionalities that make use of colours, palettes, and fonts. The package currently has themes for `{ggplot2}` and for `{forestploter}` packages.
 
 To see a list of features that we are either actively working on, are considering, or need help on, visit our [GitHub issues](https://github.com/OxfordIHTM/oxthema/issues) page.
 
-`oxthema` is currently in pre-release (alpha release) to allow for alpha testing of current functionalities.
+`{oxthema}` is currently in pre-release (alpha release) to allow for alpha testing of current functionalities.
 
 
 ## Installation
 
-`oxthema` is not yet available on [CRAN](https://cran.r-project.org) but can be installed through the [Oxford iHealth R Universe](https://oxfordihtm.r-universe.dev) repository as follows:
+`{oxthema}` is not yet available on [CRAN](https://cran.r-project.org) but can be installed through the [Oxford iHealth R Universe](https://oxfordihtm.r-universe.dev) repository as follows:
 
 ```R
 install.packages(
@@ -51,7 +51,7 @@ install.packages(
 
 ## Usage
 
-The following vignettes provide details on how to make full use of the `oxthema` package:
+The following vignettes provide details on how to make full use of the `{oxthema}` package:
 
 * [Oxford colours](https://oxford-ihtm.io/oxthema/articles/oxford-colours.html)
 
@@ -62,6 +62,14 @@ The following vignettes provide details on how to make full use of the `oxthema`
 * [Oxford ggplot2 themes](https://oxford-ihtm.io/oxthema/articles/oxford-ggplot2-themes.html)
 
 * [Oxford forestploter themes](https://oxford-ihtm.io/oxthema/articles/oxford-forestploter-themes.html)
+
+## Citation
+
+If you use the `{oxthema}` in your work, please cite using the suggested citation provided by a call to the `citation` function as follows:
+
+```{r citation, echo = TRUE, eval = TRUE}
+citation("oxthema")
+```
 
 ## Community guidelines
 

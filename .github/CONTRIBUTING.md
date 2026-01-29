@@ -2,23 +2,23 @@
 
 ## Bugs
 
-* Submit an issue on the [issues page](https://github.com/OxfordIHTM/oxfordtheme/issues)
+* Submit an issue on the [issues page](https://github.com/OxfordIHTM/oxfordthema/issues)
 
 ## Code contributions
 
 * Fork this repository to your Github account
 
-* Clone your version on your account down to your machine from your account
+* Clone your forked version to your machine
 
-```
-git clone https://github.com/<yourgithubusername>/oxfordtheme.git
+```bash
+git clone https://github.com/<yourgithubusername>/oxfordthema.git
 ```
 
-* Make sure to track progress upstream i.e., on our version of `oxfordtheme`
-at `OxfordIHTM/oxfordtheme`, by doing
+* Make sure to track progress upstream i.e., on our version of `oxfordthema`
+at `OxfordIHTM/oxfordthema`, by doing
 
-```
-git remote add upstream https://github.com/OxfordIHTM/oxfordtheme.git
+```bash
+git remote add upstream https://github.com/OxfordIHTM/oxfordthema.git
 ```
 
 * Before making changes make sure to pull changes in from `upstream` by doing
@@ -32,4 +32,4 @@ documentation
 
 * Push up changes to your account
 
-* Submit a pull request at `OxfordIHTM/oxfordtheme`
+* Submit a pull request at `OxfordIHTM/oxfordthema`
